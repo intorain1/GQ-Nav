@@ -1,0 +1,18 @@
+[
+    {   
+    "distance": 7.54,
+    "scan": "1LXtFkjw3qL",
+    "path_id": 7238,
+    "path": [
+      "a3fe827d49db4f7caa076c313434d418",
+      "e0f025c0baa94beba57ea499e3d846c5",
+      "6ab39d830183407cb7ec17206889000d",
+      "74d5b2290be74a1ba052b6fe2320e064",
+      "e8e2d73795e54b6db89cd32745e79fb9"
+    ],
+    "heading": 1.739,
+    "instr_id": "4332_1",
+    "instruction": 
+      "Go to the bottom of the stairs and turn left. Walk along the orange wall, past the stone statue, and go through the doorway. Turn left and stop at the top of the steps leading down."
+    }
+]

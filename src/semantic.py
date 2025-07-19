@@ -170,17 +170,17 @@ class SemanticSegmenter:
 
 
 if __name__ == "__main__":
-    # Example usage
     segmenter = SemanticSegmenter(
         grouding_model_config='/home/mspx/icra/GQnav/third_party/Grounded-Segment-Anything/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py',
         grounding_model_checkpoint='/home/mspx/icra/GQnav/model/groundingdino_swint_ogc.pth',
         sam_version='vit_b',
         sam_checkpoint='/home/mspx/icra/GQnav/model/sam_vit_b_01ec64.pth',
-        node_space='vase. tv.',
+        # node_space='table. tv. chair. cabinet. sofa. bed. windows. kitchen. bedroom. living room. mirror. plant. curtain. painting. picture',
+        node_space="table. tv. window. chair. refrigerator. sports. bench. piano. couch. rug. desk. doors. staircase. sink. toilet. decoration. pillow.",
         device='cuda'
     )
     
-    image = np.array(Image.open('/home/mspx/icra/GQnav/test1.jpg'))
+    image = np.array(Image.open('/home/mspx/icra/GQnav/test_image/0b22fa63d0f54a529c525afbf2e8bb25_COMBINED.jpg'))
     mask, xyxy, conf, caption = segmenter.get_segmentation(image)
     # print(mask, xyxy, conf, caption)
 
