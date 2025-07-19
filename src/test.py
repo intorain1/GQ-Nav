@@ -38,6 +38,7 @@ if __name__ == "__main__":
     # print(args.anno_dir, args.dataset, args.val_env_name)
     val_envs = build_dataset(args)
     agent = NavAgent(next(iter(val_envs.values())), args)
-    agent.rollout(reset=True)
-    agent.rollout(reset=False)
+    agent._make_action(threshold=0.5)  # Example threshold
+    # agent.rollout(reset=True)
+    # agent.rollout(reset=False)
     

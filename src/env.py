@@ -92,7 +92,7 @@ class EnvBatch(object):
         :param batch_size:  Used to create the simulator list.
         """
         self.feat_db = feat_db
-        
+
         self.sims = []
         for i in range(batch_size):
             sim = Simulator(navigable_dir)
@@ -115,6 +115,7 @@ class EnvBatch(object):
         feature_states = []
         for i, sim in enumerate(self.sims):
             state = sim.getState()
+            # print(state)
 
             feature = self.feat_db.get_image_observation(state["scanID"], state["viewpointID"])
             feature_states.append((feature, state))
@@ -209,7 +210,6 @@ class R2RNavBatch(object):
         obs = []
         for i, (feature, state) in enumerate(self.env.getStates()):
             item = self.batch[i]
-            print(item)
 
             ob = {
                 'objects' : feature["objects"],

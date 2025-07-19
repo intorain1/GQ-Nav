@@ -19,29 +19,39 @@ class NavAgent(BaseAgent):
         self.config = args
         self.env = env
         self.graph = OptimizedTimeObjectGraph()
-        self.segmenter = SemanticSegmenter()
+        # self.segmenter = SemanticSegmenter()
         self.predictor = Predictor()
         self.nav_step = 0
         self.action_chain = []
         self.imagine_chain = []
         self.path = []
 
-    def _make_action(self, threshold) -> str:
-        cur_obs = self.env._get_obs()[0]
+    def parse_objects(self, objects: List[Dict[str, Dict[str, float]]]) -> List[Tuple[str, float, float]]:
+        parsed = []
+        for obj in objects:
+            for name, props in obj.items():
+                parsed.append(name)
+        return parsed
 
-        ##update graph
-        objects = cur_obs['objects']
-        self.graph.add_recognition[self.nav_step, objects]
+    def _make_action(self, threshold, reset=True) -> str:
+        if reset:  # Reset env
+            cur_obs = self.env.reset()[0]
+        else:
+            cur_obs = self.env._get_obs()[0]
+
+        # Update graph
+        objects = self.parse_objects(cur_obs['objects'])
+        self.graph.add_recognition(self.nav_step, objects)
         self.nav_step += 1
 
-        ##judge if use action_chain
+        # Judge if use action_chain
         if self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
-            self.action_chain, self.image_chain = self.predictor.rethinking()
-    
-        ##get objects
+            self.action_chain, self.imagine_chain = self.predictor.rethinking()
+
+        # Get target object
         to_object = self.action_chain[0]
 
-        ##get navigable
+        # Get navigable candidates
         navigable = cur_obs['navigable']
         candidates = []
         candidate_graphs = []
@@ -49,25 +59,28 @@ class NavAgent(BaseAgent):
             nav_objects = self.env.get_object(cur_obs['scan'], candidate)
             candidate_graph = OptimizedTimeObjectGraph()
             candidate_graph.add_recognition(self.nav_step, nav_objects)
-            candidate_graphs.append(candidate_graph, candidate)
+            candidate_graphs.append((candidate_graph, candidate))
             if to_object in nav_objects:
-                candidates.append(candidate_graph, candidate)
-        
-        if len(candidates) == 0: ## not in all candidates
-            max = -np.inf
+                candidates.append((candidate_graph, candidate))
+
+        if len(candidates) == 0:  # not in all candidates
+            max_score = -np.inf
+            destination = None
             for candidate_graph, candidate in candidate_graphs:
                 score = candidate_graph.match_score(self.imagine_chain[0], 0, 0, 0)
-                if score > max:
-                    max = score
+                if score > max_score:
+                    max_score = score
                     destination = candidate
 
         elif len(candidates) > 2:
-            max = -np.inf
+            max_score = -np.inf
+            destination = None
             for candidate_graph, candidate in candidates:
-                if candidate_graph.match_score(self.imagine_chain[0], 0, 0, 0) > max:
-                    max = candidate_graph.match_score(self.imagine_chain[0], 0, 0, 0)
+                score = candidate_graph.match_score(self.imagine_chain[0], 0, 0, 0)
+                if score > max_score:
+                    max_score = score
                     destination = candidate
-        
+
         else:
             destination = candidates[0][1]
 

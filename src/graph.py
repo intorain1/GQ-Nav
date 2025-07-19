@@ -1,6 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
+from matplotlib.colors import ListedColormap# Use a non-interactive backend for matplotlib
 import math
 
 class OptimizedTimeObjectGraph:
