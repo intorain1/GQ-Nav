@@ -8,7 +8,7 @@ import networkx as nx
 from collections import defaultdict
 
 from env_src.utils.data import load_nav_graphs
-from eval_utils import cal_dtw, cal_cls
+from env_src.eval_utils import cal_dtw, cal_cls
 from env_src.utils.graph_utils import NavGraph
 
 ERROR_MARGIN = 3.0
