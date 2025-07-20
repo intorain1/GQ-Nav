@@ -4,8 +4,8 @@ import yaml
 import re
 import warnings
 import numpy as np
+from collections import deque
 from typing import Any, Callable, List, NamedTuple, Optional, Sequence, Tuple, Dict, Union
-
 from env import R2RNavBatch
 from argparse import Namespace
 from agent_base import BaseAgent
@@ -22,8 +22,8 @@ class NavAgent(BaseAgent):
         # self.segmenter = SemanticSegmenter()
         self.predictor = Predictor()
         self.nav_step = 0
-        self.action_chain = []
-        self.imagine_chain = []
+        self.action_chain = deque()
+        self.imagined_graph_chain = deque()
         self.path = []
 
     def parse_objects(self, objects: List[Dict[str, Dict[str, float]]]) -> List[Tuple[str, float, float]]:
@@ -49,17 +49,20 @@ class NavAgent(BaseAgent):
         # Update graph
         objects = self.parse_objects(cur_obs['objects'])
         self.graph.add_recognition(self.nav_step, objects)
+        self.predictor.load_detected_graph(self.graph)
         self.nav_step += 1
 
         # # Judge if use action_chain
         if len(self.action_chain) == 0:
             self.predictor.set_instruction(cur_obs['instruction'])
             self.predictor.update_imagined_graph()
-            self.action_chain = self.predictor.action_chain
+            self.action_chain = deque(self.predictor.action_chain)
             print('action', self.action_chain)
 
-        # elif self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
-        #     self.action_chain, self.imagine_chain = self.predictor.rethinking()
+        elif self.graph.match_score(self.imagined_graph_chain[0], 0, 0, 0) <= threshold:
+            action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
+            self.action_chain = deque(action_chain_list)
+            self.imagined_graph_chain = deque(imagined_graph_chain_list)
 
         # Get target object
         to_object = self.action_chain[0][1]
@@ -80,7 +83,7 @@ class NavAgent(BaseAgent):
             max_score = -np.inf
             destination = None
             for candidate_graph, candidate in candidate_graphs:
-                score = candidate_graph.match_score(self.imagine_chain[0], 0, 0, 0)
+                score = candidate_graph.match_score(self.imagined_graph_chain[0], 0, 0, 0)
                 if score > max_score:
                     max_score = score
                     destination = candidate
@@ -89,7 +92,7 @@ class NavAgent(BaseAgent):
             max_score = -np.inf
             destination = None
             for candidate_graph, candidate in candidates:
-                score = candidate_graph.match_score(self.imagine_chain[0], 0, 0, 0)
+                score = candidate_graph.match_score(self.imagined_graph_chain[0], 0, 0, 0)
                 if score > max_score:
                     max_score = score
                     destination = candidate
@@ -98,12 +101,19 @@ class NavAgent(BaseAgent):
             destination = candidates[0][1]
 
         self.path.append(destination)
-        self.env.step(destination)
+        print(f"agent-destination {destination} ")
+        self.env.step([destination])# the parameter is a list of next viewpoint IDs. Change destination to a list
+
+        # operation of deque progress
+        # if len(self.action_chain) > 0:
+        #     self.action_chain.popleft()
+        #     self.imagined_graph_chain.popleft()
 
     def _visulize(self):
         pass
 
     def _ifstop(self):
+        # isreach?
         pass
 
     def _rollout(self, **args):

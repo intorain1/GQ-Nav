@@ -30,7 +30,7 @@ class Predictor:
         
         self.instruction = None
         self.action_chain=[] #用物体进行描述
-        self.imagined_view_chain = []
+        self.imagined_graph_chain = []
         
         self.system_prompt = '''
 You are a scene-map-aware navigation agent.
@@ -200,7 +200,7 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
         self.skillspace = skillspace
         #self.set_system_prompt()
 
-    def set_graph(self, graph: OptimizedTimeObjectGraph):
+    def load_detected_graph(self, graph: OptimizedTimeObjectGraph):
         self.detected_graph = graph
 
     def set_instruction(self, instruction: str):
@@ -225,7 +225,7 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
             objects_of_time = self.detected_graph.time_to_objects[time_id]
             #print(f"time_id = {time_id}, objects = {objects}")
             string_map += f"{list(objects_of_time)}\n"
-        print(string_map)
+        print(f"object-group {string_map}")
         return string_map
 
     def get_llm_response(self):
@@ -253,11 +253,11 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
 
     def response_extractor(self, response):
         lines = response.strip().splitlines()
-        print(response)
-        print('*'*50)
-        print(lines)
+        #print(response)
+        #print('*'*50)
+        #print(lines)
         self.action_chain = []
-        self.imagined_view_chain = []
+        self.imagined_graph_chain = []
         try:
             # 逐行解析
             for line in lines:
@@ -271,16 +271,16 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
                 if "action" in data:
                     self.action_chain.append((data["action"]["num_of_order"], data["action"]["object"]))
                 elif "imagined_view" in data:
-                    self.imagined_view_chain.append(data["imagined_view"])
+                    self.imagined_graph_chain.append(data["imagined_view"])
 
             # 根据 num_of_order 排序 action
             self.action_chain.sort(key=lambda x: x[0])
             target_chain = [obj for _, obj in self.action_chain]
 
             # 输出结果
-            print("target_chain =", target_chain)
-            print("self.imagined_view_chain =")
-            print(self.imagined_view_chain)
+            #print("target_chain =", target_chain)
+            #print("self.imagined_graph_chain =")
+            #print(self.imagined_graph_chain)
         except json.JSONDecodeError as e:
             print(f"JSON Decode Error: {e}")
             sys.exit(1) 
@@ -292,13 +292,21 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
         #print(self.user_prompt)
         response=self.get_llm_response()
         self.response_extractor(response)
-        num_steps = len(self.imagined_view_chain)
+        num_steps = len(self.imagined_graph_chain)
         max_time_id =3#设为固定值仅用于测试，实际需要另行获取
         for i in range(num_steps):
-            imagined_view = self.imagined_view_chain[i]
+            imagined_view = self.imagined_graph_chain[i]
             if imagined_view:
                 self.predicted_graph.add_recognition(max_time_id+i,imagined_view)
         # self.predicted_graph.visualize('predicted_graph')
+
+    def rethinking(self):
+        """
+        Rethink the action chain based on the current state and predicted graph.
+        This method can be used to adjust the action chain if the initial prediction is not feasible.
+        """
+        self.update_imagined_graph()
+        return self.action_chain, self.imagined_graph_chain
 
 if __name__ == "__main__":
     # Example usage
@@ -310,7 +318,7 @@ if __name__ == "__main__":
 
     # 构建预测器
     predictor = Predictor()
-    predictor.set_graph(realgraph)#更新已探索图
+    predictor.load_detected_graph(realgraph)#更新已探索图
     predictor.current_position = 'window'#设置当前位置
     #传入导航指令，从数据集获取，是一个字符串
     predictor.set_instruction("You are now at window, go to the tv in the living room, and then go to the toilet in the bathroom. Finally go to the plant in kitchen.")

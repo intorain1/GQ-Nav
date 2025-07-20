@@ -124,6 +124,7 @@ class EnvBatch(object):
     def makeActions(self, next_viewpoint_IDs):
         ''' Take an action using the full state dependent action interface (with batched input)'''
         for i, next_viewpoint_ID in enumerate(next_viewpoint_IDs):
+            print('env.makeActions: ', next_viewpoint_ID)
             self.sims[i].makeAction(next_viewpoint_ID)
 
 
@@ -254,8 +255,9 @@ class R2RNavBatch(object):
         self.env.newEpisodes(scanIds, viewpointIds, headings)
         return self._get_obs()
 
-    def step(self, next_viewpoint_IDs):
+    def step(self, next_viewpoint_IDs:list):
         ''' Take action (same interface as makeActions) '''
+        print('env.step: ', next_viewpoint_IDs)
         self.env.makeActions(next_viewpoint_IDs)
         return self._get_obs()
 
