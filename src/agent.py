@@ -52,7 +52,13 @@ class NavAgent(BaseAgent):
         self.nav_step += 1
 
         # # Judge if use action_chain
-        if self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
+        if len(self.action_chain) == 0:
+            self.predictor.set_instruction(cur_obs['instruction'])
+            self.predictor.update_imagined_graph()
+            self.action_chain = self.predictor.action_chain
+            print(self.action_chain)
+
+        elif self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
             self.action_chain, self.imagine_chain = self.predictor.rethinking()
 
         # Get target object
