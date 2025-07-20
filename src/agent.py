@@ -32,6 +32,12 @@ class NavAgent(BaseAgent):
             for name, props in obj.items():
                 parsed.append(name)
         return parsed
+    
+    def parse_navigable(self, navigable: List[Dict[str, Any]]) -> List[str]:
+        parsed = []
+        for nav in navigable:
+            parsed.append(nav)
+        return parsed
 
     def _make_action(self, threshold, reset=True) -> str:
         if reset:  # Reset env
@@ -39,12 +45,13 @@ class NavAgent(BaseAgent):
         else:
             cur_obs = self.env._get_obs()[0]
 
+        # print(cur_obs)
         # Update graph
         objects = self.parse_objects(cur_obs['objects'])
         self.graph.add_recognition(self.nav_step, objects)
         self.nav_step += 1
 
-        # Judge if use action_chain
+        # # Judge if use action_chain
         if self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
             self.action_chain, self.imagine_chain = self.predictor.rethinking()
 
@@ -52,11 +59,11 @@ class NavAgent(BaseAgent):
         to_object = self.action_chain[0]
 
         # Get navigable candidates
-        navigable = cur_obs['navigable']
+        navigable = self.parse_navigable(cur_obs['candidate'])
         candidates = []
         candidate_graphs = []
         for candidate in navigable:
-            nav_objects = self.env.get_object(cur_obs['scan'], candidate)
+            nav_objects = self.parse_objects(self.env._get_object(cur_obs['scan'], candidate)['objects'])
             candidate_graph = OptimizedTimeObjectGraph()
             candidate_graph.add_recognition(self.nav_step, nav_objects)
             candidate_graphs.append((candidate_graph, candidate))
@@ -90,6 +97,11 @@ class NavAgent(BaseAgent):
     def _visulize(self):
         pass
 
+    def _ifstop(self):
+        pass
+
+    def _rollout(self, **args):
+        pass
                 
 
 

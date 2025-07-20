@@ -206,6 +206,16 @@ class R2RNavBatch(object):
             random.shuffle(self.data)
         self.ix = 0
 
+    def _get_object(self, scan, viewpoint):
+        """
+        Get the object in the scan and viewpoint.
+        :param scan: The scan id.
+        :param viewpoint: The viewpoint id.
+        :return: The object in the scan and viewpoint.
+        """
+        obs = self.env.feat_db.get_image_observation(scan, viewpoint)
+        return obs
+    
     def _get_obs(self):
         obs = []
         for i, (feature, state) in enumerate(self.env.getStates()):
