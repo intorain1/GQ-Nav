@@ -52,20 +52,24 @@ class NavAgent(BaseAgent):
         self.predictor.load_detected_graph(self.graph)
         self.nav_step += 1
 
+        # print(len(self.action_chain))
         # # Judge if use action_chain
         if len(self.action_chain) == 0:
             self.predictor.set_instruction(cur_obs['instruction'])
             self.predictor.update_imagined_graph()
             self.action_chain = deque(self.predictor.action_chain)
+            self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
+            print(self.imagined_graph_chain)
             print('action', self.action_chain)
 
-        elif self.graph.match_score(self.imagined_graph_chain[0], 0, 0, 0) <= threshold:
-            action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
-            self.action_chain = deque(action_chain_list)
-            self.imagined_graph_chain = deque(imagined_graph_chain_list)
+        # elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 0, 0) <= threshold:
+        #     action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
+        #     self.action_chain = deque(action_chain_list)
+        #     self.imagined_graph_chain = deque(imagined_graph_chain_list)
 
         # Get target object
-        to_object = self.action_chain[0][1]
+        to_object = self.action_chain.popleft()[1]
+        print(to_object)
 
         # Get navigable candidates
         navigable = self.parse_navigable(cur_obs['candidate'])
@@ -73,6 +77,7 @@ class NavAgent(BaseAgent):
         candidate_graphs = []
         for candidate in navigable:
             nav_objects = self.parse_objects(self.env._get_object(cur_obs['scan'], candidate)['objects'])
+            print(nav_objects)
             candidate_graph = OptimizedTimeObjectGraph()
             candidate_graph.add_recognition(self.nav_step, nav_objects)
             candidate_graphs.append((candidate_graph, candidate))
@@ -82,8 +87,11 @@ class NavAgent(BaseAgent):
         if len(candidates) == 0:  # not in all candidates
             max_score = -np.inf
             destination = None
+            graph = OptimizedTimeObjectGraph()
+            ob = self.imagined_graph_chain.popleft()
+            graph.add_recognition(self.nav_step, ob)
             for candidate_graph, candidate in candidate_graphs:
-                score = candidate_graph.match_score(self.imagined_graph_chain[0], 0, 0, 0)
+                score = candidate_graph.match_score(graph, 0, 1, 0)
                 if score > max_score:
                     max_score = score
                     destination = candidate
@@ -92,7 +100,7 @@ class NavAgent(BaseAgent):
             max_score = -np.inf
             destination = None
             for candidate_graph, candidate in candidates:
-                score = candidate_graph.match_score(self.imagined_graph_chain[0], 0, 0, 0)
+                score = candidate_graph.match_score(self.imagined_graph_chain[0], 0, 1, 0)
                 if score > max_score:
                     max_score = score
                     destination = candidate
