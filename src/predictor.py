@@ -298,7 +298,7 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
             imagined_view = self.imagined_view_chain[i]
             if imagined_view:
                 self.predicted_graph.add_recognition(max_time_id+i,imagined_view)
-        self.predicted_graph.visualize('predicted_graph')
+        # self.predicted_graph.visualize('predicted_graph')
 
 if __name__ == "__main__":
     # Example usage

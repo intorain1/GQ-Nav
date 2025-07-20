@@ -56,13 +56,13 @@ class NavAgent(BaseAgent):
             self.predictor.set_instruction(cur_obs['instruction'])
             self.predictor.update_imagined_graph()
             self.action_chain = self.predictor.action_chain
-            print(self.action_chain)
+            print('action', self.action_chain)
 
-        elif self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
-            self.action_chain, self.imagine_chain = self.predictor.rethinking()
+        # elif self.graph.match_score(self.imagine_chain[0], 0, 0, 0) <= threshold:
+        #     self.action_chain, self.imagine_chain = self.predictor.rethinking()
 
         # Get target object
-        to_object = self.action_chain[0]
+        to_object = self.action_chain[0][1]
 
         # Get navigable candidates
         navigable = self.parse_navigable(cur_obs['candidate'])
