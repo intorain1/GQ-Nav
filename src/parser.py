@@ -6,7 +6,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="")
 
     # datasets
-    parser.add_argument('--root_dir', type=str, default='/home/mspx/icra/GQnav/datasets')
+    parser.add_argument('--root_dir', type=str, default='/home/mspx/icra/GQ-Nav/datasets')
     parser.add_argument('--dataset', type=str, default='r2r', choices=['r2r', 'r4r'])
     parser.add_argument('--output_dir', type=str, default='../datasets/R2R/exprs/gpt-3.5-turbo', help='experiment id')
     # parser.add_argument('--output_dir', type=str, default='../datasets/R2R/exprs/LlaMA-2-13b-test', help='experiment id')

@@ -14,5 +14,25 @@
     "instr_id": "4332_1",
     "instruction": 
       "Go to the bottom of the stairs and turn left. Walk along the orange wall, past the stone statue, and go through the doorway. Turn left and stop at the top of the steps leading down."
-    }
+    },
+    {
+    "distance": 15.77,
+    "scan": "1LXtFkjw3qL",
+    "path_id": 5184,
+    "path": [
+      "0b22fa63d0f54a529c525afbf2e8bb25",
+      "3eb5c4d7ad9a4805b0470cf5f9e3b17c",
+      "6c15ae9a3fc24613b9fcedb3da80aee5",
+      "6ecf3c792e5c48b4921e21fbb3aeff3c",
+      "24df7bedfc814d7e9bd610171c862f7a",
+      "649a58719cd7455ebe18675c9719dfa7",
+      "03a8325e3b054e3fad7e1e7091f9d283"
+    ],
+    "heading": 3.654,
+    "instr_id": "4332_1",
+    "instruction": [
+      "Head indoors and take the hallway to the living room. Stop and wait on the right hand side of the purple wall."
+    ]
+  }
+
 ]
