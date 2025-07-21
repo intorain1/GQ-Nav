@@ -59,8 +59,8 @@ class NavAgent(BaseAgent):
             self.predictor.update_imagined_graph()
             self.action_chain = deque(self.predictor.action_chain)
             self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
-            print(self.imagined_graph_chain)
-            print('action', self.action_chain)
+            # print(self.imagined_graph_chain)
+            # print('action', self.action_chain)
 
         # elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 0, 0) <= threshold:
         #     action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
@@ -69,7 +69,7 @@ class NavAgent(BaseAgent):
 
         # Get target object
         to_object = self.action_chain.popleft()[1]
-        print(to_object)
+        # print(to_object)
 
         # Get navigable candidates
         navigable = self.parse_navigable(cur_obs['candidate'])
@@ -77,7 +77,7 @@ class NavAgent(BaseAgent):
         candidate_graphs = []
         for candidate in navigable:
             nav_objects = self.parse_objects(self.env._get_object(cur_obs['scan'], candidate)['objects'])
-            print(nav_objects)
+            # print(nav_objects)
             candidate_graph = OptimizedTimeObjectGraph()
             candidate_graph.add_recognition(self.nav_step, nav_objects)
             candidate_graphs.append((candidate_graph, candidate))
