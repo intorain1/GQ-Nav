@@ -3,6 +3,7 @@ import json
 import yaml
 import re
 import warnings
+import time
 import numpy as np
 from collections import deque
 from typing import Any, Callable, List, NamedTuple, Optional, Sequence, Tuple, Dict, Union
@@ -55,12 +56,15 @@ class NavAgent(BaseAgent):
         # print(len(self.action_chain))
         # # Judge if use action_chain
         if len(self.action_chain) == 0:
+            start_time = time.time()
             self.predictor.set_instruction(cur_obs['instruction'])
             self.predictor.update_imagined_graph()
+            end_time = time.time()
+            print("thinking cost time:", end_time - start_time)
             self.action_chain = deque(self.predictor.action_chain)
             self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
             # print(self.imagined_graph_chain)
-            # print('action', self.action_chain)
+            print('action', self.action_chain)
 
         # elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 0, 0) <= threshold:
         #     action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
@@ -69,7 +73,7 @@ class NavAgent(BaseAgent):
 
         # Get target object
         to_object = self.action_chain.popleft()[1]
-        # print(to_object)
+        print(to_object)
 
         # Get navigable candidates
         navigable = self.parse_navigable(cur_obs['candidate'])

@@ -39,20 +39,25 @@ if __name__ == "__main__":
     # print(args.anno_dir, args.dataset, args.val_env_name)
     val_envs = build_dataset(args)
     agent = NavAgent(next(iter(val_envs.values())), args)
+    start_time = time.time()
     for i in range(0,5):
         if i == 0:
             agent._make_action(threshold=0.5)  # Example threshold
         else:
             agent._make_action(threshold=0.5, reset=False)
+    end_time = time.time()
+    print(f"Total time taken for 5 actions: {end_time - start_time:.2f} seconds")
     agent = NavAgent(next(iter(val_envs.values())), args)
 
     print('-----------------------------------')
-    
+    start_time = time.time()
     for i in range(0,5):
         if i == 0:
             agent._make_action(threshold=0.5)  # Example threshold
         else:
             agent._make_action(threshold=0.5, reset=False)
+    end_time = time.time()
+    print(f"Total time taken for 5 actions: {end_time - start_time:.2f} seconds")
     # agent.rollout(reset=True)
     # agent.rollout(reset=False)
     

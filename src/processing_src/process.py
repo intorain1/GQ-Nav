@@ -79,7 +79,11 @@ def process_scenes(folder_path, output_folder):
 
 
 if __name__ == "__main__":
-    input_folder = "/media/mspx/Elements1/mp3d/v1/scans/1LXtFkjw3qL/1LXtFkjw3qL/matterport_color_images" 
-    output_folder = "/home/mspx/icra/GQnav/test_image"
-    
-    process_scenes(input_folder, output_folder)
+    # Get all directories in /media/mspx/Elements1/mp3d/v1/scans
+    scan_root = "/media/mspx/Elements1/mp3d/v1/scans"
+    scan_dirs = [d for d in os.listdir(scan_root) if os.path.isdir(os.path.join(scan_root, d))]
+    for scan in scan_dirs:
+        input_folder = os.path.join(scan_root, scan, scan, "matterport_color_images")
+        output_folder = input_folder.replace("matterport_color_images", "combined_images")
+        os.makedirs(output_folder, exist_ok=True)
+        process_scenes(input_folder, output_folder)

@@ -97,7 +97,7 @@ Example:(Assume door is not included in the given scene map, but you can infer i
 {"action": {"num_of_order":2, "skill":"move", "object":"sink"}}
 {"imagined_view": ['door', 'shower', 'mirror', 'cloth']}
 ...
-The objects in the imagined_view and action can only be chosen from:'''
+Most importantly! The objects in the imagined_view and action_chain can only be chosen from:'''
         self.system_prompt += f'''{self.nodespace}\n'''
         self.system_prompt += f'''Do **not** include any other explanations or extra text in your output.
 Remeber you must generate 5 actions and matched imagined_view in total! Think carefully of the objects you will see along the way!
@@ -324,3 +324,8 @@ if __name__ == "__main__":
     predictor.set_instruction("You are now at window, go to the tv in the living room, and then go to the toilet in the bathroom. Finally go to the plant in kitchen.")
     #做出预测
     predictor.update_imagined_graph()
+    ##TODO: action_chain [start (1, 'door'), (2, 'tv'), (3, 'sink'), (4, 'plant'), stop]
+    ##TODO: action deque([(1, 'wall'), (2, 'couch'), (3, 'lamp'), (4, 'painting'), (5, 'bookshelf'), (6, 'stop')])
+    ##TODO: imagined_graph_chain [['wall', 'couch', 'lamp'], ['couch', 'painting', 'stop'],3,4,5, 6[wall]]
+    ##TODO: rethink: start object_graph xxx-object not in env rethink object road
+    ## memory module
