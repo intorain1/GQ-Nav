@@ -11,6 +11,12 @@ from env import R2RNavBatch
 from agent import NavAgent
 import argparse
 
+def get_results(results):
+    output = []
+    for k, v in results.items():
+        output.append({'instr_id': k, 'trajectory': v['path']})
+    return output
+
 def build_dataset(args):
 
     feat_db = ImageObservationsDB(args.obj_dir)
@@ -40,24 +46,37 @@ if __name__ == "__main__":
     val_envs = build_dataset(args)
     agent = NavAgent(next(iter(val_envs.values())), args)
     start_time = time.time()
-    for i in range(0,5):
-        if i == 0:
-            agent._make_action(threshold=0.5)  # Example threshold
-        else:
-            agent._make_action(threshold=0.5, reset=False)
-    end_time = time.time()
-    print(f"Total time taken for 5 actions: {end_time - start_time:.2f} seconds")
-    agent = NavAgent(next(iter(val_envs.values())), args)
 
-    print('-----------------------------------')
-    start_time = time.time()
-    for i in range(0,5):
-        if i == 0:
-            agent._make_action(threshold=0.5)  # Example threshold
-        else:
-            agent._make_action(threshold=0.5, reset=False)
+    agent._make_action(threshold=0.5)  # Example threshold
     end_time = time.time()
     print(f"Total time taken for 5 actions: {end_time - start_time:.2f} seconds")
+
+    traj = agent.traj
+    # print(traj['instr_id'])
+    results = {}
+    results[traj[0]['instr_id']] = traj
+    preds = traj
+    # print(results)
+    # preds = get_results(results)
+    print(preds)
+
+    for env_name, env in val_envs.items():
+        score_summary, _ = env.eval_metrics(preds)
+        loss_str = "Env name: %s" % env_name
+        for metric, val in score_summary.items():
+            loss_str += ', %s: %.2f' % (metric, val)
+        print(loss_str)
+    # agent = NavAgent(next(iter(val_envs.values())), args)
+
+    # print('-----------------------------------')
+    # start_time = time.time()
+    # for i in range(0,5):
+    #     if i == 0:
+    #         agent._make_action(threshold=0.5)  # Example threshold
+    #     else:
+    #         agent._make_action(threshold=0.5, reset=False)
+    # end_time = time.time()
+    # print(f"Total time taken for 5 actions: {end_time - start_time:.2f} seconds")
     # agent.rollout(reset=True)
     # agent.rollout(reset=False)
     

@@ -8,16 +8,10 @@ class BaseAgent(object):
         self.env = env
         self.results = {}
 
-    def get_results(self, detailed_output=False):
+    def get_results(self):
         output = []
         for k, v in self.results.items():
             output.append({'instr_id': k, 'trajectory': v['path']})
-            if detailed_output:
-                output[-1]['details'] = v['details']
-                output[-1]['action_plan'] = v['action_plan']
-                output[-1]['llm_output'] = v['llm_output']
-                output[-1]['llm_thought'] = v['llm_thought']
-                output[-1]['llm_observation'] = v['llm_observation']
         return output
 
     def rollout(self, **args):
@@ -41,7 +35,7 @@ class BaseAgent(object):
                 for traj in self.rollout(**kwargs):
                     self.loss = 0
                     self.results[traj['instr_id']] = traj
-                    preds_detail = self.get_results(detailed_output=True)
+                    preds_detail = self.get_results()
                     json.dump(
                     preds_detail,
                     open(os.path.join(self.config.log_dir, 'runtime.json'), 'w'),
@@ -55,7 +49,7 @@ class BaseAgent(object):
                     else:
                         self.loss = 0
                         self.results[traj['instr_id']] = traj
-                        preds_detail = self.get_results(detailed_output=True)
+                        preds_detail = self.get_results()
                         json.dump(
                         preds_detail,
                         open(os.path.join(self.config.log_dir, 'runtime.json'), 'w'),
