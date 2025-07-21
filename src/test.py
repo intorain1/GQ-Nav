@@ -24,6 +24,7 @@ def build_dataset(args):
         val_instr_data = construct_instrs(
             args.anno_dir, args.dataset, [split]
         )
+        
         val_env = dataset_class(
             feat_db, val_instr_data, args.connectivity_dir, args.navigable_dir,
             batch_size=args.batch_size, seed=args.seed, name=split,
@@ -38,11 +39,11 @@ if __name__ == "__main__":
     # print(args.anno_dir, args.dataset, args.val_env_name)
     val_envs = build_dataset(args)
     agent = NavAgent(next(iter(val_envs.values())), args)
-    for i in range(0,5):
-        if i == 0:
-            agent._make_action(threshold=0.5)  # Example threshold
-        else:
-            agent._make_action(threshold=0.5, reset=False)
+    # for i in range(0,5):
+    #     if i == 0:
+    #         agent._make_action(threshold=0.5)  # Example threshold
+    #     else:
+    #         agent._make_action(threshold=0.5, reset=False)
     # agent.rollout(reset=True)
     # agent.rollout(reset=False)
     

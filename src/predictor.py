@@ -293,7 +293,7 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
         response=self.get_llm_response()
         self.response_extractor(response)
         num_steps = len(self.imagined_graph_chain)
-        max_time_id =3#设为固定值仅用于测试，实际需要另行获取
+        max_time_id = max(self.detected_graph.get_time_values())
         for i in range(num_steps):
             imagined_view = self.imagined_graph_chain[i]
             if imagined_view:

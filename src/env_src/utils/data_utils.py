@@ -8,6 +8,7 @@ def load_instr_datasets(anno_dir, dataset, splits):
         filepath = os.path.join(anno_dir, f'{split}.json')
         with open(filepath) as f:
             new_data = json.load(f)
+            print(new_data)
 
         data += new_data
 
