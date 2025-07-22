@@ -14,7 +14,7 @@ class BaseAgent(object):
             output.append({'instr_id': k, 'trajectory': v['path']})
         return output
 
-    def rollout(self, **args):
+    def _make_action(self, **args):
         ''' Return a list of dicts containing instr_id:'xx', path:[(viewpointId, heading_rad, elevation_rad)]  '''
         raise NotImplementedError
 
@@ -24,16 +24,13 @@ class BaseAgent(object):
 
     def test(self, iters=None, **kwargs):
         # self.env.reset_epoch(shuffle=(iters is not None))   # If iters is not none, shuffle the env batch
-        self.losses = []
         self.results = {}
         # We rely on env showing the entire batch before repeating anything
         looped = False
-        self.loss = 0
         if iters is not None:
             # For each time, it will run the first 'iters' iterations. (It was shuffled before)
             for i in range(iters):
-                for traj in self.rollout(**kwargs):
-                    self.loss = 0
+                for traj in self._make_action(**kwargs):
                     self.results[traj['instr_id']] = traj
                     preds_detail = self.get_results()
                     json.dump(
@@ -43,11 +40,10 @@ class BaseAgent(object):
                     )
         else:   # Do a full round
             while True:
-                for traj in self.rollout(**kwargs):
+                for traj in self._make_action(**kwargs):
                     if traj['instr_id'] in self.results:
                         looped = True
                     else:
-                        self.loss = 0
                         self.results[traj['instr_id']] = traj
                         preds_detail = self.get_results()
                         json.dump(

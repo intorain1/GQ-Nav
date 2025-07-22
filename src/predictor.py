@@ -225,7 +225,7 @@ Remeber you must generate 5 actions and matched imagined_view in total! Think ca
             objects_of_time = self.detected_graph.time_to_objects[time_id]
             #print(f"time_id = {time_id}, objects = {objects}")
             string_map += f"{list(objects_of_time)}\n"
-        print(f"object-group {string_map}")
+        # print(f"object-group {string_map}")
         return string_map
 
     def get_llm_response(self):

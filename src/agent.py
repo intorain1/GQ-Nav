@@ -32,7 +32,8 @@ class NavAgent(BaseAgent):
         parsed = []
         for obj in objects:
             for name, props in obj.items():
-                parsed.append(name)
+                words = list(dict.fromkeys(name.split()))
+                parsed.extend(words)
         return parsed
     
     def parse_navigable(self, navigable: List[Dict[str, Any]]) -> List[str]:
@@ -68,15 +69,15 @@ class NavAgent(BaseAgent):
             # print(len(self.action_chain))
             # # Judge if use action_chain
             if len(self.action_chain) == 0:
-                start_time = time.time()
+                # start_time = time.time()
                 self.predictor.set_instruction(cur_obs['instruction'])
                 self.predictor.update_imagined_graph()
-                end_time = time.time()
-                print("thinking cost time:", end_time - start_time)
+                # end_time = time.time()
+                # print("thinking cost time:", end_time - start_time)
                 self.action_chain = deque(self.predictor.action_chain)
                 self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
                 # print(self.imagined_graph_chain)
-                print('action', self.action_chain)
+                # print('action', self.action_chain)
 
             # elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 1, 0) <= threshold:
             #     action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
@@ -85,7 +86,7 @@ class NavAgent(BaseAgent):
 
             # Get target object
             to_object = self.action_chain.popleft()[1]
-            print(to_object)
+            # print(to_object)
 
             # Get navigable candidates
             navigable = self.parse_navigable(cur_obs['candidate'])
@@ -128,12 +129,14 @@ class NavAgent(BaseAgent):
                 destination = candidates[0][1]
 
             self.path.append(destination)
-            print(f"agent-destination {destination} ")
+            # print(f"agent-destination {destination} ")
             self.env.step([destination])# the parameter is a list of next viewpoint IDs. Change destination to a list
             self.traj[0]['path'].append([destination])
 
             if len(self.action_chain) == 0:
                 self.stop = True
+        
+        return self.traj
                 # print(self.traj[0]['path'])
         # operation of deque progress
         # if len(self.action_chain) > 0:
@@ -143,12 +146,8 @@ class NavAgent(BaseAgent):
     def _visulize(self):
         pass
 
-    def _ifstop(self):
-        # isreach?
-        pass
+    
 
-    def _rollout(self, **args):
-        pass
                 
 
 

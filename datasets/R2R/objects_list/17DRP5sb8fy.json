@@ -1,0 +1,4358 @@
+{
+  "d65b6505904448d1940e679c9a098047": [
+    {
+      "painting picture picture frame painting": {
+        "heading": -139.83004831847796,
+        "distance": 0.8271073319220997
+      }
+    },
+    {
+      "lamp chandelier chandelier": {
+        "heading": 154.84053018511258,
+        "distance": 1.481923319069324
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 117.21830422756977,
+        "distance": 0.586141881405045
+      }
+    },
+    {
+      "chair armchair seat armchair": {
+        "heading": 77.68156898492214,
+        "distance": 1.020240392381629
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 66.21129345802396,
+        "distance": 1.9289244066138094
+      }
+    },
+    {
+      "curtain": {
+        "heading": -143.11301835256285,
+        "distance": 1.3369378061095119
+      }
+    },
+    {
+      "lamp": {
+        "heading": 37.956879499140854,
+        "distance": 0.9863616321382753
+      }
+    },
+    {},
+    {},
+    {
+      "mirror": {
+        "heading": -105.4559258774616,
+        "distance": 1.552649712530946
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 63.721241257314546,
+        "distance": 1.981104304250425
+      }
+    },
+    {
+      "lamp": {
+        "heading": 46.536070476271334,
+        "distance": 1.7117412522671207
+      }
+    },
+    {
+      "lamp": {
+        "heading": 88.22968601865131,
+        "distance": 1.8066103940991718
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 77.22993647516381,
+        "distance": 1.0690171873854235
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -177.0696355856334,
+        "distance": 1.498408803180013
+      }
+    },
+    {
+      "pillow": {
+        "heading": -58.96929296386607,
+        "distance": 0.7602745956059345
+      }
+    },
+    {
+      "lamp": {
+        "heading": -32.81584919767397,
+        "distance": 0.5098360085869333
+      }
+    },
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -91.01703189768048,
+        "distance": 1.4066999612868631
+      }
+    },
+    {
+      "lamp": {
+        "heading": -41.58562147456129,
+        "distance": 1.5754852853418542
+      }
+    },
+    {
+      "lamp": {
+        "heading": 112.01772521473345,
+        "distance": 1.8192021110809753
+      }
+    },
+    {
+      "curtain": {
+        "heading": 77.82112762608983,
+        "distance": 1.1011815739815995
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 123.9175790014582,
+        "distance": 1.106280937391559
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 124.76296844817097,
+        "distance": 1.2536434890645747
+      }
+    },
+    {
+      "lamp": {
+        "heading": -38.94177283149159,
+        "distance": 1.876892767540089
+      }
+    },
+    {
+      "lamp": {
+        "heading": 57.760494570755725,
+        "distance": 0.7809931843904401
+      }
+    },
+    {},
+    {}
+  ],
+  "50c241453dfd45c1ba95b5d7191982ef": [
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 32.26637620187961,
+        "distance": 1.631364626708553
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 177.37672181759336,
+        "distance": 1.0460673635445685
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 150.98025204096422,
+        "distance": 1.2897775712844923
+      }
+    },
+    {
+      "couch bed sofa sofa": {
+        "heading": -97.78670751725672,
+        "distance": 1.1665251920395576
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 19.80711065773974,
+        "distance": 1.739784828830955
+      }
+    },
+    {
+      "table desk pool _ table massage _ table": {
+        "heading": 101.09907364416699,
+        "distance": 0.6233519914904226
+      }
+    },
+    {
+      "window": {
+        "heading": -65.45116341366656,
+        "distance": 1.7709005428464213
+      }
+    },
+    {
+      "window": {
+        "heading": 138.5747257285998,
+        "distance": 0.500200017676153
+      }
+    },
+    {
+      "table desk": {
+        "heading": 31.4565332215343,
+        "distance": 0.5811473572223005
+      }
+    },
+    {},
+    {},
+    {
+      "window": {
+        "heading": -23.87692254214926,
+        "distance": 1.993552806992381
+      }
+    },
+    {},
+    {},
+    {}
+  ],
+  "08c774f20c984008882da2b8547850eb": [
+    {
+      "chandelier chandelier": {
+        "heading": 20.181648366172737,
+        "distance": 0.8392161039934963
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": 42.28445064061086,
+        "distance": 0.8757866939927343
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 171.14410074084498,
+        "distance": 0.612420254085083
+      }
+    },
+    {},
+    {
+      "chair armchair seat armchair": {
+        "heading": 117.47696146584587,
+        "distance": 1.5250216803310002
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -27.213665153985517,
+        "distance": 0.6031983015274709
+      }
+    },
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -73.02917982321593,
+        "distance": 1.1170708095621988
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -101.12564129684245,
+        "distance": 1.1265138714972813
+      }
+    },
+    {},
+    {},
+    {
+      "window": {
+        "heading": 95.81666097478035,
+        "distance": 1.793596610838472
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 101.65192774485047,
+        "distance": 0.5924548681191115
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 90.13189349250894,
+        "distance": 1.218017899985839
+      }
+    }
+  ],
+  "f4d03f729dfc49068db327584455e975": [
+    {
+      "pillow": {
+        "heading": 104.99730694313513,
+        "distance": 0.9716302183940912
+      }
+    },
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 129.56702666595902,
+        "distance": 1.370256246124026
+      }
+    },
+    {
+      "vent": {
+        "heading": -174.30625369849832,
+        "distance": 1.7106140953497502
+      }
+    },
+    {
+      "chandelier chandelier": {
+        "heading": 131.45068266254958,
+        "distance": 1.2493107639029506
+      }
+    },
+    {
+      "chandelier chandelier": {
+        "heading": 11.020016104063387,
+        "distance": 1.8988806297507448
+      }
+    },
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 113.6674438872148,
+        "distance": 1.8872442503727687
+      }
+    },
+    {
+      "table table massage _ table": {
+        "heading": -76.3402903824701,
+        "distance": 1.5157133807219363
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": -87.98697053500652,
+        "distance": 1.2391713021253263
+      }
+    },
+    {
+      "pillow": {
+        "heading": 120.07353872043859,
+        "distance": 1.2729033776190073
+      }
+    },
+    {},
+    {
+      "footstool ottoman": {
+        "heading": 33.659990836054476,
+        "distance": 1.922112389797113
+      }
+    }
+  ],
+  "abe20dd6e5194f579dfc6b63a612c150": [
+    {
+      "chandelier chandelier": {
+        "heading": -168.95105608536926,
+        "distance": 1.6191496175069762
+      }
+    },
+    {
+      "painting picture picture painting": {
+        "heading": -151.74918466327765,
+        "distance": 1.9880751535909826
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 143.2961194117367,
+        "distance": 1.347764453746105
+      }
+    },
+    {
+      "plant plant": {
+        "heading": 46.5007525580709,
+        "distance": 0.9120196162215743
+      }
+    },
+    {},
+    {
+      "bookcase": {
+        "heading": 98.06383934171663,
+        "distance": 1.6812896832014972
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -32.03997304470499,
+        "distance": 0.651345006870648
+      }
+    },
+    {
+      "couch chair sofa armchair sofa armchair": {
+        "heading": -135.16632635587956,
+        "distance": 1.7606210808293106
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -139.65641569109155,
+        "distance": 0.5280462391840436
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -67.05343324423156,
+        "distance": 1.9416923767769445
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 171.4091234206001,
+        "distance": 1.045056902922184
+      }
+    },
+    {},
+    {},
+    {
+      "door": {
+        "heading": 139.1179273979323,
+        "distance": 0.6050975206006997
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -158.10979557637518,
+        "distance": 0.8188308952447585
+      }
+    },
+    {
+      "curtain": {
+        "heading": 174.3093420759671,
+        "distance": 1.5934703422224752
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "window": {
+        "heading": 98.05217818496675,
+        "distance": 0.9823249945969617
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -149.95377188060635,
+        "distance": 1.6259334525457958
+      }
+    },
+    {},
+    {},
+    {}
+  ],
+  "30c97842da204e6290ac32904c924e17": [
+    {},
+    {
+      "footstool ottoman": {
+        "heading": 154.95608106282765,
+        "distance": 1.443345913610797
+      }
+    },
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -32.15550566402743,
+        "distance": 1.89635923314546
+      }
+    },
+    {
+      "pillow": {
+        "heading": -77.00109891659142,
+        "distance": 0.935449942203374
+      }
+    },
+    {
+      "pillow": {
+        "heading": 146.51682929869594,
+        "distance": 1.8551110698167197
+      }
+    },
+    {
+      "pillow": {
+        "heading": -140.41759626401276,
+        "distance": 1.7160114807571651
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -136.43096975927824,
+        "distance": 0.980411385848594
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 170.38989188845494,
+        "distance": 1.7066003031055554
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 62.87192759605179,
+        "distance": 0.9491905853997101
+      }
+    },
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": 161.41730273447035,
+        "distance": 1.5715563993438475
+      }
+    },
+    {
+      "table desk pool table counter massage _ table": {
+        "heading": -136.9488824768813,
+        "distance": 0.7309952806641927
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 26.926587278825508,
+        "distance": 1.2050202326138701
+      }
+    },
+    {
+      "window": {
+        "heading": 99.07392905656752,
+        "distance": 1.6980813311960812
+      }
+    },
+    {
+      "picture picture frame plaque": {
+        "heading": 79.75012264459485,
+        "distance": 1.4968185249776775
+      }
+    },
+    {},
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 35.08952671654643,
+        "distance": 1.6449145441668551
+      }
+    },
+    {
+      "rug": {
+        "heading": -87.90234837956883,
+        "distance": 1.6327451333714476
+      }
+    },
+    {
+      "pillow": {
+        "heading": -127.91172116649528,
+        "distance": 1.1287318388324292
+      }
+    },
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 51.29473133702746,
+        "distance": 1.608175071984041
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": 41.238517842575874,
+        "distance": 0.7644890116079865
+      }
+    },
+    {
+      "curtain": {
+        "heading": -97.68230097698678,
+        "distance": 1.7700877096516967
+      }
+    }
+  ],
+  "8ccf449f599a4cd88648e1d0ff39fdd0": [
+    {},
+    {
+      "window": {
+        "heading": 113.48685228926433,
+        "distance": 1.8425119824055414
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": -124.73191783274191,
+        "distance": 0.5711142374848183
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "desk counter": {
+        "heading": -3.820008120567593,
+        "distance": 1.5166273540905602
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 126.56952404226604,
+        "distance": 1.7949285285405967
+      }
+    },
+    {},
+    {
+      "closet curtain": {
+        "heading": -56.403133516604214,
+        "distance": 0.8823051056561086
+      }
+    }
+  ],
+  "23ec8bbec8eb40478411cba2e55b732e": [
+    {},
+    {
+      "pillow": {
+        "heading": -93.04313427412741,
+        "distance": 0.8941757764752941
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": -123.37166226679813,
+        "distance": 1.413470181648121
+      }
+    },
+    {
+      "pillow": {
+        "heading": -31.905201257115948,
+        "distance": 0.6244926466401433
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": -64.06438671056848,
+        "distance": 1.0612553361428592
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 15.171192549221672,
+        "distance": 1.1275053168497151
+      }
+    },
+    {
+      "lamp": {
+        "heading": -105.36301402275473,
+        "distance": 0.6665864531668048
+      }
+    },
+    {},
+    {},
+    {
+      "mattress": {
+        "heading": -78.34039883086608,
+        "distance": 1.3366771286643977
+      }
+    },
+    {
+      "rug": {
+        "heading": -74.84304958468147,
+        "distance": 0.659947133459629
+      }
+    },
+    {},
+    {},
+    {
+      "window": {
+        "heading": 124.99711039680153,
+        "distance": 1.8695046290729418
+      }
+    },
+    {},
+    {},
+    {},
+    {}
+  ],
+  "d160d2229e4148839ef3a43dbc0ecdc4": [
+    {},
+    {},
+    {},
+    {
+      "desk counter": {
+        "heading": -119.58532586504995,
+        "distance": 1.0890918829121068
+      }
+    },
+    {},
+    {
+      "chandelier chandelier": {
+        "heading": -16.781017651185607,
+        "distance": 1.377835067223723
+      }
+    },
+    {},
+    {
+      "picture picture frame": {
+        "heading": 127.41221943335137,
+        "distance": 0.7833599251383729
+      }
+    },
+    {
+      "mattress": {
+        "heading": 137.61184064364915,
+        "distance": 1.3819655211951654
+      }
+    },
+    {},
+    {},
+    {
+      "console _ table plaque": {
+        "heading": 90.66669483806879,
+        "distance": 1.774300120888972
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "558ba0761bf24428b9cf91e60333ea25": [
+    {
+      "chandelier chandelier": {
+        "heading": -49.43721727305251,
+        "distance": 1.6606542031065263
+      }
+    },
+    {
+      "mirror": {
+        "heading": 45.79718366639986,
+        "distance": 0.579277694206136
+      }
+    },
+    {},
+    {
+      "picture picture _ frame": {
+        "heading": -23.044339811961805,
+        "distance": 0.7984228766101928
+      }
+    },
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": -110.75410265775142,
+        "distance": 0.6183411593087014
+      }
+    },
+    {},
+    {},
+    {
+      "_ table console _ table": {
+        "heading": -65.03506492273107,
+        "distance": 0.7079254623005709
+      }
+    },
+    {},
+    {
+      "bathtub": {
+        "heading": 62.68696395582063,
+        "distance": 0.664065170877082
+      }
+    },
+    {
+      "mirror": {
+        "heading": -9.358409221940661,
+        "distance": 1.6269438900750557
+      }
+    },
+    {},
+    {
+      "mattress": {
+        "heading": 42.69011868109516,
+        "distance": 0.5272611339117028
+      }
+    },
+    {
+      "mattress": {
+        "heading": 116.02517168410503,
+        "distance": 0.8110062491179919
+      }
+    },
+    {}
+  ],
+  "cb6a9786e4ff47f79a11b024c36ef7c0": [
+    {
+      "basket": {
+        "heading": -40.22870474681534,
+        "distance": 0.8959211686160493
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": -166.56116088289966,
+        "distance": 1.2200593274787548
+      }
+    },
+    {},
+    {
+      "mattress": {
+        "heading": 80.70844631123134,
+        "distance": 0.6721744788366684
+      }
+    },
+    {
+      "couch sofa love seat sofa": {
+        "heading": 9.141643198503914,
+        "distance": 1.0411537747664574
+      }
+    },
+    {
+      "towel": {
+        "heading": -24.210183437225112,
+        "distance": 1.3376182637881118
+      }
+    },
+    {
+      "curtain": {
+        "heading": -105.69068742195958,
+        "distance": 0.9961976561357162
+      }
+    },
+    {
+      "towel": {
+        "heading": 85.30606256296522,
+        "distance": 1.2284876012292565
+      }
+    },
+    {},
+    {},
+    {
+      "towel": {
+        "heading": -20.797062668042656,
+        "distance": 1.9819449528087039
+      }
+    },
+    {
+      "rug mattress": {
+        "heading": -152.1759209262819,
+        "distance": 1.393848121399404
+      }
+    },
+    {},
+    {
+      "towel": {
+        "heading": -142.64701372610375,
+        "distance": 1.203751529309618
+      }
+    },
+    {},
+    {
+      "footstool ottoman": {
+        "heading": -104.88328732208006,
+        "distance": 1.9823115988773035
+      }
+    },
+    {
+      "towel": {
+        "heading": -82.24848113796844,
+        "distance": 1.4750554848127315
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "towel": {
+        "heading": -6.279224019965625,
+        "distance": 1.6145865700075093
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "door": {
+        "heading": 85.68606306943485,
+        "distance": 1.6243388602595954
+      }
+    },
+    {
+      "eye _ chart console _ table plaque": {
+        "heading": 179.5667951673709,
+        "distance": 1.209146377302376
+      }
+    },
+    {},
+    {
+      "footstool ottoman": {
+        "heading": -44.749412648350045,
+        "distance": 1.9419344047069076
+      }
+    },
+    {
+      "vent": {
+        "heading": -156.38882646762193,
+        "distance": 1.5291905242069996
+      }
+    },
+    {},
+    {}
+  ],
+  "da5fa65c13e643719a20cbb818c9a85d": [
+    {
+      "picture picture _ frame": {
+        "heading": 128.8293512057635,
+        "distance": 1.0210070050363707
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": -7.374892837555592,
+        "distance": 1.9979398716373429
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -122.48807075357952,
+        "distance": 1.0311828457099348
+      }
+    },
+    {},
+    {},
+    {
+      "##deldel clock": {
+        "heading": -24.921525386688188,
+        "distance": 0.6601796604372207
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "shelf cabinet closet shelf cabinet": {
+        "heading": 62.639184205130505,
+        "distance": 1.4359836151915686
+      }
+    },
+    {
+      "mirror": {
+        "heading": -120.70504150752222,
+        "distance": 1.6819768160205852
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "dresser": {
+        "heading": -28.487610275704355,
+        "distance": 0.6167413451231786
+      }
+    },
+    {},
+    {},
+    {
+      "mirror closet": {
+        "heading": -167.12287243306045,
+        "distance": 0.9758003288967705
+      }
+    },
+    {
+      "stool footstool ottoman": {
+        "heading": 156.00319510245237,
+        "distance": 0.6916613075411768
+      }
+    },
+    {
+      "door": {
+        "heading": 98.14273188223757,
+        "distance": 0.9638687079454886
+      }
+    },
+    {},
+    {
+      "door": {
+        "heading": -117.17695822178098,
+        "distance": 1.199477286255841
+      }
+    },
+    {},
+    {}
+  ],
+  "85c23efeaecd4d43a7dcd5b90137179e": [
+    {
+      "pillow": {
+        "heading": -135.1345412798811,
+        "distance": 1.9081255628383835
+      }
+    },
+    {
+      "pillow": {
+        "heading": 171.93261169190663,
+        "distance": 0.8232334899906502
+      }
+    },
+    {
+      "window": {
+        "heading": -64.85102344381212,
+        "distance": 1.8361111262878234
+      }
+    },
+    {
+      "fridge door": {
+        "heading": -89.13044409342461,
+        "distance": 0.8005155003206847
+      }
+    },
+    {
+      "grill": {
+        "heading": -139.43293158606446,
+        "distance": 1.153235485071647
+      }
+    },
+    {},
+    {
+      "couch sofa sofa": {
+        "heading": 64.81594421055314,
+        "distance": 1.7268488708842376
+      }
+    },
+    {
+      "pillow": {
+        "heading": -120.94344613111237,
+        "distance": 1.1201894254767213
+      }
+    },
+    {
+      "pillow": {
+        "heading": -107.50748629429985,
+        "distance": 1.2026970825285839
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 100.26900780444987,
+        "distance": 1.3417052906976594
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": 2.2513500194338008,
+        "distance": 1.9684760558797194
+      }
+    },
+    {},
+    {},
+    {
+      "table desk pool _ table table table": {
+        "heading": -28.741894215444603,
+        "distance": 0.9832570961024323
+      }
+    },
+    {
+      "eye _ chart plaque": {
+        "heading": -133.82048769126519,
+        "distance": 1.8468642583141712
+      }
+    },
+    {},
+    {
+      "clock": {
+        "heading": 100.60428731184112,
+        "distance": 1.661804093261184
+      }
+    },
+    {},
+    {
+      "mirror": {
+        "heading": 148.31295708476216,
+        "distance": 0.5813475012295898
+      }
+    },
+    {}
+  ],
+  "3577de361e1a46b1be544d37731bfde6": [
+    {},
+    {
+      "lamp chandelier chandelier": {
+        "heading": -70.70397478401091,
+        "distance": 1.5968505487599718
+      }
+    },
+    {
+      "painting picture picture frame painting pool": {
+        "heading": 10.591110595184773,
+        "distance": 0.8859716621019949
+      }
+    },
+    {
+      "rug": {
+        "heading": 15.895094318824562,
+        "distance": 0.7887811973465522
+      }
+    },
+    {
+      "couch sofa sofa mattress": {
+        "heading": -120.54821731147686,
+        "distance": 1.0583420845530165
+      }
+    },
+    {
+      "love seat bust": {
+        "heading": 45.392388539052035,
+        "distance": 1.4944157847899064
+      }
+    },
+    {
+      "statue bust statue": {
+        "heading": -153.22224856683246,
+        "distance": 1.1109354471347213
+      }
+    },
+    {
+      "window": {
+        "heading": 65.80559518202762,
+        "distance": 1.5665229330633912
+      }
+    },
+    {
+      "rug mattress": {
+        "heading": -33.093317552208504,
+        "distance": 1.522784096632187
+      }
+    }
+  ],
+  "352a92fb1f6d4b71b3aafcc74e196234": [
+    {},
+    {
+      "chandelier chandelier": {
+        "heading": -62.34593045508666,
+        "distance": 1.6892668602375598
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "piano grill": {
+        "heading": 150.33586436198271,
+        "distance": 1.9195826847963935
+      }
+    },
+    {},
+    {},
+    {
+      "love seat": {
+        "heading": 14.869796327188084,
+        "distance": 1.4685298391693788
+      }
+    },
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 118.79940619857314,
+        "distance": 1.1933104760025581
+      }
+    },
+    {},
+    {}
+  ],
+  "e0ce09f0178c48e2bbe649d2bf659702": [
+    {
+      "mirror": {
+        "heading": 133.28609754566628,
+        "distance": 1.7841974087683077
+      }
+    },
+    {},
+    {},
+    {
+      "picture picture frame": {
+        "heading": 177.94802157432002,
+        "distance": 1.6292599869393323
+      }
+    },
+    {},
+    {
+      "sink counter": {
+        "heading": -123.41489916813295,
+        "distance": 0.5713707977493296
+      }
+    },
+    {
+      "door": {
+        "heading": -56.903509337194336,
+        "distance": 0.5052328125431316
+      }
+    }
+  ],
+  "cb66d4266148455bbddf5d059a483711": [
+    {},
+    {},
+    {},
+    {
+      "towel": {
+        "heading": -2.7243199849262965,
+        "distance": 1.162812099403582
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": 34.25385864038816,
+        "distance": 0.717298894106621
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -21.075300381255886,
+        "distance": 1.6615138090643562
+      }
+    },
+    {
+      "towel": {
+        "heading": -4.531686741148889,
+        "distance": 0.7995225807052186
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "rug mattress": {
+        "heading": -88.21229598706262,
+        "distance": 1.0015114821301074
+      }
+    },
+    {
+      "chair": {
+        "heading": 76.1255519697147,
+        "distance": 0.695797985863629
+      }
+    },
+    {},
+    {
+      "towel": {
+        "heading": -134.00563344580817,
+        "distance": 1.8994344959450133
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 135.7028141315643,
+        "distance": 1.0319678710615838
+      }
+    },
+    {
+      "mirror window": {
+        "heading": 148.74217207547366,
+        "distance": 1.0077803842205635
+      }
+    },
+    {
+      "curtain": {
+        "heading": 76.43856756532438,
+        "distance": 0.5764139095509643
+      }
+    },
+    {},
+    {
+      "bathtub pool": {
+        "heading": -36.76092905617301,
+        "distance": 1.736964672425101
+      }
+    },
+    {},
+    {},
+    {
+      "stool foot": {
+        "heading": -62.77807254149073,
+        "distance": 0.8838721884873959
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "0f37bd0737e349de9d536263a4bdd60d": [
+    {},
+    {
+      "curtain": {
+        "heading": 42.81150361796398,
+        "distance": 1.7109343729786952
+      }
+    },
+    {
+      "pillow": {
+        "heading": 102.69281035239544,
+        "distance": 0.9704102168794717
+      }
+    },
+    {},
+    {},
+    {
+      "painting picture picture frame painting": {
+        "heading": 150.16116480597668,
+        "distance": 1.9808230837251695
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": 163.6384364976911,
+        "distance": 0.5998646436059927
+      }
+    },
+    {
+      "pillow": {
+        "heading": 122.31678214180533,
+        "distance": 0.7348025945628556
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 90.71653513594367,
+        "distance": 1.004107500601018
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -144.34493667176503,
+        "distance": 1.8982263789189906
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -37.34870194579315,
+        "distance": 0.856434367102321
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "window": {
+        "heading": 39.049413702629664,
+        "distance": 1.5744146806607777
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "5e9f4f8654574e699480e90ecdd150c8": [
+    {
+      "painting picture picture frame painting": {
+        "heading": 152.30901381219815,
+        "distance": 0.5418874821756765
+      }
+    },
+    {
+      "pillow": {
+        "heading": 18.708716137497078,
+        "distance": 1.7823540287490474
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 73.18201403376997,
+        "distance": 0.5192209809599599
+      }
+    },
+    {},
+    {
+      "chandelier chandelier": {
+        "heading": 7.159958027703738,
+        "distance": 0.523821153662712
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -24.652039872674152,
+        "distance": 0.7491796765154997
+      }
+    },
+    {
+      "window": {
+        "heading": 7.4688029169097945,
+        "distance": 1.0058955787464612
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -22.432167559216424,
+        "distance": 1.2441657499307461
+      }
+    },
+    {
+      "stairs": {
+        "heading": 89.39489767471213,
+        "distance": 1.0950213276672955
+      }
+    },
+    {
+      "pillow": {
+        "heading": -70.90438092701689,
+        "distance": 1.3489816105134813
+      }
+    },
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -63.16868607732023,
+        "distance": 0.7190558560513562
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 151.24470001527283,
+        "distance": 1.501672533733967
+      }
+    },
+    {
+      "rug": {
+        "heading": -152.3557993858998,
+        "distance": 0.5846078884172657
+      }
+    },
+    {
+      "stairs": {
+        "heading": -22.80505258122082,
+        "distance": 1.584872097663922
+      }
+    },
+    {
+      "pillow": {
+        "heading": 87.12332215868884,
+        "distance": 1.6747114446547007
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 104.17538394331694,
+        "distance": 0.9649577107999969
+      }
+    },
+    {},
+    {
+      "love seat": {
+        "heading": -55.913075379931726,
+        "distance": 1.4008169088030065
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "counter": {
+        "heading": -176.64394941818153,
+        "distance": 0.5917573851635912
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 125.06260301857083,
+        "distance": 1.5999619319482874
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": -171.77044419853732,
+        "distance": 1.436074232117147
+      }
+    },
+    {},
+    {
+      "towel": {
+        "heading": -131.9085638599567,
+        "distance": 1.4862125898091105
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -79.78866909092575,
+        "distance": 1.4472552527458324
+      }
+    },
+    {},
+    {},
+    {
+      "clock": {
+        "heading": 81.82535179211607,
+        "distance": 1.7962395172423262
+      }
+    },
+    {
+      "pillow": {
+        "heading": -121.62580421456425,
+        "distance": 0.973855684759886
+      }
+    },
+    {
+      "window curtain": {
+        "heading": -134.3827933411445,
+        "distance": 0.6872053027723656
+      }
+    },
+    {
+      "pillow": {
+        "heading": 149.62829318791148,
+        "distance": 1.2412294077654362
+      }
+    },
+    {}
+  ],
+  "00ebbf3782c64d74aaf7dd39cd561175": [
+    {},
+    {
+      "towel": {
+        "heading": 136.45070207178372,
+        "distance": 0.7532324981347245
+      }
+    },
+    {
+      "sink": {
+        "heading": -143.93162940890352,
+        "distance": 1.3287573867331877
+      }
+    },
+    {
+      "towel": {
+        "heading": 43.39709277676283,
+        "distance": 1.0756123066875187
+      }
+    },
+    {},
+    {
+      "sink bathtub pool": {
+        "heading": -40.74388595027935,
+        "distance": 1.4612911982100363
+      }
+    },
+    {
+      "stairs": {
+        "heading": -119.02909146734018,
+        "distance": 1.523880918212524
+      }
+    },
+    {},
+    {},
+    {
+      "door": {
+        "heading": 123.56291357117948,
+        "distance": 1.7051909262609954
+      }
+    },
+    {
+      "towel": {
+        "heading": 112.26987394298237,
+        "distance": 1.4362601264830042
+      }
+    },
+    {},
+    {},
+    {}
+  ],
+  "e34dcf54d26a4a95869cc8a0c01cd2be": [
+    {
+      "painting picture picture frame painting": {
+        "heading": 60.279121530795635,
+        "distance": 0.8081953140306785
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "couch sofa sofa": {
+        "heading": 130.9846514174357,
+        "distance": 0.939857913634762
+      }
+    },
+    {
+      "pillow": {
+        "heading": -83.31042335208413,
+        "distance": 1.932889206503124
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "armchair love seat armchair": {
+        "heading": -102.20091853799002,
+        "distance": 0.8278996366862678
+      }
+    },
+    {},
+    {
+      "desk": {
+        "heading": -42.95983892163525,
+        "distance": 1.9771613978671354
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "bed": {
+        "heading": 55.07306735276248,
+        "distance": 1.5331529792508016
+      }
+    },
+    {
+      "bed": {
+        "heading": 119.35871391542832,
+        "distance": 1.8238773421805639
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": -177.6306253167533,
+        "distance": 0.8092969828930465
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 47.157103811524394,
+        "distance": 1.2492790488648795
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 92.16405309904945,
+        "distance": 1.0187106418980028
+      }
+    },
+    {}
+  ],
+  "b185432bf33645aca813ac2a961b4140": [
+    {},
+    {
+      "painting picture picture frame painting": {
+        "heading": 0.1267078456821764,
+        "distance": 0.8269730508713613
+      }
+    },
+    {
+      "pillow": {
+        "heading": -86.26532246034361,
+        "distance": 1.372387038078885
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": -7.144515646022114,
+        "distance": 0.8320267579504261
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": -39.938018046526565,
+        "distance": 1.3528954174287993
+      }
+    },
+    {
+      "pillow": {
+        "heading": -117.3092571217326,
+        "distance": 1.3857623130995733
+      }
+    },
+    {
+      "pillow": {
+        "heading": 85.44538852851389,
+        "distance": 0.6699496200239798
+      }
+    },
+    {},
+    {},
+    {
+      "rug": {
+        "heading": -55.877551045653306,
+        "distance": 1.753347956120215
+      }
+    },
+    {
+      "stool footsto": {
+        "heading": -98.6327861975305,
+        "distance": 0.54943542223714
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 18.329581301907808,
+        "distance": 0.7264165544724009
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": -64.89597439874669,
+        "distance": 1.0068557953096027
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 157.01373226490375,
+        "distance": 1.012807950265042
+      }
+    },
+    {
+      "fridge door": {
+        "heading": -87.40785070460628,
+        "distance": 1.050466462393123
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -1.3277115975320726,
+        "distance": 0.8411492011796582
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "e693b5de8ad84d4cb61a79ece2e66d11": [
+    {},
+    {
+      "rug mattress": {
+        "heading": -3.824419501532873,
+        "distance": 1.8318709850243822
+      }
+    },
+    {
+      "door closet": {
+        "heading": 43.96149883475542,
+        "distance": 1.5541353139722858
+      }
+    },
+    {
+      "curtain": {
+        "heading": 147.04725063646828,
+        "distance": 1.6194358277832899
+      }
+    },
+    {
+      "towel towel": {
+        "heading": -147.66854526569537,
+        "distance": 0.9619189917466797
+      }
+    },
+    {
+      "footstool ottoman": {
+        "heading": -117.42429318859325,
+        "distance": 1.1960465769340312
+      }
+    },
+    {},
+    {},
+    {
+      "ottoman": {
+        "heading": -78.16007996378289,
+        "distance": 1.963866530210323
+      }
+    },
+    {
+      "rug mattress": {
+        "heading": -37.95478930827642,
+        "distance": 1.9052793253566747
+      }
+    },
+    {
+      "armchair seat armchair": {
+        "heading": 95.03679395789322,
+        "distance": 1.7464449629792527
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": 174.88786421805787,
+        "distance": 1.0835902166543332
+      }
+    },
+    {},
+    {
+      "footstool ottoman": {
+        "heading": 164.0181674635105,
+        "distance": 0.8774590579625363
+      }
+    }
+  ],
+  "8345f786b7cb4e1eb6c63e2b87ddcabb": [
+    {
+      "chandelier chandelier": {
+        "heading": 164.7673774913273,
+        "distance": 1.6405183982791192
+      }
+    },
+    {
+      "curtain": {
+        "heading": -131.66513698916646,
+        "distance": 1.7738471413752466
+      }
+    },
+    {},
+    {
+      "painting picture picture painting": {
+        "heading": 169.32854202221705,
+        "distance": 1.397887414204113
+      }
+    },
+    {},
+    {
+      "couch sofa seat sofa": {
+        "heading": 24.572200780563037,
+        "distance": 1.179772677980595
+      }
+    },
+    {},
+    {
+      "couch sofa seat sofa": {
+        "heading": -3.609214987653985,
+        "distance": 1.8568435974807902
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": -147.11453143100914,
+        "distance": 1.6613037507504538
+      }
+    },
+    {}
+  ],
+  "b2e9278f9b8f4661abcb0446d2cbb98e": [
+    {},
+    {},
+    {},
+    {},
+    {
+      "grill oven": {
+        "heading": -42.727721223019756,
+        "distance": 0.5685470094966495
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 100.28318092980032,
+        "distance": 0.8678317613200238
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 88.22490711009493,
+        "distance": 1.2813376559674783
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -165.51616828103474,
+        "distance": 1.237361620452413
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -79.11169273010704,
+        "distance": 1.4367334611729095
+      }
+    },
+    {},
+    {},
+    {
+      "window": {
+        "heading": 105.06136368452894,
+        "distance": 1.9660429802514148
+      }
+    },
+    {},
+    {
+      "desk counter": {
+        "heading": 54.38592898047443,
+        "distance": 1.1274599228682938
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "desk counter": {
+        "heading": 100.60720209838206,
+        "distance": 1.3651110581611712
+      }
+    },
+    {},
+    {
+      "counter massage table": {
+        "heading": -165.66815752028498,
+        "distance": 1.45172806538073
+      }
+    },
+    {
+      "fridge door": {
+        "heading": 30.510269666537766,
+        "distance": 0.6321486464864936
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": -94.10935516763556,
+        "distance": 1.564963706978088
+      }
+    },
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": 42.78058886585515,
+        "distance": 1.1001649049225852
+      }
+    },
+    {},
+    {}
+  ],
+  "df211c2c55f94b87a717ce1469577456": [
+    {},
+    {
+      "lamp": {
+        "heading": 30.14251672685816,
+        "distance": 1.8655540579815777
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 158.38519228924287,
+        "distance": 1.862354440526287
+      }
+    },
+    {
+      "stool footstool ottoman": {
+        "heading": 106.32707489734508,
+        "distance": 1.3391698069107485
+      }
+    },
+    {
+      "lamp": {
+        "heading": -100.17863302067401,
+        "distance": 0.7918027556913318
+      }
+    },
+    {
+      "painting window picture picture frame painting": {
+        "heading": 34.613351941050894,
+        "distance": 0.8277747216474024
+      }
+    },
+    {
+      "towel": {
+        "heading": -141.82709212016513,
+        "distance": 0.8226877997307467
+      }
+    },
+    {
+      "door closet": {
+        "heading": 125.9207785999501,
+        "distance": 0.9357480197697536
+      }
+    },
+    {
+      "lamp": {
+        "heading": -112.60633378920018,
+        "distance": 1.3367291124556075
+      }
+    },
+    {
+      "rug": {
+        "heading": 70.75632105994666,
+        "distance": 0.5675272576489161
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -26.96436223679919,
+        "distance": 1.9875866823174846
+      }
+    },
+    {},
+    {},
+    {
+      "rug": {
+        "heading": 62.45367190260407,
+        "distance": 0.6595486082049673
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": -141.795814170366,
+        "distance": 0.9057935849121979
+      }
+    },
+    {
+      "lamp": {
+        "heading": 42.45136778462356,
+        "distance": 0.5348765856461488
+      }
+    },
+    {},
+    {
+      "rug": {
+        "heading": 121.24703379257954,
+        "distance": 0.8569401148978388
+      }
+    }
+  ],
+  "28db29e8c72c4a68bfdf5bb2b454443d": [
+    {
+      "sink": {
+        "heading": -158.56134127537732,
+        "distance": 0.8902580668466054
+      }
+    },
+    {},
+    {
+      "towel": {
+        "heading": 46.94274573459893,
+        "distance": 1.1029349296799527
+      }
+    },
+    {
+      "towel": {
+        "heading": -51.094151575804375,
+        "distance": 1.4109283407271378
+      }
+    },
+    {
+      "towel": {
+        "heading": -96.2104287918148,
+        "distance": 0.8366767312510223
+      }
+    },
+    {
+      "towel": {
+        "heading": -154.37470695812772,
+        "distance": 0.766687979857357
+      }
+    },
+    {
+      "door closet": {
+        "heading": 46.48486554525397,
+        "distance": 1.0770986010538146
+      }
+    },
+    {},
+    {
+      "stairs": {
+        "heading": -33.299052370345294,
+        "distance": 0.6299037500016225
+      }
+    },
+    {
+      "chandelier chandelier clock": {
+        "heading": -7.808402339714775,
+        "distance": 0.629659462007994
+      }
+    },
+    {
+      "couch sofa armchair sofa armchair": {
+        "heading": 176.57406046402275,
+        "distance": 1.7095106126914594
+      }
+    },
+    {},
+    {
+      "footstool": {
+        "heading": -106.56544040593165,
+        "distance": 1.437474668414322
+      }
+    },
+    {
+      "chandelier chandelier": {
+        "heading": 115.24711914095809,
+        "distance": 1.7168483289941525
+      }
+    },
+    {
+      "mattress": {
+        "heading": -95.64139080001877,
+        "distance": 1.445813167063289
+      }
+    },
+    {},
+    {},
+    {
+      "mattress": {
+        "heading": -37.72124716087637,
+        "distance": 0.5903518389635076
+      }
+    },
+    {
+      "curtain": {
+        "heading": 4.499211840498361,
+        "distance": 0.5127588161289794
+      }
+    },
+    {
+      "towel": {
+        "heading": -1.9953559882353034,
+        "distance": 1.618111920412899
+      }
+    }
+  ],
+  "db145474a5fa476d95c2cc7f09e7c83a": [
+    {},
+    {
+      "lamp": {
+        "heading": 134.80004236788795,
+        "distance": 0.7423351152328137
+      }
+    },
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": 130.00757152066524,
+        "distance": 0.8318338001808621
+      }
+    },
+    {
+      "table desk pool _ table table massage _ table": {
+        "heading": 64.97826484150866,
+        "distance": 1.8607822753226453
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "mattress": {
+        "heading": 73.22256422022369,
+        "distance": 0.55611024462493
+      }
+    },
+    {
+      "door": {
+        "heading": -100.53217018348971,
+        "distance": 1.7752880571423566
+      }
+    },
+    {},
+    {
+      "candle": {
+        "heading": -139.34163259275095,
+        "distance": 1.3702829717401703
+      }
+    }
+  ],
+  "0e92a69a50414253a23043758f111cec": [
+    {
+      "sink": {
+        "heading": 161.572026222602,
+        "distance": 1.6975680756474432
+      }
+    },
+    {
+      "sink": {
+        "heading": -135.21632378269922,
+        "distance": 1.9718832995208
+      }
+    },
+    {},
+    {
+      "grill oven": {
+        "heading": 113.01139322439553,
+        "distance": 1.938267354946746
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -96.90159376526964,
+        "distance": 1.071878630918842
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 55.651104330487755,
+        "distance": 1.2960235901801858
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": 148.4597520629281,
+        "distance": 1.9600076329531515
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "fire _ extinguisher fire _ extinguisher": {
+        "heading": -142.43323844815788,
+        "distance": 1.9227594150584753
+      }
+    },
+    {},
+    {
+      "mattress basket": {
+        "heading": -13.255645352660821,
+        "distance": 0.9437655769334161
+      }
+    },
+    {},
+    {
+      "counter": {
+        "heading": 47.48591964150697,
+        "distance": 1.5863531306872944
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "window": {
+        "heading": 28.849124257365503,
+        "distance": 0.9639163781632063
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -148.48300929239642,
+        "distance": 1.363375285756021
+      }
+    },
+    {
+      "desk counter": {
+        "heading": 65.81042548928605,
+        "distance": 1.0925333485655315
+      }
+    },
+    {},
+    {
+      "counter": {
+        "heading": -110.6631089521804,
+        "distance": 1.8460441682854771
+      }
+    }
+  ],
+  "ee59d6b5e5da4def9fe85a8ba94ecf25": [
+    {
+      "chandelier chandelier clock": {
+        "heading": -145.52887743690883,
+        "distance": 0.672025685481918
+      }
+    },
+    {
+      "picture picture _ frame plaque": {
+        "heading": 33.92605634479722,
+        "distance": 1.2560964791384026
+      }
+    },
+    {
+      "mirror": {
+        "heading": -136.7608083717743,
+        "distance": 1.761818210619859
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": 136.87464966968207,
+        "distance": 0.9094236621852197
+      }
+    },
+    {
+      "door closet": {
+        "heading": 26.173195640586215,
+        "distance": 0.6145165326383453
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "stoolol ottoman": {
+        "heading": 87.01163119018196,
+        "distance": 1.640930362597342
+      }
+    },
+    {
+      "desk": {
+        "heading": 105.54890417975685,
+        "distance": 0.9469217895736686
+      }
+    },
+    {
+      "stool footstool ottoman": {
+        "heading": -149.1485507848393,
+        "distance": 0.6294912582654524
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "mirror": {
+        "heading": 73.22021755058748,
+        "distance": 1.6560149303780407
+      }
+    },
+    {},
+    {
+      "door closet": {
+        "heading": -56.3008910105312,
+        "distance": 1.3046424008372144
+      }
+    },
+    {}
+  ],
+  "701f7128272a4bb2acd9dbd89b5cdf6f": [
+    {},
+    {
+      "lamp chandelier chandelier": {
+        "heading": -96.5963780989697,
+        "distance": 1.5966300512078744
+      }
+    },
+    {
+      "picture picture _ frame": {
+        "heading": 7.276956156311513,
+        "distance": 0.7698375515548113
+      }
+    },
+    {
+      "window": {
+        "heading": -13.636516507969986,
+        "distance": 1.8804660146740164
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 144.5318493598217,
+        "distance": 1.7894618515126046
+      }
+    },
+    {
+      "lamp": {
+        "heading": -171.47236553173764,
+        "distance": 1.6907426334154059
+      }
+    },
+    {},
+    {
+      "painting painting": {
+        "heading": 162.68782506951226,
+        "distance": 0.8664139405238132
+      }
+    },
+    {
+      "lamp": {
+        "heading": 39.876475475899724,
+        "distance": 0.9964725480901783
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 149.168376607227,
+        "distance": 1.1345058346103543
+      }
+    },
+    {
+      "lamp": {
+        "heading": 79.69912615252053,
+        "distance": 1.3170348905242921
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 62.4528616504316,
+        "distance": 1.5418644987437726
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -75.14518562779962,
+        "distance": 0.8980033393206925
+      }
+    },
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 37.26592783939276,
+        "distance": 1.8661396077265324
+      }
+    },
+    {
+      "lamp": {
+        "heading": -99.85707049349459,
+        "distance": 1.8500397437554903
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -164.72138403641452,
+        "distance": 1.6578070152389992
+      }
+    },
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -69.23086941187623,
+        "distance": 1.6045004493679955
+      }
+    },
+    {
+      "window": {
+        "heading": 36.04211076913083,
+        "distance": 0.9187636689128711
+      }
+    },
+    {
+      "lamp": {
+        "heading": -47.03408096292253,
+        "distance": 1.4968886550989677
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 32.97960226565556,
+        "distance": 0.9476319024949373
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": 63.93671560904161,
+        "distance": 0.945701750267872
+      }
+    },
+    {
+      "lamp": {
+        "heading": -0.33075537036461355,
+        "distance": 1.832677407205446
+      }
+    },
+    {
+      "lamp": {
+        "heading": -7.119910986159141,
+        "distance": 0.6574871097094993
+      }
+    },
+    {},
+    {},
+    {},
+    {}
+  ],
+  "51857544c192476faebf212acb1b3d90": [
+    {
+      "rug": {
+        "heading": -51.72373698326862,
+        "distance": 1.974164004826593
+      }
+    },
+    {
+      "pillow": {
+        "heading": -19.90900749477592,
+        "distance": 0.8221752600251241
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 10.501758334979229,
+        "distance": 1.3415635320221186
+      }
+    },
+    {},
+    {
+      "rug": {
+        "heading": 119.49827975478348,
+        "distance": 1.041997212882372
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "picture picture frame": {
+        "heading": 24.96090753866187,
+        "distance": 0.7064514793385015
+      }
+    },
+    {
+      "vase": {
+        "heading": -70.06698460251619,
+        "distance": 1.0324734910627935
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -81.43668111405701,
+        "distance": 1.846719854838524
+      }
+    },
+    {},
+    {
+      "picture picture frame": {
+        "heading": 173.0810509495356,
+        "distance": 1.4098308907931385
+      }
+    },
+    {
+      "mattress": {
+        "heading": 19.1767628550092,
+        "distance": 1.3488928835027734
+      }
+    },
+    {
+      "pillow": {
+        "heading": -172.07140046410157,
+        "distance": 0.8459260723349493
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "rug": {
+        "heading": -126.44222452776707,
+        "distance": 0.7625348771453544
+      }
+    },
+    {
+      "mattress ottoman": {
+        "heading": 158.08227624336536,
+        "distance": 1.987528206235606
+      }
+    },
+    {
+      "mirror": {
+        "heading": 20.509219766917482,
+        "distance": 1.2949985148171106
+      }
+    },
+    {}
+  ],
+  "10c252c90fa24ef3b698c6f54d984c5c": [
+    {
+      "bed": {
+        "heading": 136.45160807502634,
+        "distance": 1.6885774743224768
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": -146.02121750491725,
+        "distance": 0.6668861227224083
+      }
+    },
+    {
+      "pillow": {
+        "heading": 22.96588817217446,
+        "distance": 1.2498371678889924
+      }
+    },
+    {
+      "painting picture painting": {
+        "heading": -155.32517478174634,
+        "distance": 1.9277859250562899
+      }
+    },
+    {
+      "pillow": {
+        "heading": -32.981966535729924,
+        "distance": 1.0890978653879282
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -67.1556203317181,
+        "distance": 1.8985936696216126
+      }
+    },
+    {},
+    {
+      "rug": {
+        "heading": 26.199305778820474,
+        "distance": 1.229032246780445
+      }
+    },
+    {
+      "pillow": {
+        "heading": 168.31854370737636,
+        "distance": 1.717218988757326
+      }
+    },
+    {},
+    {
+      "stairs bed": {
+        "heading": 89.45341628384853,
+        "distance": 1.9799639877640665
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 153.88910538357737,
+        "distance": 0.8002099055259801
+      }
+    },
+    {},
+    {
+      "table desk pool table table": {
+        "heading": -155.48434002710854,
+        "distance": 0.9064289645471171
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "window": {
+        "heading": 174.68367555499873,
+        "distance": 1.355847356212868
+      }
+    },
+    {
+      "window": {
+        "heading": -41.93668497844436,
+        "distance": 1.7398209482918072
+      }
+    },
+    {
+      "window": {
+        "heading": -47.89215004223851,
+        "distance": 1.4639103772738862
+      }
+    },
+    {},
+    {
+      "closet": {
+        "heading": 114.74751923239643,
+        "distance": 1.743142598517003
+      }
+    },
+    {},
+    {
+      "mattress": {
+        "heading": 98.12527765554125,
+        "distance": 1.8220784763742297
+      }
+    },
+    {
+      "window": {
+        "heading": -82.7672897648244,
+        "distance": 1.9929975532562176
+      }
+    },
+    {},
+    {}
+  ],
+  "902e65564f81489687878425d9b3cb55": [
+    {
+      "rug": {
+        "heading": 68.60585094497827,
+        "distance": 1.2681789179229637
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 147.4568974719814,
+        "distance": 1.6138976075442852
+      }
+    },
+    {
+      "pillow": {
+        "heading": 112.78625064967974,
+        "distance": 1.2583559731242695
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": -107.78273424337809,
+        "distance": 1.2740098593566023
+      }
+    },
+    {},
+    {
+      "picture picture frame plaque": {
+        "heading": 177.22750212706887,
+        "distance": 1.653624933186357
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "desk": {
+        "heading": -10.329203646975031,
+        "distance": 1.6378848757308921
+      }
+    },
+    {
+      "pillow": {
+        "heading": -11.14319233662124,
+        "distance": 1.4211327079592209
+      }
+    },
+    {
+      "lamp": {
+        "heading": -88.39847426284877,
+        "distance": 1.3430587109199903
+      }
+    },
+    {
+      "table footstool table ottoman": {
+        "heading": -17.67262826195983,
+        "distance": 1.58402374329691
+      }
+    },
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -151.45709353329636,
+        "distance": 0.9080126005351807
+      }
+    },
+    {
+      "curtain": {
+        "heading": -94.63752139904199,
+        "distance": 0.9035197977430443
+      }
+    },
+    {
+      "pillow": {
+        "heading": 56.239680614827904,
+        "distance": 0.593409910980109
+      }
+    }
+  ],
+  "5b9b2794954e4694a45fc424a8643081": [
+    {
+      "painting picture picture frame painting": {
+        "heading": 143.95190606795353,
+        "distance": 1.9289415015103766
+      }
+    },
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -6.899301853478448,
+        "distance": 1.069510171191245
+      }
+    },
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 81.9399513474288,
+        "distance": 1.384214716776885
+      }
+    },
+    {
+      "pillow": {
+        "heading": 16.014667421655417,
+        "distance": 1.1649786027603422
+      }
+    },
+    {
+      "pillow": {
+        "heading": -139.24363806242835,
+        "distance": 1.215477616034105
+      }
+    },
+    {
+      "pillow": {
+        "heading": 57.8437278932405,
+        "distance": 1.3438442006088003
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": -151.87722410539226,
+        "distance": 1.2828873916518346
+      }
+    },
+    {},
+    {
+      "table desk": {
+        "heading": 81.61070737563949,
+        "distance": 0.6910354843204038
+      }
+    },
+    {},
+    {
+      "table desk footstool": {
+        "heading": -41.07435256681069,
+        "distance": 1.7693939398462017
+      }
+    },
+    {
+      "lamp chanier chanier": {
+        "heading": 66.9542930730104,
+        "distance": 1.3455288661458409
+      }
+    },
+    {},
+    {},
+    {},
+    {}
+  ],
+  "7ad0b4e15c4f4cf38f56efbbcadfbf6a": [
+    {
+      "chandelier chandelier": {
+        "heading": -154.05058703186418,
+        "distance": 1.155413822932346
+      }
+    },
+    {
+      "picture picture _ frame": {
+        "heading": 69.1891386384255,
+        "distance": 0.6661759069663367
+      }
+    },
+    {
+      "pillow": {
+        "heading": -132.57104164137394,
+        "distance": 1.4670974308837383
+      }
+    },
+    {
+      "pillow": {
+        "heading": 59.390109507627926,
+        "distance": 0.8180610987263076
+      }
+    },
+    {
+      "mirror window": {
+        "heading": -162.35303281970496,
+        "distance": 0.723319319017963
+      }
+    },
+    {},
+    {},
+    {
+      "chair stairs": {
+        "heading": -115.92590159388129,
+        "distance": 0.7248710697332703
+      }
+    },
+    {
+      "closet": {
+        "heading": -38.48030534276057,
+        "distance": 0.9595846046754883
+      }
+    },
+    {
+      "chair stairs stool": {
+        "heading": 79.55056635958778,
+        "distance": 0.5867310894788806
+      }
+    },
+    {
+      "table table footstool massage _ table": {
+        "heading": 117.14043805047885,
+        "distance": 0.8999034121839142
+      }
+    },
+    {
+      "vent": {
+        "heading": 119.34853142917746,
+        "distance": 0.9490636242689356
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -0.9391811660256622,
+        "distance": 0.8060579095120276
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": -150.58505282434916,
+        "distance": 1.4731113107383202
+      }
+    },
+    {
+      "grill pool": {
+        "heading": -84.08197363821289,
+        "distance": 0.972938398138474
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 52.533731144187016,
+        "distance": 0.5790817394613258
+      }
+    },
+    {},
+    {
+      "door": {
+        "heading": -69.25043243220313,
+        "distance": 1.1171586585283138
+      }
+    },
+    {
+      "rug mattress": {
+        "heading": 169.0550472727012,
+        "distance": 0.5062128042800476
+      }
+    }
+  ],
+  "77a1a11978b04e9cbf74914c98578ab8": [
+    {},
+    {
+      "pillow": {
+        "heading": -166.73139919063152,
+        "distance": 1.9058157599772712
+      }
+    },
+    {
+      "pillow": {
+        "heading": 53.616849576627345,
+        "distance": 0.6742481440748411
+      }
+    },
+    {
+      "pillow": {
+        "heading": -118.01432981466517,
+        "distance": 1.9223086142058985
+      }
+    },
+    {
+      "pillow": {
+        "heading": 91.2557679249337,
+        "distance": 1.732449067211534
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": -39.309781832455315,
+        "distance": 1.7588583544368377
+      }
+    },
+    {
+      "rug": {
+        "heading": 153.47722387401,
+        "distance": 1.999369122149011
+      }
+    },
+    {},
+    {
+      "chair armchair seat armchair": {
+        "heading": 41.71282246089635,
+        "distance": 1.6178564588809863
+      }
+    },
+    {},
+    {
+      "painting painting": {
+        "heading": -135.09586626579392,
+        "distance": 1.8167931289476127
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -25.268659828998977,
+        "distance": 0.9944188969530341
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": -148.54117533696814,
+        "distance": 0.7449662961650574
+      }
+    },
+    {},
+    {
+      "desk counter": {
+        "heading": -62.74834543766535,
+        "distance": 1.4472741605890127
+      }
+    },
+    {},
+    {
+      "rug": {
+        "heading": -116.28364593087178,
+        "distance": 1.358729156004363
+      }
+    },
+    {
+      "painting picture painting": {
+        "heading": -103.46332111323204,
+        "distance": 0.6500472490659643
+      }
+    },
+    {},
+    {},
+    {
+      "towel": {
+        "heading": 55.874211991558525,
+        "distance": 1.1210239738455012
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "3a6d2322867f40d9a3d2758ab88df288": [
+    {
+      "pillow": {
+        "heading": 132.80643802985122,
+        "distance": 1.075103364274471
+      }
+    },
+    {
+      "pillow": {
+        "heading": -157.60740677841665,
+        "distance": 1.1348100928416598
+      }
+    },
+    {
+      "pillow": {
+        "heading": -140.77653073513827,
+        "distance": 0.6818390185702379
+      }
+    },
+    {
+      "stool footstool ottoman": {
+        "heading": 21.255390344519498,
+        "distance": 1.5769346059708185
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": -26.08476413045588,
+        "distance": 0.7513825598340687
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": -51.65849363901111,
+        "distance": 1.9452995006362013
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -136.22122935770153,
+        "distance": 1.3462756994589662
+      }
+    },
+    {
+      "rug": {
+        "heading": 62.74054726892814,
+        "distance": 1.492815374013451
+      }
+    },
+    {
+      "window": {
+        "heading": -119.87236521520613,
+        "distance": 1.886943922578065
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "bed": {
+        "heading": 21.40412565410685,
+        "distance": 1.6487420162574813
+      }
+    },
+    {
+      "window": {
+        "heading": 167.71835863193428,
+        "distance": 1.9429513192321441
+      }
+    },
+    {},
+    {},
+    {
+      "stool": {
+        "heading": 27.767567611175565,
+        "distance": 1.6011277388816687
+      }
+    },
+    {
+      "curtain": {
+        "heading": 162.72357365729806,
+        "distance": 0.8193442643162535
+      }
+    },
+    {},
+    {
+      "pillow": {
+        "heading": 112.48885679695172,
+        "distance": 0.9638849712633826
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "window": {
+        "heading": 56.22593668151234,
+        "distance": 1.8842914467907788
+      }
+    },
+    {
+      "chair armchair seat armchair": {
+        "heading": 13.3274301518085,
+        "distance": 1.9002596677393926
+      }
+    },
+    {},
+    {},
+    {
+      "stool": {
+        "heading": -27.797240842352636,
+        "distance": 1.88626590449237
+      }
+    }
+  ],
+  "194bef4cbba641dc9860ba7f43a0c16a": [
+    {
+      "pillow": {
+        "heading": -149.7059747982656,
+        "distance": 0.6256544710070131
+      }
+    },
+    {
+      "pillow": {
+        "heading": -18.02783629691183,
+        "distance": 0.9042050245877011
+      }
+    },
+    {
+      "pillow": {
+        "heading": -70.12403418865406,
+        "distance": 1.505683752100403
+      }
+    },
+    {
+      "pillow": {
+        "heading": -178.25591599372396,
+        "distance": 1.6392275817779018
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 87.44114527663106,
+        "distance": 0.9457451018442495
+      }
+    },
+    {
+      "table massage _ table": {
+        "heading": -126.63056035166471,
+        "distance": 0.757231740338288
+      }
+    },
+    {
+      "mirror clock": {
+        "heading": -153.4687262521673,
+        "distance": 1.536221478562392
+      }
+    },
+    {
+      "fridge": {
+        "heading": -172.39532539004085,
+        "distance": 1.3441634684266708
+      }
+    },
+    {
+      "door": {
+        "heading": -101.19486589767743,
+        "distance": 1.515359479613784
+      }
+    },
+    {
+      "pillow": {
+        "heading": -50.63500787971458,
+        "distance": 1.217524033074376
+      }
+    },
+    {
+      "pillow": {
+        "heading": 49.908789310041385,
+        "distance": 1.6279557519495662
+      }
+    },
+    {
+      "lamp": {
+        "heading": 40.73804318883768,
+        "distance": 1.5666939591408313
+      }
+    },
+    {
+      "chandelier chandelier": {
+        "heading": -29.59055228344087,
+        "distance": 1.551330637717467
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -103.57978133155225,
+        "distance": 0.5458716192117831
+      }
+    },
+    {
+      "candle": {
+        "heading": 125.32831584909292,
+        "distance": 1.3354649584762959
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "footstool ottoman": {
+        "heading": 77.1769500692132,
+        "distance": 1.9266487116148738
+      }
+    },
+    {}
+  ],
+  "8a0f2f1a8ea441658501561e5dc34a3e": [
+    {
+      "pillow": {
+        "heading": -138.69533604970184,
+        "distance": 1.7858902532558352
+      }
+    },
+    {
+      "pillow": {
+        "heading": -44.166017733710476,
+        "distance": 1.9622895321943354
+      }
+    },
+    {
+      "pillow": {
+        "heading": 20.688593163853312,
+        "distance": 1.69255618496378
+      }
+    },
+    {
+      "pillow": {
+        "heading": -179.6180634390431,
+        "distance": 1.6167640387990627
+      }
+    },
+    {
+      "bed": {
+        "heading": 5.996899911460332,
+        "distance": 0.8653209739110141
+      }
+    },
+    {},
+    {},
+    {
+      "bed": {
+        "heading": 174.46447663458662,
+        "distance": 0.9155651438878507
+      }
+    },
+    {},
+    {
+      "painting picture picture painting": {
+        "heading": -98.91538589211983,
+        "distance": 1.9587879804866617
+      }
+    },
+    {},
+    {},
+    {
+      "couch sofa sofa": {
+        "heading": 173.02679909277646,
+        "distance": 1.7778429304695815
+      }
+    },
+    {},
+    {
+      "table footstool _ table ottoman": {
+        "heading": 122.21041047545316,
+        "distance": 0.866308961632303
+      }
+    },
+    {
+      "stool footsto ottoman": {
+        "heading": -140.1758619482413,
+        "distance": 0.7671066642503801
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -164.78977496374182,
+        "distance": 0.7711101717373732
+      }
+    },
+    {
+      "pillow": {
+        "heading": -104.18393618471167,
+        "distance": 1.431659347682598
+      }
+    },
+    {},
+    {},
+    {
+      "stool": {
+        "heading": -69.65178532198735,
+        "distance": 1.2511298965621358
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "door": {
+        "heading": 111.02675154929028,
+        "distance": 1.9667040079405624
+      }
+    },
+    {
+      "stool ottoman": {
+        "heading": 76.39849763980129,
+        "distance": 0.9430307654188174
+      }
+    },
+    {},
+    {
+      "mirror": {
+        "heading": 68.15237967576186,
+        "distance": 0.826015836892579
+      }
+    }
+  ],
+  "08115b08da534f1aafff2fa81fc73512": [
+    {
+      "chandelier chandelier": {
+        "heading": 74.01332088827516,
+        "distance": 1.104514188660239
+      }
+    },
+    {
+      "lamp": {
+        "heading": -5.373195480918952,
+        "distance": 1.4276455372662495
+      }
+    },
+    {
+      "lamp chandelier chandelier": {
+        "heading": 50.43968421324436,
+        "distance": 1.4670695736658894
+      }
+    },
+    {},
+    {
+      "painting painting": {
+        "heading": 67.0041318349559,
+        "distance": 1.5174799999217599
+      }
+    },
+    {},
+    {
+      "stool footstool": {
+        "heading": -53.722161800019535,
+        "distance": 1.4862064617899269
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": 70.80388758318787,
+        "distance": 0.7188922765611105
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 118.11179611270813,
+        "distance": 1.5756392321899857
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 46.36077824635416,
+        "distance": 0.7417568258653824
+      }
+    },
+    {
+      "lamp": {
+        "heading": -87.91480683638319,
+        "distance": 1.98499958103416
+      }
+    },
+    {
+      "lamp": {
+        "heading": 108.9450256492334,
+        "distance": 0.7297222674029031
+      }
+    },
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -55.20914985821122,
+        "distance": 0.718610096466175
+      }
+    },
+    {
+      "lamp": {
+        "heading": -98.80438491887581,
+        "distance": 1.9957961000798212
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -90.89879997507515,
+        "distance": 1.7160439188965306
+      }
+    },
+    {
+      "closet": {
+        "heading": -108.47161384970461,
+        "distance": 0.5976994015167452
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": 73.81052495243617,
+        "distance": 1.8306409108926456
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -70.04274829132018,
+        "distance": 1.3411547557786696
+      }
+    },
+    {
+      "lamp": {
+        "heading": 93.559585371163,
+        "distance": 0.8210249044450015
+      }
+    },
+    {
+      "lamp": {
+        "heading": 39.98208547312606,
+        "distance": 0.6330722945864317
+      }
+    },
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -7.466737831815124,
+        "distance": 1.1331712488819432
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -8.515255826097842,
+        "distance": 1.9749378300271163
+      }
+    },
+    {}
+  ],
+  "5efaa5e4a30e481f9dadc1bac5e56a21": [
+    {
+      "chandelier chandelier": {
+        "heading": 25.270844159775322,
+        "distance": 1.5943514974879254
+      }
+    },
+    {
+      "mirror": {
+        "heading": -93.29346827130509,
+        "distance": 1.0438981059956411
+      }
+    },
+    {
+      "pillow": {
+        "heading": -108.2297452094731,
+        "distance": 0.9548989552676749
+      }
+    },
+    {
+      "lamp": {
+        "heading": 173.05988295475896,
+        "distance": 1.2775112337492422
+      }
+    },
+    {
+      "desk counter": {
+        "heading": -34.39770747026702,
+        "distance": 0.9357172172072206
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": 172.92752351249328,
+        "distance": 0.9743553054237151
+      }
+    },
+    {
+      "picture picture frame plaque": {
+        "heading": 88.20570158564567,
+        "distance": 1.726804928752685
+      }
+    },
+    {
+      "window": {
+        "heading": -76.14413644803443,
+        "distance": 0.7624259008571572
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": -25.177089351381966,
+        "distance": 1.9767808902783814
+      }
+    },
+    {},
+    {
+      "table pool _ table massage _ table": {
+        "heading": 119.28788600545249,
+        "distance": 1.0561333105623758
+      }
+    },
+    {
+      "pillow": {
+        "heading": -46.95084004770254,
+        "distance": 0.7736740580034512
+      }
+    },
+    {
+      "pillow": {
+        "heading": 23.942970396132637,
+        "distance": 1.5209587415305927
+      }
+    },
+    {},
+    {},
+    {
+      "door": {
+        "heading": 129.60793601345597,
+        "distance": 1.9633248666782936
+      }
+    },
+    {},
+    {
+      "mattress": {
+        "heading": 88.95307129268713,
+        "distance": 0.8592651830821729
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 154.15464223965517,
+        "distance": 1.0110993255795626
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 168.85537077590675,
+        "distance": 1.551410063852097
+      }
+    }
+  ],
+  "c429b363fd3145fe8a7631bbe9644066": [
+    {
+      "painting picture picture painting": {
+        "heading": 68.18617862491033,
+        "distance": 0.53121330537869
+      }
+    },
+    {
+      "stairs stool": {
+        "heading": 35.62242462410384,
+        "distance": 1.7580263809423864
+      }
+    },
+    {
+      "window": {
+        "heading": -48.64279750082346,
+        "distance": 0.588843542831923
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 102.42710039049729,
+        "distance": 0.516545338306557
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": 15.410302399350286,
+        "distance": 1.6481574719746859
+      }
+    },
+    {},
+    {
+      "chair armchair seat armchair": {
+        "heading": -52.200871670099474,
+        "distance": 0.6465829923942974
+      }
+    },
+    {
+      "door": {
+        "heading": -146.26205297225445,
+        "distance": 0.886480016690015
+      }
+    },
+    {},
+    {},
+    {
+      "lamp chandelier chandelier": {
+        "heading": -65.39220399990614,
+        "distance": 1.7495673277083121
+      }
+    },
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": 97.03746835027738,
+        "distance": 0.7575861330776568
+      }
+    },
+    {},
+    {},
+    {
+      "mirror": {
+        "heading": 33.82149115713372,
+        "distance": 0.5265061135238656
+      }
+    },
+    {
+      "lamp": {
+        "heading": -103.63029565828562,
+        "distance": 1.903218129258836
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": -115.69173608941243,
+        "distance": 1.5488946811955244
+      }
+    },
+    {},
+    {},
+    {
+      "door": {
+        "heading": -161.6311850394199,
+        "distance": 1.2319112314251535
+      }
+    },
+    {
+      "lamp": {
+        "heading": 29.218389708856904,
+        "distance": 1.2912624542872004
+      }
+    },
+    {
+      "window curtain": {
+        "heading": 161.27760378725463,
+        "distance": 1.8588430575915373
+      }
+    }
+  ],
+  "6800f98e9e67463e9928a4253253bc2f": [
+    {
+      "rug": {
+        "heading": 97.93499706700294,
+        "distance": 0.5935279755449774
+      }
+    },
+    {},
+    {
+      "shelf cabinet bookcase shelf cabinet": {
+        "heading": 141.69649698011568,
+        "distance": 0.9320440311365216
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": 45.07228089642712,
+        "distance": 1.9184715705144377
+      }
+    },
+    {
+      "painting picture picture frame painting": {
+        "heading": -17.366898465990744,
+        "distance": 1.4883495495374044
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": 153.60540322891597,
+        "distance": 1.034500780785935
+      }
+    },
+    {},
+    {},
+    {
+      "painting picture picture frame painting": {
+        "heading": 125.78377214382238,
+        "distance": 1.9649855866740693
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "rug": {
+        "heading": -57.59523724247009,
+        "distance": 0.8555285727831646
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "1e86968849944444b66d9537efb5da9e": [
+    {
+      "pillow": {
+        "heading": -137.67440986374004,
+        "distance": 1.5858246756203294
+      }
+    },
+    {
+      "mirror": {
+        "heading": 173.91464572768717,
+        "distance": 1.7717694029816524
+      }
+    },
+    {
+      "pillow": {
+        "heading": 97.13552403474392,
+        "distance": 1.84045723409033
+      }
+    },
+    {
+      "pillow": {
+        "heading": -37.516734742769785,
+        "distance": 0.9121651150453614
+      }
+    },
+    {
+      "stool footstool ottoman": {
+        "heading": -144.21549130292493,
+        "distance": 1.8895845490542615
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "chandelier chandelier": {
+        "heading": -170.19224969044242,
+        "distance": 1.8368639613794273
+      }
+    },
+    {},
+    {},
+    {
+      "table desk counter": {
+        "heading": 16.109624225588846,
+        "distance": 0.918645638154453
+      }
+    },
+    {
+      "rug": {
+        "heading": -147.8125590600566,
+        "distance": 1.0389385667943065
+      }
+    },
+    {
+      "bed": {
+        "heading": 53.34111342010368,
+        "distance": 0.9084578257615807
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "pillow": {
+        "heading": 24.032351317261657,
+        "distance": 0.9745817318110351
+      }
+    },
+    {
+      "stairs": {
+        "heading": -73.38109269265615,
+        "distance": 1.155376108879459
+      }
+    },
+    {},
+    {
+      "couch bed": {
+        "heading": 69.27381737623656,
+        "distance": 0.7884489751799735
+      }
+    },
+    {},
+    {
+      "shelf cabinet shelf cabinet": {
+        "heading": -132.50569614741505,
+        "distance": 1.4885416292396103
+      }
+    },
+    {
+      "stool ottoman": {
+        "heading": 178.23504126657997,
+        "distance": 1.2832028970789686
+      }
+    },
+    {
+      "bust": {
+        "heading": 0.77184385453657,
+        "distance": 0.9320355576795487
+      }
+    },
+    {
+      "pillow": {
+        "heading": -41.17971590741709,
+        "distance": 1.8843215091897831
+      }
+    },
+    {},
+    {},
+    {
+      "window": {
+        "heading": -165.73747267168585,
+        "distance": 1.5415222436310851
+      }
+    },
+    {},
+    {
+      "towel": {
+        "heading": 5.046738116514803,
+        "distance": 1.922664746644563
+      }
+    },
+    {
+      "door closet": {
+        "heading": 135.7374121045416,
+        "distance": 1.004435623600211
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "1a41339ece1846eda6a924cdb4c417dd": [
+    {
+      "picture picture _ frame": {
+        "heading": 152.39144047035808,
+        "distance": 0.5114989434419813
+      }
+    },
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -121.30246093308433,
+        "distance": 1.8004039882207767
+      }
+    },
+    {
+      "chandelier chandelier": {
+        "heading": -24.29925269371202,
+        "distance": 1.0486616265863105
+      }
+    },
+    {
+      "painting painting": {
+        "heading": -31.63236299235021,
+        "distance": 1.7219943000524485
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -62.037853054330355,
+        "distance": 1.4623778577103073
+      }
+    },
+    {
+      "counter": {
+        "heading": -11.706287327828989,
+        "distance": 1.3298712109374442
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 124.81437753559737,
+        "distance": 1.1972871894187969
+      }
+    },
+    {
+      "chair armchair seat armchair": {
+        "heading": -145.6371333173671,
+        "distance": 1.2972965752940548
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -167.19014438407442,
+        "distance": 1.1939475689787113
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "painting painting": {
+        "heading": -6.175705655142451,
+        "distance": 0.7439948944318355
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": 46.80804828132602,
+        "distance": 1.648776156956718
+      }
+    },
+    {
+      "stool footstool": {
+        "heading": 158.06108687280573,
+        "distance": 1.0984523348622823
+      }
+    },
+    {},
+    {},
+    {
+      "chair armchair armchair": {
+        "heading": -123.74062573699263,
+        "distance": 1.2454900685571748
+      }
+    },
+    {
+      "statue bust statue": {
+        "heading": -105.19437817799837,
+        "distance": 1.4763956123297912
+      }
+    },
+    {
+      "chair armchair armchair": {
+        "heading": -70.65596112888201,
+        "distance": 0.8753625596530947
+      }
+    },
+    {
+      "couch sofa sofa": {
+        "heading": 98.50330800256182,
+        "distance": 0.6631509820974973
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "c341c46acf7044d1a712d622cbc94a27": [
+    {},
+    {},
+    {},
+    {},
+    {
+      "mattress": {
+        "heading": -17.938871482792024,
+        "distance": 1.1981513915065842
+      }
+    },
+    {
+      "curtain": {
+        "heading": 169.19702865245785,
+        "distance": 1.8742621886370878
+      }
+    },
+    {},
+    {
+      "footstool ottoman": {
+        "heading": -10.253183240792964,
+        "distance": 1.7191258659862585
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "seat mattress": {
+        "heading": -46.009440090963636,
+        "distance": 1.3518256245123421
+      }
+    },
+    {
+      "picture picture frame": {
+        "heading": -38.19910254288598,
+        "distance": 1.8796455835160024
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "bathtub pool": {
+        "heading": -123.8316374272153,
+        "distance": 1.0274582976041728
+      }
+    },
+    {
+      "lamp": {
+        "heading": -10.45250539762759,
+        "distance": 0.7246582399180341
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "lamp": {
+        "heading": 68.74927822276504,
+        "distance": 0.6556667190420596
+      }
+    },
+    {
+      "window": {
+        "heading": 106.42625995374271,
+        "distance": 1.9459317906118292
+      }
+    },
+    {}
+  ],
+  "c8112f69d34d476fbb29e6b3909deba2": [
+    {
+      "picture picture _ frame": {
+        "heading": -107.60485376326467,
+        "distance": 1.460716368990949
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "stool footstool ottoman": {
+        "heading": -26.141863778331924,
+        "distance": 1.2900003993646754
+      }
+    },
+    {
+      "shelf cabinet closet shelf cabinet": {
+        "heading": -92.49995996419172,
+        "distance": 1.4198999110836938
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "door": {
+        "heading": -176.6767726650177,
+        "distance": 1.3613317887439909
+      }
+    },
+    {},
+    {},
+    {
+      "mattress ottoman": {
+        "heading": -37.72892633538078,
+        "distance": 1.7556945856717308
+      }
+    },
+    {},
+    {
+      "door": {
+        "heading": -84.57089192230814,
+        "distance": 1.3133949656348518
+      }
+    },
+    {
+      "counter": {
+        "heading": -64.93930855225959,
+        "distance": 1.7426733875460132
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 119.84350247713195,
+        "distance": 1.3576628127035737
+      }
+    },
+    {},
+    {},
+    {}
+  ]
+}

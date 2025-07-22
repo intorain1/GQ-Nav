@@ -278,7 +278,7 @@ class R2RNavBatch(object):
         shortest_distances = self.shortest_distances[scan]
 
         path = sum(pred_path, [])
-        print(gt_path[0], path[0])
+        
         assert gt_path[0] == path[0], 'Result trajectories should include the start position'
 
         nearest_position = self._get_nearest(shortest_distances, gt_path[-1], path)
@@ -310,8 +310,8 @@ class R2RNavBatch(object):
 
         metrics = defaultdict(list)
         for item in preds:
-            instr_id = item['instr_id']
-            traj = item['path']
+            instr_id = item[0]['instr_id']
+            traj = item[0]['path']
             scan, gt_traj = self.gt_trajs[instr_id]
             traj_scores = self._eval_item(scan, traj, gt_traj)
             for k, v in traj_scores.items():

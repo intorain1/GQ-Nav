@@ -10,6 +10,7 @@ from parser import parse_args
 from env import R2RNavBatch
 from agent import NavAgent
 import argparse
+import tqdm
 
 def get_results(results):
     output = []
@@ -39,34 +40,57 @@ def build_dataset(args):
 
     return val_envs
 
-if __name__ == "__main__":
+def valid(args, val_envs):
+    results = []
+    env = next(iter(val_envs.values()))
+    num_episodes = len(env.data)
+    # print(num_episodes)
 
-    args = parse_args()
-    # print(args.anno_dir, args.dataset, args.val_env_name)
-    val_envs = build_dataset(args)
-    agent = NavAgent(next(iter(val_envs.values())), args)
-    start_time = time.time()
-
-    agent._make_action(threshold=0.5)  # Example threshold
-    end_time = time.time()
-    print(f"Total time taken for 5 actions: {end_time - start_time:.2f} seconds")
-
-    traj = agent.traj
-    # print(traj['instr_id'])
-    results = {}
-    results[traj[0]['instr_id']] = traj
-    preds = traj
-    # print(results)
-    # preds = get_results(results)
-    print(preds)
+    for i in tqdm.tqdm(range(num_episodes), desc='testing'):
+        env = next(iter(val_envs.values()))
+        agent = NavAgent(env, args)
+        traj = agent._make_action(threshold=0.5)
+        results.append(traj)
 
     for env_name, env in val_envs.items():
-        score_summary, _ = env.eval_metrics(preds)
+        score_summary, _ = env.eval_metrics(results)
         loss_str = "Env name: %s" % env_name
         for metric, val in score_summary.items():
             loss_str += ', %s: %.2f' % (metric, val)
-        print(loss_str)
+
+    return loss_str
+
+if __name__ == "__main__":
+    args = parse_args()
+    val_envs = build_dataset(args)
+
+    results = valid(args, val_envs)
+    print(results)
+    # results = []
+
+
+    # # Get the number of episodes in the first validation environment
+    # env = next(iter(val_envs.values()))
+    # num_episodes = len(env.data)  # Assuming 'data' holds the episodes
+
+    # agent = NavAgent(env, args)
+    # traj = agent._make_action(threshold=0.5)  # Example threshold
+    # results.append(traj)
+
     # agent = NavAgent(next(iter(val_envs.values())), args)
+    # traj = agent._make_action(threshold=0.5)
+    # results.append(traj)
+
+    # preds = results
+
+    # print(preds)
+
+    # for env_name, env in val_envs.items():
+    #     score_summary, _ = env.eval_metrics(preds)
+    #     loss_str = "Env name: %s" % env_name
+    #     for metric, val in score_summary.items():
+    #         loss_str += ', %s: %.2f' % (metric, val)
+    #     print(loss_str)
 
     # print('-----------------------------------')
     # start_time = time.time()
