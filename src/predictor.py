@@ -68,7 +68,7 @@ The scene map is an ordered list of object-groups.
 ### Your Task
 Given the current scene map, the target instruction, history information and your current position, your job is to:
 - Generate the next several actions in order , leading the robot to gradually approach the target.
-- Each action must specify the direction, the navigation skill used, and the the target object reached.
+- Each action must specify the navigation skill used and the the target object reached.
 
 **Solid Objects:** You are only allowed to choose solid objects as the "target objects" such as furniture, doors, windows, stairs, and walls.
 **Rules for Skill Selection**
@@ -90,6 +90,7 @@ Each action must be expressed as:
 After each action, **imagine a object-group** you can see after reaching the taget position according to the instruction and the current scene map.
 Prediction of each action must be expressed as an object-group:
 {"imagined_view": ['bed', 'oven', 'door', 'sink']}
+Notice that the object-group must include the **target object of the action** and several **other objects** that can be seen from the target position.
 
 Notice that the scene map is incomplete and may not contain all the objects in the environment so that you can not always choose existing objects as the target position.
 You must create at least three new object in each predicted object-group that does not exist in the given scene map. These objects should be plausible based on the current instruction and daily life knowledge.
@@ -113,7 +114,6 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
         self.user_prompt =""
         #优化方向：现在的前几个goal只由instruction决定，并不合理，应该在路径中途细化想象；
         #skill没有体现，是一个空壳参数
-        #没加入想象错误的反馈
     
     def set_llm(self, model: str, url:str, api_key: str, temperature: float):
         self.model = model
@@ -142,6 +142,9 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
     def load_detected_graph(self, graph: OptimizedTimeObjectGraph):
         self.detected_graph = graph
 
+    def set_current_position(self, position: str):
+        self.current_position = position
+
     def set_instruction(self, instruction: str):
         self.instruction = instruction
 
@@ -158,9 +161,9 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
             # print(f"current_local_detected_graph = {current_local_detected_graph}")
             self.user_prompt += f'''History information: Based on the instruction, you have given an ordered series of predicted actions and their corresponding imagined_view as follows\n'''
             self.user_prompt += f'''{self.response}\n'''
-            self.user_prompt += f'''Now you have successfully reached the first {len(self.action_chain)} target objects in the action chain.\n'''
-            self.user_prompt += f'''But……At {self.error_action_num}, can't reach {self.error_object}, previos predicted view is far different from real observation {current_local_detected_graph}''' # 错误反馈
-            self.user_prompt += f'''Now you need to rethink the action chain based on the current state and error information above.\n'''
+            self.user_prompt += f'''Now you have successfully reached the first {self.error_action_num-1} target objects in the action chain.\n'''
+            self.user_prompt += f'''But in actual situation, the agent can't {self.error_object} at "action_num {self.error_action_num}". The previos predicted view{self.error_imagined_graph} is far different from real observation {current_local_detected_graph}''' # 错误反馈
+            self.user_prompt += f'''Now you need to rethink the action chain based on the current state, error information above and the following real scene map.\n'''
 
         self.user_prompt += "scene map:{"
         self.user_prompt += f'''{self.graph_to_string()} \n'''
@@ -221,7 +224,7 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
                     if not line or '{' not in line:
                         continue 
                     # 替换单引号为双引号，使其符合 JSON 格式
-                    line_fixed = line.replace("'", '"')
+                    line_fixed = line.replace("'", '"').replace("\\","")
                     line_fixed = line_fixed.replace("\n", '').replace("”", '"')
                     if line_fixed.endswith('},'):
                         line_fixed = line_fixed[:-2] + '}'
@@ -232,13 +235,14 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
                         if data["action"]["num_of_order"] > max_num_of_order:
                             max_num_of_order = data["action"]["num_of_order"]
                     elif "imagined_view" in data:
-                        self.imagined_graph_chain.append(data["imagined_view"].append("NORMAL"))
+                        self.imagined_graph_chain.append(data["imagined_view"])
+                        self.imagined_graph_chain[-1].append('NORMAL')  # 添加停止动作
                         # imagined_view 的总长度比action_chain少1
-
+                print("imagined_graph_chain =", self.imagined_graph_chain)
                 # 根据 num_of_order 排序 action
                 self.action_chain.sort(key=lambda x: x[0])
                 self.action_chain[-1]=(self.action_chain[-1][0],self.action_chain[-1][1],"STOP") # 添加停止动作
-                self.imagined_graph_chain[-1][-1].append(['STOP'])  # 最后一个动作的想象内容为空
+                self.imagined_graph_chain[-1].append('STOP')  # 最后一个动作的想象内容为空
 
                 # 输出结果
                 #print("target_chain =", target_chain)
@@ -305,12 +309,14 @@ if __name__ == "__main__":
     #做出预测
     predictor.update_imagined_graph()
     print("action_chain =", predictor.action_chain)
-    # remaining_action_chain= predictor.action_chain[-2:]
-    # remaining_imagined_graph_chain = predictor.imagined_graph_chain[-2:]
-    # predictor.rethinking(remaining_action_chain, remaining_imagined_graph_chain)
+    error_point= predictor.action_chain[-2]  # 假设倒数第二个动作是错误的
+    print("error_point =", error_point)
+    predictor.rethinking(error_action=error_point)
 
     ##TODO: goal是子集的命令调试验证
     ##TODO: skill暂时没有用到导航中
     ##TODO: self.current_position没有与探测/任务初始化/current_step保持同步更新，这个参数需要考虑“实时更新”或删除
     ##      rethinking时重新设置self.current_position感觉更好一些！！！！！！important!!!!
+    ## optional:
     ## memory module
+    ## 逐步提问CoT
