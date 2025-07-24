@@ -25,7 +25,6 @@ class NavAgent(BaseAgent):
         self.nav_step = 0
         self.action_chain = deque()
         self.imagined_graph_chain = deque()
-        self.path = []
         self.stop = False
         self.threshold = -np.inf
 
@@ -53,41 +52,39 @@ class NavAgent(BaseAgent):
     def _make_action(self, reset=True) -> str:
         if reset:  # Reset env
             cur_obs = self.env.reset()[0]
+            # print(cur_obs['instruction'])
         else:
             cur_obs = self.env._get_obs()[0]
         # print(cur_obs)
 
         self.init_trajecotry(cur_obs)
+        objects = self.parse_objects(cur_obs['objects'])
+        self.graph.add_recognition(self.nav_step, objects)
+        self.predictor.load_detected_graph(self.graph)
+        self.predictor.set_instruction(cur_obs['instruction'])
 
         while(not self.stop):
-            cur_obs = self.env._get_obs()[0]
         # Update graph
-            objects = self.parse_objects(cur_obs['objects'])
-            self.graph.add_recognition(self.nav_step, objects)
-            self.predictor.load_detected_graph(self.graph)
-            self.nav_step += 1
-
             # print(len(self.action_chain))
             # # Judge if use action_chain
             if len(self.action_chain) == 0:
-                # start_time = time.time()
-                self.predictor.set_instruction(cur_obs['instruction'])
                 self.predictor.update_imagined_graph()
-                # end_time = time.time()
-                # print("thinking cost time:", end_time - start_time)
                 self.action_chain = deque(self.predictor.action_chain)
                 self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
                 # print(self.imagined_graph_chain)
                 # print('action', self.action_chain)
 
-            elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 1, 0) <= self.threshold:
-                action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
-                self.action_chain = deque(action_chain_list)
-                self.imagined_graph_chain = deque(imagined_graph_chain_list)
+            #exe      
+            action = self.action_chain.popleft()
 
-            # Get target object
-            to_object = self.action_chain.popleft()[1]
+            if action[2] == 'STOP':
+                self.stop = True
+                return self.traj
 
+            to_object = action[1]
+            # print(to_object)
+            last_action = action
+            
             # Get navigable candidates
             navigable = self.parse_navigable(cur_obs['candidate'])
             candidates = []
@@ -100,12 +97,13 @@ class NavAgent(BaseAgent):
                 candidate_graphs.append((candidate_graph, candidate))
                 if to_object in nav_objects:
                     candidates.append((candidate_graph, candidate))
+            
+            ob = self.imagined_graph_chain.popleft()
 
             if len(candidates) == 0:  # not in all candidates
                 max_score = -np.inf
                 destination = None
                 graph = OptimizedTimeObjectGraph()
-                ob = self.imagined_graph_chain.popleft()
                 graph.add_recognition(self.nav_step, ob)
                 for candidate_graph, candidate in candidate_graphs:
                     score = candidate_graph.match_score(graph, 0, 1, 0)
@@ -117,7 +115,6 @@ class NavAgent(BaseAgent):
                 max_score = -np.inf
                 destination = None
                 graph = OptimizedTimeObjectGraph()
-                ob = self.imagined_graph_chain.popleft()
                 graph.add_recognition(self.nav_step, ob)
                 for candidate_graph, candidate in candidates:
                     score = candidate_graph.match_score(graph, 0, 1, 0)
@@ -128,13 +125,32 @@ class NavAgent(BaseAgent):
             else:
                 destination = candidates[0][1]
 
-            self.path.append(destination)
             # print(f"agent-destination {destination} ")
             self.env.step([destination])# the parameter is a list of next viewpoint IDs. Change destination to a list
             self.traj[0]['path'].append([destination])
 
-            if len(self.action_chain) == 0:
-                self.stop = True
+            self.nav_step += 1
+            cur_obs = self.env._get_obs()[0]
+            objects = self.parse_objects(cur_obs['objects'])
+            self.graph.add_recognition(self.nav_step, objects)
+            # print(objects)
+
+            # now_graph = OptimizedTimeObjectGraph()
+            # now_graph.add_recognition(self.nav_step, objects)
+
+            # imagine_graph = OptimizedTimeObjectGraph()
+            # imagine_graph.add_recognition(self.nav_step, ob)
+            # score = now_graph.match_score(imagine_graph, 0, 1, 0)
+            # print(score)
+            # if  score <= self.threshold:
+            #     self.predictor.load_detected_graph(self.graph)
+            #     action_chain_list, imagined_graph_chain_list = self.predictor.rethinking(last_action)
+            #     self.action_chain = deque(action_chain_list)
+            #     # print(self.action_chain)
+            #     self.imagined_graph_chain = deque(imagined_graph_chain_list)
+            # else:
+            #     self.threshold = score
+
         
         return self.traj
                 # print(self.traj[0]['path'])

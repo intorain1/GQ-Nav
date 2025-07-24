@@ -236,13 +236,13 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
                             max_num_of_order = data["action"]["num_of_order"]
                     elif "imagined_view" in data:
                         self.imagined_graph_chain.append(data["imagined_view"])
-                        self.imagined_graph_chain[-1].append('NORMAL')  # 添加停止动作
+                        self.imagined_graph_chain[-1]  # 添加停止动作
                         # imagined_view 的总长度比action_chain少1
                 # print("decomposed imagined_graph_chain =", self.imagined_graph_chain)
                 # 根据 num_of_order 排序 action
                 self.action_chain.sort(key=lambda x: x[0])
                 self.action_chain[-1]=(self.action_chain[-1][0],self.action_chain[-1][1],"STOP") # 添加停止动作
-                self.imagined_graph_chain[-1][-1]='STOP'  # 最后一个动作的想象内容为空
+                self.imagined_graph_chain[-1].append('STOP')  # 最后一个动作的想象内容为空
 
                 # 输出结果
                 #print("target_chain =", target_chain)
@@ -262,10 +262,10 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
         #print(self.system_prompt)
         #print(self.user_prompt)
         self.response=self.get_llm_response()
-        print("origin response=",self.response)
+        # print("origin response=",self.response)
         self.response_extractor()
-        print("extracted action_chain =", self.action_chain)
-        print("extracted imagined_graph_chain =", self.imagined_graph_chain)
+        # print("extracted action_chain =", self.action_chain)
+        # print("extracted imagined_graph_chain =", self.imagined_graph_chain)
         num_steps = len(self.imagined_graph_chain)
         max_time_id = max(self.detected_graph.get_time_values())
         for i in range(num_steps):
@@ -274,7 +274,7 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
                 self.predicted_graph.add_recognition(max_time_id+i,imagined_view)
         # self.predicted_graph.visualize('predicted_graph')
 
-    def rethinking(self,error_action):
+    def rethinking(self, error_action):
         # rethink 前需要load_detected_graph
         # must pop from completed action_chain and imagined_graph_chain
         """

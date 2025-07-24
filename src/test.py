@@ -49,7 +49,7 @@ def valid(args, val_envs):
     for i in tqdm.tqdm(range(num_episodes), desc='testing'):
         env = next(iter(val_envs.values()))
         agent = NavAgent(env, args)
-        traj = agent._make_action(threshold=0.5)
+        traj = agent._make_action()
         results.append(traj)
 
     for env_name, env in val_envs.items():
