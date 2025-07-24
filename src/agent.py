@@ -27,6 +27,7 @@ class NavAgent(BaseAgent):
         self.imagined_graph_chain = deque()
         self.path = []
         self.stop = False
+        self.threshold = -np.inf
 
     def parse_objects(self, objects: List[Dict[str, Dict[str, float]]]) -> List[Tuple[str, float, float]]:
         parsed = []
@@ -49,7 +50,7 @@ class NavAgent(BaseAgent):
             'path': [[obs['viewpoint']]],
         }]
 
-    def _make_action(self, threshold, reset=True) -> str:
+    def _make_action(self, reset=True) -> str:
         if reset:  # Reset env
             cur_obs = self.env.reset()[0]
         else:
@@ -79,14 +80,13 @@ class NavAgent(BaseAgent):
                 # print(self.imagined_graph_chain)
                 # print('action', self.action_chain)
 
-            # elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 1, 0) <= threshold:
-            #     action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
-            #     self.action_chain = deque(action_chain_list)
-            #     self.imagined_graph_chain = deque(imagined_graph_chain_list)
+            elif self.graph.match_score(self.imagined_graph_chain.popleft(), 0, 1, 0) <= self.threshold:
+                action_chain_list, imagined_graph_chain_list = self.predictor.rethinking()
+                self.action_chain = deque(action_chain_list)
+                self.imagined_graph_chain = deque(imagined_graph_chain_list)
 
             # Get target object
             to_object = self.action_chain.popleft()[1]
-            # print(to_object)
 
             # Get navigable candidates
             navigable = self.parse_navigable(cur_obs['candidate'])
