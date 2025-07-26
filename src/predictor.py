@@ -6,11 +6,26 @@ import json
 import sys
 import random
 
+USER_PROMPT = '''You are a wheeled mobile robot working in an indoor environient.Your task is finding a certain type of objects as soon as possible.\For efficient exploration, you should based on your observation to decide abest searching direction.
+And you will be provided with the following elements:\
+(1)<Target object>: The target object.\
+(2)<Panoramic Image>: The panoramic image describing your surrounding envionment, each image contains a label indicating the relative rotation angle wiTo help you select the best direction, I can give you some human suggestion
+(1)For each direction, first confirm whether there are visible floor arean the image, do not choose the directions without navigable areas or very nea(2)Try to avoid going backwards(selecting 150,210),unless all the otherirections do not meet the requirements of(1).\(3)For each direction, analyze the appeared room type in the image and thik about whether the <Target Object>is likely to occur in that room.\Your answer should be formatted as a dict, for example: Answer={'Reason':<Aralyze each view image, and tell me your reason>, 'Angle':<Your Select Angle>Do not output other ":'instead of the following of 'Reason','Angle' andlag'.\
+'''
+USER_PROMPT='''You are an expert in guiding a home navigation robot.
+The robot wants to follow a detailed language instruction to
+reach a target destination. To successfully complete this task,
+you will break down the input 'instruction' to output a list
+of 'waypoint', 'landmark', 'waypoint-to-waypoint transition
+actions' and 'waypoint-to-landmark spatial relationship'''
 class Predictor:
     def __init__(self):
         # skill和object闭集配置
         self.skillspace = ["move", "go_upstairs", "go_downstairs", "open_door"]
-        self.nodespace = ["chair", "sofa", "door", "window", "table", "refrigerator", "vase", "tv", "sink", "bed", "oven", "shower", "mirror", "cloth", "plant"]
+        self.object_list_path = os.path.join('src', 'processing_src', 'object_simplified.txt')
+        with open(self.object_list_path, 'r') as f:
+            self.nodespace = [line.strip() for line in f if line.strip()]
+
         # llm配置
         self.model = "gpt-3.5-turbo"
         self.temperature = 0.0
@@ -39,82 +54,13 @@ class Predictor:
         self.error_skill = None
         self.error_imagined_graph = None
 
-        self.system_prompt = '''
-You are a scene-map-aware navigation agent.
+        self.system_prompt = "You are a smart human and you can navigate to the goal perfectly."
 
-Your skillset allows you to:
-1. Read local scene maps composed of objects. Understand the scene by identifying objects and their relationships.
-2. Plan safe, low-cost paths to reach a target position using the scene map.
-3. Select and apply real-world navigation skills to move toward the target.
-4. Predicted and update possible surrounding objects every time you move to a new position.
-
-### Scene Map Format
-The scene map is an ordered list of object-groups.
-- Each object-group is presented by a set of objects that can be detected by the agent from current view.  
-- The format of an object-group is:
-['chair', 'sofa', 'door', 'window', 'table']
-- Each object is represented by its caption (e.g., "chair", "sofa"). 
-- The objects in an object-group are unordered, indicating only that they can be observed from the same viewpoint.
-
-- The format of a scene map is:
-{
-    ['chair', 'sofa', 'door', 'window', 'table'],
-    ['sofa', 'refrigerator', 'door', 'table', 'vase'],
-    ...
-}
-- The object-groups in the scene map are ordered, indicating the sequence of views as the agent moves through the environment.
-
-
-### Your Task
-Given the current scene map, the target instruction, history information and your current position, your job is to:
-- Generate the next several actions in order , leading the robot to gradually approach the target.
-- Each action must specify the navigation skill used and the the target object reached.
-
-**Solid Objects:** You are only allowed to choose solid objects as the "target objects" such as furniture, doors, windows, stairs, and walls.
-**Rules for Skill Selection**
-- A skill is chosen from the set: ["move", "go_upstairs", "go_downstairs",  "open_door"].
-- Use **go_upstairs** or **go_downstairs** when moving through stairs (real or imagined).
-- Use **open_door** when passing through a door (real or imagined).
-- Use **move** for all other standard movements.
-
-### Output Format
-Each action must be expressed as:
-{"action": 
-{
-    "num_of_order": <1-the number of stages>,
-    "skill": <one of [move, go_upstairs, go_downstairs, open_door]>,
-    "object": <name of the target object reached>
-}
-}
-
-After each action, **imagine a object-group** you can see after reaching the taget position according to the instruction and the current scene map.
-Prediction of each action must be expressed as an object-group:
-{"imagined_view": ['bed', 'oven', 'door', 'sink']}
-Notice that the object-group must include the **target object of the action** and several **other objects** that can be seen from the target position.
-
-Notice that the scene map is incomplete and may not contain all the objects in the environment so that you can not always choose existing objects as the target position.
-You must create at least three new object in each predicted object-group that does not exist in the given scene map. These objects should be plausible based on the current instruction and daily life knowledge.
-
-
-### Final Output Format
-Your response must be a **list alternating between actions and their predicted scene maps**, with no other text or commentary:
-
-Example:(Assume door is not included in the given scene map, but you can infer it from the instruction)
-{"action": {"num_of_order":1, "skill":"open_door", "object":"door"}}
-{"imagined_view": ['chair', 'window', 'sink']}
-{"action": {"num_of_order":2, "skill":"move", "object":"sink"}}
-{"imagined_view": ['door', 'shower', 'mirror', 'cloth']}
-...
-Most importantly! The objects in the imagined_view and action_chain can only be chosen from:'''
-        self.system_prompt += f'''{self.nodespace}. And the target object must be subset of the imagined_view.'''
-        self.system_prompt += f'''Do **not** include any other explanations or extra text in your output.
-Remeber you must generate enough steps of actions and matched imagined_view to completely express the requirements in the instruction and make sure the agent can gradually approach the goal!! Think carefully of the objects you will see along the way!
-'''
-
-        self.user_prompt =""
+        self.user_prompt =None
         #优化方向：现在的前几个goal只由instruction决定，并不合理，应该在路径中途细化想象；
         #skill没有体现，是一个空壳参数
     
+    # 没有用上
     def set_llm(self, model: str, url:str, api_key: str, temperature: float):
         self.model = model
         self.url = url
@@ -147,6 +93,7 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
 
     def set_instruction(self, instruction: str):
         self.instruction = instruction
+        self.edit_user_prompt()  # 编辑用户提示
 
     def instruction_decomposer(self):
         # This method should decompose the instruction into sub goal graph.
@@ -155,24 +102,51 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
 
 
     def edit_user_prompt(self,is_rethinking=False):
-        self.user_prompt = f'''instruction: {self.instruction}\n'''
-        if is_rethinking:
-            current_local_detected_graph = self.detected_graph.time_to_objects[self.detected_graph.get_time_values()[-1]]
-            # print(f"current_local_detected_graph = {current_local_detected_graph}")
-            self.user_prompt += f'''History information: Based on the instruction, you have given an ordered series of predicted actions and their corresponding imagined_view as follows\n'''
-            self.user_prompt += f'''{self.response}\n'''
-            self.user_prompt += f'''Now you have successfully reached the first {self.error_action_num-1} target objects in the action chain.\n'''
-            self.user_prompt += f'''But in actual situation, the agent can't {self.error_object} at "action_num {self.error_action_num}". The previos predicted view{self.error_imagined_graph} is far different from real observation {current_local_detected_graph}''' # 错误反馈
-            self.user_prompt += f'''What should the agent do next? Now you need to rethink next actions and views. Give the action chain based on the current state, error information above and the following real scene map.\n'''
+        # self.user_prompt = f'''instruction: {self.instruction}\n'''
+        # if is_rethinking:
+        #     current_local_detected_graph = self.detected_graph.time_to_objects[self.detected_graph.get_time_values()[-1]]
+        #     # print(f"current_local_detected_graph = {current_local_detected_graph}")
+        #     self.user_prompt += f'''History information: Based on the instruction, you have given an ordered series of predicted actions and their corresponding imagined_view as follows\n'''
+        #     self.user_prompt += f'''{self.response}\n'''
+        #     self.user_prompt += f'''Now you have successfully reached the first {self.error_action_num-1} target objects in the action chain.\n'''
+        #     self.user_prompt += f'''But in actual situation, the agent can't {self.error_object} at "action_num {self.error_action_num}". The previos predicted view{self.error_imagined_graph} is far different from real observation {current_local_detected_graph}''' # 错误反馈
+        #     self.user_prompt += f'''What should the agent do next? Now you need to rethink next actions and views. Give the action chain based on the current state, error information above and the following real scene map.\n'''
 
-        self.user_prompt += "scene map:{"
-        self.user_prompt += f'''{self.graph_to_string()} \n'''
-        self.user_prompt += "}\n"
-        self.user_prompt += f'''current position: {self.current_position}\n'''
+        # self.user_prompt += "scene map:{"
+        # self.user_prompt += f'''{self.graph_to_string()} \n'''
+        # self.user_prompt += "}\n"
+        # self.user_prompt += f'''current position: {self.current_position}\n'''
 
-        if is_rethinking:
-            self.user_prompt += f'''Rethink and predict the next actions and corresponding imagined_view. Number the actions start from 1.\n'''
-    
+        # if is_rethinking:
+        #     self.user_prompt += f'''Rethink and predict the next actions and corresponding imagined_view. Number the actions start from 1.\n'''
+        self.user_prompt = f'''Now you should navigate with instruction{self.instruction}, and the objects in your environment are among {self.nodespace}. '''
+        if len(self.detected_graph.time_nodes) > 0:
+            self.user_prompt += f'''Now you have known the following objects in your environment: {self.graph_to_string()}. The objects in a pair of [] are the objects detected in the same viewpoint. The time order is from top to bottom. The first line is the objects detected at the first viewpoint, and so on.\n'''
+        self.user_prompt +='''You should analyze the waypoints, thinking in the following steps to finish this task.
+        1. Fisrt, you should break down the instruction to subtasks, for example: first go into bedroom, then hallway, then … .
+        2. Then reasoning: in your experience, what objects would you find in the rooms/hallway/…? Please give me a set of objects that you would expect to find in each subtasks respectively.
+        3. Next, What are the objects you would find when transferring from one room/hallay/… to another? Predicted the objects to help the agent to complete the instruction.
+        The two steps above generate a series of object "group" in this task. The number of "group" is added from the number of rooms/ways and the number of transferring movements. How many "group" do you think there are in this task?
+        For example, if there are 3 rooms and 2 transferring movements, then there will be 5 "group" in total.
+        4. Then organize the relative all objects of each "group" above in chronological order and output the result as a 2-dim array in python.
+        Objects can be repeatable. If one type of objects appear twice in the process of complete the task, its name should also appear twice in the array. Remember, all the metioned objects should be in the list:{self.nodespace}.
+        5. Finally, choose 1 object in each "group" as the "goal". What combination of "goal" objects is the most possible to lead the agent to complete the instruction?
+        6. In the end, output the result in format of a list of dicts with two keys for each stage: "group" and "goal". The format must be like this:
+        [
+            {{
+                "group": ["object1", "object2", ...],
+                "goal": "object_goal"
+            }},
+            {{
+                "group": ["object1", "object2", ...],
+                "goal": "object_goal"
+            }},
+            ...
+        ]
+        This list must can be decoded as a json object.
+        Tell me your answers of all 6 steps above. Mark each answer with a number in 1-6, like "answer1", "answer2", etc. 
+        '''
+
     def graph_to_string(self):
         string_map = ""
         for time_value in self.detected_graph.time_nodes:
@@ -184,73 +158,99 @@ Remeber you must generate enough steps of actions and matched imagined_view to c
         return string_map
 
     def get_llm_response(self):
-        message= json.dumps({
-            "model": self.model,
-            "messages": [
-                {
-                    "role": "system", 
-                    "content": '{}'.format(self.system_prompt)
-                },
-                {
-                    "role": "user", 
-                    "content": '{}'.format(self.user_prompt)
-                }
-        ],
-            "temperature": self.temperature
-        })
-        
-        connection = http.client.HTTPSConnection(self.url)
-        connection.request("POST", "/v1/chat/completions", message, self.headers)
-        response = connection.getresponse()
-        data = response.read()
-        dict = json.loads(data.decode("utf-8"))
-        self.response = dict["choices"][0]["message"]["content"]
-        return dict["choices"][0]["message"]["content"]
+        if self.user_prompt is not None:
+            message= json.dumps({
+                "model": self.model,
+                "messages": [
+                    {
+                        "role": "system", 
+                        "content": '{}'.format(self.system_prompt)
+                    },
+                    {
+                        "role": "user", 
+                        "content": '{}'.format(self.user_prompt)
+                    }
+            ],
+                "temperature": self.temperature
+            })
+            
+            connection = http.client.HTTPSConnection(self.url)
+            connection.request("POST", "/v1/chat/completions", message, self.headers)
+            response = connection.getresponse()
+            data = response.read()
+            dict = json.loads(data.decode("utf-8"))
+            self.response = dict["choices"][0]["message"]["content"]
+            return dict["choices"][0]["message"]["content"]
+        else:
+            print("No user prompt!")
+            sys.exit(1)
 
     def response_extractor(self):
-        if self.response is None:
-            print("No response to extract.")
-        else:
-            lines = self.response.strip().splitlines()
-            #print(response)
-            #print('*'*50)
-            #print(lines)
-            self.action_chain = [(0,self.current_position,"START")]  # 初始化动作链，包含起始动作
-            self.imagined_graph_chain = [['START']] #当前视角的想象内容初始化start
-            try:
-                # 逐行解析
-                max_num_of_order = 0
-                for line in lines:
-                    if not line or '{' not in line:
-                        continue 
-                    # 替换单引号为双引号，使其符合 JSON 格式
-                    line_fixed = line.replace("'", '"').replace("\\","")
-                    line_fixed = line_fixed.replace("\n", '').replace("”", '"')
-                    if line_fixed.endswith('},'):
-                        line_fixed = line_fixed[:-2] + '}'
-                    data = json.loads(line_fixed)
+        try:
+            # 2. 找到"answer6:"，并获取它之后的所有内容
+            # split会将其分割成两部分，[1]就是我们需要的部分
+            json_string = self.response.split("answer6:")[1]
+            
+            # 3. 使用json.loads()解析字符串
+            # .strip()可以去除可能存在于开头和结尾的多余空格或换行符
+            data = json.loads(json_string.strip())
+            
+            # 4. 使用列表推导式高效地提取group和goal
+            self.imagined_graph_chain = [item['group'] for item in data]
+            self.action_chain = [item['goal'] for item in data]
 
-                    if "action" in data:
-                        self.action_chain.append((data["action"]["num_of_order"], data["action"]["object"],"NORMAL"))
-                        if data["action"]["num_of_order"] > max_num_of_order:
-                            max_num_of_order = data["action"]["num_of_order"]
-                    elif "imagined_view" in data:
-                        self.imagined_graph_chain.append(data["imagined_view"])
-                        self.imagined_graph_chain[-1]  # 添加停止动作
-                        # imagined_view 的总长度比action_chain少1
-                # print("decomposed imagined_graph_chain =", self.imagined_graph_chain)
-                # 根据 num_of_order 排序 action
-                self.action_chain.sort(key=lambda x: x[0])
-                self.action_chain[-1]=(self.action_chain[-1][0],self.action_chain[-1][1],"STOP") # 添加停止动作
-                self.imagined_graph_chain[-1].append('STOP')  # 最后一个动作的想象内容为空
+        except IndexError:
+            print("错误：在文本中未找到 'answer6:'。")
+            return [], []
+        except json.JSONDecodeError:
+            print("错误：'answer6:'之后的内容不是有效的JSON格式。")
+            return [], []
+        except KeyError as e:
+            print(f"错误：JSON对象中缺少键: {e}。")
+            return [], []
+        # if self.response is None:
+        #     print("No response to extract.")
+        # else:
+        #     lines = self.response.strip().splitlines()
+        #     #print(response)
+        #     #print('*'*50)
+        #     #print(lines)
+        #     self.action_chain = [(0,self.current_position,"START")]  # 初始化动作链，包含起始动作
+        #     self.imagined_graph_chain = [['START']] #当前视角的想象内容初始化start
+        #     try:
+        #         # 逐行解析
+        #         max_num_of_order = 0
+        #         for line in lines:
+        #             if not line or '{' not in line:
+        #                 continue 
+        #             # 替换单引号为双引号，使其符合 JSON 格式
+        #             line_fixed = line.replace("'", '"').replace("\\","")
+        #             line_fixed = line_fixed.replace("\n", '').replace("”", '"')
+        #             if line_fixed.endswith('},'):
+        #                 line_fixed = line_fixed[:-2] + '}'
+        #             data = json.loads(line_fixed)
 
-                # 输出结果
-                #print("target_chain =", target_chain)
-                #print("self.imagined_graph_chain =")
-                #print(self.imagined_graph_chain)
-            except json.JSONDecodeError as e:
-                print(f"JSON Decode Error: {e}")
-                sys.exit(1) 
+        #             if "action" in data:
+        #                 self.action_chain.append((data["action"]["num_of_order"], data["action"]["object"],"NORMAL"))
+        #                 if data["action"]["num_of_order"] > max_num_of_order:
+        #                     max_num_of_order = data["action"]["num_of_order"]
+        #             elif "imagined_view" in data:
+        #                 self.imagined_graph_chain.append(data["imagined_view"])
+        #                 self.imagined_graph_chain[-1]  # 添加停止动作
+        #                 # imagined_view 的总长度比action_chain少1
+        #         # print("decomposed imagined_graph_chain =", self.imagined_graph_chain)
+        #         # 根据 num_of_order 排序 action
+        #         self.action_chain.sort(key=lambda x: x[0])
+        #         self.action_chain[-1]=(self.action_chain[-1][0],self.action_chain[-1][1],"STOP") # 添加停止动作
+        #         self.imagined_graph_chain[-1].append('STOP')  # 最后一个动作的想象内容为空
+
+        #         # 输出结果
+        #         #print("target_chain =", target_chain)
+        #         #print("self.imagined_graph_chain =")
+        #         #print(self.imagined_graph_chain)
+        #     except json.JSONDecodeError as e:
+        #         print(f"JSON Decode Error: {e}")
+        #         sys.exit(1) 
 
     def update_imagined_graph(self, is_rethinking=False):
         '''
@@ -296,31 +296,33 @@ if __name__ == "__main__":
     # Example usage
     # 模拟探测结果
     realgraph = OptimizedTimeObjectGraph()
-    realgraph.add_recognition(0, ['chair', 'sofa', 'door', 'window', 'table'])
-    realgraph.add_recognition(1, ['sofa', 'refrigerator', 'door', 'table', 'vase'])
-    realgraph.add_recognition(2, ['door', 'tv', 'sink'])
+    realgraph.add_recognition(0, ['door', 'window', 'shelf', 'cabinet', 'vent'])
+    realgraph.add_recognition(1, ['window', 'window', 'door'])
+    realgraph.add_recognition(2, ['mattress', 'window', 'picture', 'shelf', 'cabinet', 'bed', 'stairs', 'vent'])
 
     # 构建预测器
     predictor = Predictor()
     predictor.load_detected_graph(realgraph)#更新已探索图
     predictor.current_position = 'window'#设置当前位置
     #传入导航指令，从数据集获取，是一个字符串
-    predictor.set_instruction("You are now at window, go to the tv in the living room, and then go to the toilet in the bathroom. Finally go to the plant in kitchen.")
+    predictor.set_instruction("Go through the door way and down the hallway, turning left at the end looking into a bedroom with a gray throw on the bed.")
     #做出预测
     predictor.update_imagined_graph()
     print("action_chain =", predictor.action_chain)
-    error_point= predictor.action_chain[-2]  # 假设倒数第二个动作是错误的
-    print("error_point =", error_point)
-    print("*"*50)
-    predictor.set_current_position(error_point[1])  # 更新当前位置为错误动作的目标对象
-    renewed_graph = OptimizedTimeObjectGraph()
-    renewed_graph.add_recognition(0, ['chair', 'sofa', 'door', 'window', 'table'])
-    renewed_graph.add_recognition(1, ['sofa', 'refrigerator', 'door', 'table', 'vase'])
-    renewed_graph.add_recognition(2, ['door', 'tv', 'sink'])
-    renewed_graph.add_recognition(3, ['sink', 'oven', 'microwave', 'refrigerator'])  # 假设在错误动作后看到了这些物体
-    predictor.load_detected_graph(renewed_graph)  # 更新探测图
-    print("rethinking...")
-    predictor.rethinking(error_action=error_point)
+    print("imagined_graph_chain =", predictor.imagined_graph_chain)
+    # error_point= predictor.action_chain[-2]  # 假设倒数第二个动作是错误的
+    # print("error_point =", error_point)
+    # print("*"*50)
+    # predictor.set_current_position(error_point[1])  # 更新当前位置为错误动作的目标对象
+    # renewed_graph = OptimizedTimeObjectGraph()
+    # renewed_graph.add_recognition(0, ['chair', 'sofa', 'door', 'window', 'table'])
+    # renewed_graph.add_recognition(1, ['sofa', 'refrigerator', 'door', 'table', 'vase'])
+    # renewed_graph.add_recognition(2, ['door', 'tv', 'sink'])
+    # renewed_graph.add_recognition(3, ['window', 'pillow', 'pillow', 'pillow', 'pillow', 'shelf', 'cabinet', 'chandelier', 'vent', 'pool', 'console',  'table', 'picture', 'frame', 'vent'])  # 假设在错误动作后看到了这些物体
+    # renewed_graph.add_recognition(4,['mattress', 'window', 'picture', 'shelf', 'cabinet', 'bed', 'stairs', 'vent'])
+    # predictor.load_detected_graph(renewed_graph)  # 更新探测图
+    # print("rethinking...")
+    # predictor.rethinking(error_action=error_point)
 
     ##TODO: goal是子集的命令调试验证
     ### RESULT：很不稳定，经常不在子集中；手动加入？
