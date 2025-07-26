@@ -22,7 +22,7 @@ class Predictor:
     def __init__(self):
         # skill和object闭集配置
         self.skillspace = ["move", "go_upstairs", "go_downstairs", "open_door"]
-        self.object_list_path = os.path.join('src', 'processing_src', 'object_simplified.txt')
+        self.object_list_path = os.path.join('/home/mspx/icra/GQ-Nav/src', 'processing_src', 'object_simplified.txt')
         with open(self.object_list_path, 'r') as f:
             self.nodespace = [line.strip() for line in f if line.strip()]
 
@@ -187,13 +187,9 @@ class Predictor:
 
     def response_extractor(self):
         try:
-            # 2. 找到"answer6:"，并获取它之后的所有内容
-            # split会将其分割成两部分，[1]就是我们需要的部分
             json_string = self.response.split("answer6")[1]
             json_string = json_string.partition('[')[2]
-            json_string = '[' + json_string  # 补回 [
-            # 3. 使用json.loads()解析字符串
-            # .strip()可以去除可能存在于开头和结尾的多余空格或换行符
+            json_string = '[' + json_string 
             data = json.loads(json_string.strip())
             
             # 4. 使用列表推导式高效地提取group和goal
@@ -267,12 +263,12 @@ class Predictor:
         structure of action_chain:         [(0, 'current_position', 'START'),  (1, 'door','NORMAL'),         (2, 'tv','NORMAL'),             (3, 'sink','STOP')]
         structure of imagined_graph_chain: [['START'],                         ['door', 'window', 'table'],  ['tv', 'sofa', 'refrigerator'],  ['sink', 'vase', 'STOP']]
         '''
-        self.predicted_graph = self.detected_graph
+        self.predicted_graph = self.detected_graph._copy()
         self.edit_user_prompt(is_rethinking=is_rethinking)  # 编辑用户提示
         #print(self.system_prompt)
         #print(self.user_prompt)
         self.response=self.get_llm_response()
-        print("origin response=",self.response)
+        # print("origin response=",self.response)
         self.response_extractor()
         # print("extracted action_chain =", self.action_chain)
         # print("extracted imagined_graph_chain =", self.imagined_graph_chain)

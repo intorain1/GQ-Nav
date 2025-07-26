@@ -61,6 +61,15 @@ class OptimizedTimeObjectGraph:
             if id_val == time_id:
                 return value
         return None
+    
+    def _copy(self):
+        new_graph = OptimizedTimeObjectGraph()
+        new_graph.time_nodes = self.time_nodes.copy()
+        new_graph.object_nodes = self.object_nodes.copy()
+        new_graph.time_to_objects = {k: v.copy() for k, v in self.time_to_objects.items()}
+        new_graph.object_to_times = {k: v.copy() for k, v in self.object_to_times.items()}
+        new_graph.node_counter = self.node_counter
+        return new_graph
 
     def _generate_id(self):
         self.node_counter += 1

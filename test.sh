@@ -6,4 +6,4 @@ export all_proxy=''
 cd src
 python test.py --llm_model_name gpt-4 \
     --output_dir ../datasets/R2R/exprs/gpt-4-val-unseen \
-    --val_env_name R2R_val_unseen_instr_0 \
+    --val_env_name R2R_val_instr \
