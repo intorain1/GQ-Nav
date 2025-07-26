@@ -189,15 +189,25 @@ class Predictor:
         try:
             # 2. 找到"answer6:"，并获取它之后的所有内容
             # split会将其分割成两部分，[1]就是我们需要的部分
-            json_string = self.response.split("answer6:")[1]
-            
+            json_string = self.response.split("answer6")[1]
+            json_string = json_string.partition('[')[2]
+            json_string = '[' + json_string  # 补回 [
             # 3. 使用json.loads()解析字符串
             # .strip()可以去除可能存在于开头和结尾的多余空格或换行符
             data = json.loads(json_string.strip())
             
             # 4. 使用列表推导式高效地提取group和goal
             self.imagined_graph_chain = [item['group'] for item in data]
+            self.imagined_graph_chain[-1].append('STOP')  
             self.action_chain = [item['goal'] for item in data]
+            num_steps = len(self.imagined_graph_chain)
+            for i in range(num_steps):
+                if i == 0:
+                    self.action_chain[i] = (i, self.current_position, "NORMAL")
+                elif i == num_steps - 1:
+                    self.action_chain[i] = (i, self.action_chain[i], "STOP")
+                else:
+                    self.action_chain[i] = (i, self.action_chain[i], "NORMAL")  # 添加动作序号和状态
 
         except IndexError:
             print("错误：在文本中未找到 'answer6:'。")
@@ -262,7 +272,7 @@ class Predictor:
         #print(self.system_prompt)
         #print(self.user_prompt)
         self.response=self.get_llm_response()
-        # print("origin response=",self.response)
+        print("origin response=",self.response)
         self.response_extractor()
         # print("extracted action_chain =", self.action_chain)
         # print("extracted imagined_graph_chain =", self.imagined_graph_chain)
