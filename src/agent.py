@@ -70,6 +70,8 @@ class NavAgent(BaseAgent):
             # # Judge if use action_chain
             if len(self.action_chain) == 0:
                 self.predictor.update_imagined_graph()
+                print("action_chain =", self.predictor.action_chain)
+                print("imagined_graph_chain =", self.predictor.imagined_graph_chain)
                 self.action_chain = deque(self.predictor.action_chain)
                 self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
                 self.imagined_graph_chain_copy = self.imagined_graph_chain.copy()
@@ -151,8 +153,8 @@ class NavAgent(BaseAgent):
 
             # imagine_graph = OptimizedTimeObjectGraph()
             # imagine_graph.add_recognition(self.nav_step, ob)
-            # self.graph.visualize('3')
-            # self.imagined_graph.visualize('4')
+            self.graph.visualize('3')
+            self.imagined_graph.visualize('4')
             score = self.graph.match_score(self.imagined_graph, 0, 1, 0)
             print(score)
             if  score <= self.threshold:

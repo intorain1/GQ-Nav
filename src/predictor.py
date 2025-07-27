@@ -124,8 +124,8 @@ class Predictor:
             self.user_prompt += f'''Now you have known the following objects in your environment: {self.graph_to_string()}. The objects in a pair of [] are the objects detected in the same viewpoint. The time order is from top to bottom. The first line is the objects detected at the first viewpoint, and so on.\n'''
         self.user_prompt +='''You should analyze the waypoints, thinking in the following steps to finish this task.
         1. Fisrt, you should break down the instruction to subtasks, for example: first go into bedroom, then hallway, then … .
-        2. Then reasoning: in your experience, what objects would you find in the rooms/hallway/…? Please give me a set of objects that you would expect to find in each subtasks respectively.
-        3. Next, What are the objects you would find when transferring from one room/hallay/… to another? Predicted the objects to help the agent to complete the instruction.
+        2. Then reasoning: in your experience, what objects would you find in the rooms/hallway/…? Please give me a set of objects that you would expect to find in each subtasks respectively. Each subtask should have a set of at least 4 objects.
+        3. Next, What are the objects you would find when transferring from one room/hallay/… to another? Predicted the objects to help the agent to complete the instruction. Notice that the objects in the transferring process should include at least 1 object respectively that is in the 2 neighbor room/hallway/… you mentioned in step 2.
         The two steps above generate a series of object "group" in this task. The number of "group" is added from the number of rooms/ways and the number of transferring movements. How many "group" do you think there are in this task?
         For example, if there are 3 rooms and 2 transferring movements, then there will be 5 "group" in total.
         4. Then organize the relative all objects of each "group" above in chronological order and output the result as a 2-dim array in python.
@@ -190,6 +190,7 @@ class Predictor:
             json_string = self.response.split("answer6")[1]
             json_string = json_string.partition('[')[2]
             json_string = '[' + json_string 
+            json_string = json_string.replace("'", '"')  # 替换单引号
             data = json.loads(json_string.strip())
             
             # 4. 使用列表推导式高效地提取group和goal
@@ -207,11 +208,14 @@ class Predictor:
 
         except IndexError:
             print("错误：在文本中未找到 'answer6:'。")
+            print("current response:",self.response)
             return [], []
         except json.JSONDecodeError:
             print("错误：'answer6:'之后的内容不是有效的JSON格式。")
+            print("current response:",self.response)
             return [], []
         except KeyError as e:
+            print("current response:",self.response)
             print(f"错误：JSON对象中缺少键: {e}。")
             return [], []
         # if self.response is None:
@@ -314,6 +318,7 @@ if __name__ == "__main__":
     predictor.set_instruction("Go through the door way and down the hallway, turning left at the end looking into a bedroom with a gray throw on the bed.")
     #做出预测
     predictor.update_imagined_graph()
+    print("response =", predictor.response)
     print("action_chain =", predictor.action_chain)
     print("imagined_graph_chain =", predictor.imagined_graph_chain)
     # error_point= predictor.action_chain[-2]  # 假设倒数第二个动作是错误的
