@@ -49,7 +49,7 @@ class NavAgent(BaseAgent):
             'path': [[obs['viewpoint']]],
         }]
 
-    def _make_action(self, reset=True) -> str:
+    def _make_action(self, max_step, reset=True) -> str:
         if reset:  # Reset env
             cur_obs = self.env.reset()[0]
             # print(cur_obs['instruction'])
@@ -70,24 +70,29 @@ class NavAgent(BaseAgent):
             # # Judge if use action_chain
             if len(self.action_chain) == 0:
                 self.predictor.update_imagined_graph()
-                print("action_chain =", self.predictor.action_chain)
-                print("imagined_graph_chain =", self.predictor.imagined_graph_chain)
+                # print("action_chain =", self.predictor.action_chain)
+                # print("imagined_graph_chain =", self.predictor.imagined_graph_chain)
                 self.action_chain = deque(self.predictor.action_chain)
                 self.imagined_graph_chain = deque(self.predictor.imagined_graph_chain)
-                self.imagined_graph_chain_copy = self.imagined_graph_chain.copy()
-                step = self.nav_step
-                # print(self.imagined_graph_chain)
-                self.imagined_graph = OptimizedTimeObjectGraph()
-                while(len(self.imagined_graph_chain_copy) != 0):
-                    image_graph = self.imagined_graph_chain_copy.popleft()
-                    self.imagined_graph.add_recognition(step, image_graph)
-                    step += 1
+                self.imagined_graph = self.predictor.predicted_graph._copy()
+                # self.imagined_graph_chain_copy = self.imagined_graph_chain.copy()
+                # step = self.nav_step
+                # # print(self.imagined_graph_chain)
+                # self.imagined_graph = OptimizedTimeObjectGraph()
+                # while(len(self.imagined_graph_chain_copy) != 0):
+                #     image_graph = self.imagined_graph_chain_copy.popleft()
+                #     self.imagined_graph.add_recognition(step, image_graph)
+                #     step += 1
                 # self.imagined_graph.visualize('2')
                 # print('imagined_graph_chain', self.imagined_graph_chain)
                 # print(self.imagined_graph_chain)
                 # print('action', self.action_chain)
 
-            #exe      
+            #exe
+            if len(self.action_chain) == 0:
+                self.stop = True
+                return self.traj
+                  
             action = self.action_chain.popleft()
 
             if action[2] == 'STOP':
@@ -100,6 +105,12 @@ class NavAgent(BaseAgent):
             
             # Get navigable candidates
             navigable = self.parse_navigable(cur_obs['candidate'])
+            navigable = [nav for nav in navigable if [nav] not in self.traj[0]['path']]
+            
+            if len(navigable) == 0:
+                self.stop = True
+                return self.traj
+            
             candidates = []
             candidate_graphs = []
             for candidate in navigable:
@@ -148,13 +159,18 @@ class NavAgent(BaseAgent):
             self.graph.add_recognition(self.nav_step, objects)
             # print(objects)
 
+            if (self.nav_step >= max_step):
+                self.stop = True
+                return self.traj
+
             # now_graph = OptimizedTimeObjectGraph()
             # now_graph.add_recognition(self.nav_step, objects)
 
             # imagine_graph = OptimizedTimeObjectGraph()
             # imagine_graph.add_recognition(self.nav_step, ob)
-            self.graph.visualize('3')
-            self.imagined_graph.visualize('4')
+
+            # self.graph.visualize('3')
+            # self.imagined_graph.visualize('4')
             score = self.graph.match_score(self.imagined_graph, 0, 1, 0)
             print(score)
             if  score <= self.threshold:
@@ -162,13 +178,16 @@ class NavAgent(BaseAgent):
                 action_chain_list, imagined_graph_chain_list = self.predictor.rethinking(last_action)
                 self.action_chain = deque(action_chain_list)
                 self.imagined_graph_chain = deque(imagined_graph_chain_list)
-                self.imagined_graph_chain_copy = self.imagined_graph_chain.copy()
-                step = self.nav_step
-                self.imagined_graph = OptimizedTimeObjectGraph()
-                while(len(self.imagined_graph_chain_copy) != 0):
-                    image_graph = self.imagined_graph_chain_copy.popleft()
-                    self.imagined_graph.add_recognition(step, image_graph)
-                    step += 1
+                self.imagined_graph = self.predictor.predicted_graph._copy()
+                # self.imagined_graph.visualize('5')
+                # self.imagined_graph_chain_copy = self.imagined_graph_chain.copy()
+                # step = self.nav_step
+                # self.imagined_graph = OptimizedTimeObjectGraph()
+                # while(len(self.imagined_graph_chain_copy) != 0):
+                #     image_graph = self.imagined_graph_chain_copy.popleft()
+                #     self.imagined_graph.add_recognition(step, image_graph)
+                #     step += 1
+                self.threshold = score
                 
             else:
                 self.threshold = score
