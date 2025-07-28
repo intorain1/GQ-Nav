@@ -10,7 +10,7 @@ class Predictor:
     def __init__(self):
         # skill和object闭集配置
         self.skillspace = ["move", "go_upstairs", "go_downstairs", "open_door"]
-        self.object_list_path = os.path.join('/home/mspx/icra/GQ-Nav/src', 'processing_src', 'object.txt')
+        self.object_list_path = os.path.join('/home/mspx/icra/GQ-Nav/src', 'processing_src', 'object_simplified.txt')
         with open(self.object_list_path, 'r') as f:
             self.nodespace = [line.strip() for line in f if line.strip()]
 
@@ -42,7 +42,7 @@ class Predictor:
         self.error_skill = None
         self.error_imagined_graph = None
 
-        self.system_prompt = "You are a smart human and you can navigate to the goal perfectly."
+        self.system_prompt = "You are a smart human and you can imagine the spatial relation of object navigate to the goal perfectly."
 
         self.user_prompt =None
         #优化方向：现在的前几个goal只由instruction决定，并不合理，应该在路径中途细化想象；

@@ -3,220 +3,257 @@
     {},
     {
       "curtain": {
-        "heading": 95.52334105114812,
-        "distance": 1.9010634043446195
+        "heading": 77.85931205601287,
+        "distance": 1.691139673262127
       }
     },
-    {},
     {
       "stairs": {
-        "heading": -175.83363224090343,
-        "distance": 1.1904725427535099
+        "heading": 54.98809693701807,
+        "distance": 1.915000255642876
       }
     },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {
-      "picture picture _ frame": {
-        "heading": -113.23124593394044,
-        "distance": 1.8851543165126339
+      "shelf cabinet": {
+        "heading": 168.45861938181633,
+        "distance": 1.3898133228203857
       }
     },
-    {},
-    {},
-    {},
-    {},
     {
       "fridge door": {
-        "heading": 158.84028913769185,
-        "distance": 1.2921784230470152
+        "heading": 101.987426234304,
+        "distance": 1.3835996368220145
       }
     },
-    {},
     {},
     {},
     {
-      "desk counter": {
-        "heading": -160.04740023059097,
-        "distance": 0.6308425068304984
+      "shelf cabinet": {
+        "heading": -89.02824466989733,
+        "distance": 1.1896543914099897
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -142.40862265672519,
+        "distance": 0.6880995860283861
+      }
+    },
+    {
+      "painting": {
+        "heading": 101.12756562143824,
+        "distance": 1.3618749381749158
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -1.2637206916336936,
+        "distance": 0.6521405017009916
       }
     },
     {},
     {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -18.157566417181755,
-        "distance": 1.03791608199167
+      "table counter": {
+        "heading": 170.48965006588855,
+        "distance": 1.602684565481967
       }
     },
     {
-      "desk": {
-        "heading": 69.49725987735582,
-        "distance": 1.2012852856675698
+      "window": {
+        "heading": 27.654115874127086,
+        "distance": 1.6088154415619964
       }
     },
-    {},
-    {},
-    {},
     {
-      "painting picture picture frame painting": {
-        "heading": 147.21368222229893,
-        "distance": 1.311053495853797
+      "shelf cabinet": {
+        "heading": 48.52208622811054,
+        "distance": 1.2873527635899413
       }
     },
+    {
+      "counter": {
+        "heading": -17.243187038496103,
+        "distance": 0.6002351486869639
+      }
+    },
+    {},
+    {},
+    {},
+    {},
     {}
   ],
   "ad6096a762cd43788ca5c5c37fa06c36": [
-    {},
-    {},
+    {
+      "statue": {
+        "heading": 123.56321651740325,
+        "distance": 1.755101932809984
+      }
+    },
     {
       "bust": {
-        "heading": 9.300921396015127,
-        "distance": 1.4173208168379363
+        "heading": 96.49774989501083,
+        "distance": 1.7641722389681103
       }
     },
     {
       "rug": {
-        "heading": -72.41502540741216,
-        "distance": 0.774101856317246
+        "heading": 26.618917139544124,
+        "distance": 1.8518138512494107
       }
     },
+    {},
+    {},
+    {},
     {
-      "statue statue": {
-        "heading": -120.56253457626872,
-        "distance": 1.3468140304999159
+      "door": {
+        "heading": -59.985386624875844,
+        "distance": 1.8779053936105874
       }
     },
-    {},
-    {},
-    {},
-    {},
     {
       "fridge door": {
-        "heading": -85.23702395118825,
-        "distance": 1.8459691588864238
+        "heading": -178.7527227169051,
+        "distance": 1.4982617545524344
       }
     },
+    {},
+    {},
+    {},
     {
       "door": {
-        "heading": 84.20985913635155,
-        "distance": 1.2174911117808689
+        "heading": -114.09406619547059,
+        "distance": 0.855988350930595
       }
-    },
-    {
-      "door": {
-        "heading": -158.77603345328833,
-        "distance": 1.9288650154760858
-      }
-    },
-    {}
+    }
   ],
   "9b253c8eec6c40528ee7fbfc011316a1": [
     {},
     {},
+    {},
     {
       "door": {
-        "heading": 108.19097226855746,
-        "distance": 0.5334166171831791
-      }
-    },
-    {
-      "lamp": {
-        "heading": 153.2806300092834,
-        "distance": 0.808594785164541
-      }
-    },
-    {
-      "window": {
-        "heading": 141.17473531137057,
-        "distance": 1.2610870534884566
-      }
-    },
-    {
-      "curtain": {
-        "heading": -66.78277448842113,
-        "distance": 1.6314551210403763
-      }
-    },
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -164.63329821145246,
-        "distance": 1.4172027939823708
+        "heading": -2.436000046350898,
+        "distance": 1.7463024203186752
       }
     },
     {},
     {
-      "window": {
-        "heading": -56.6626531439143,
-        "distance": 1.9117699209324965
+      "shelf cabinet": {
+        "heading": -153.3105157431392,
+        "distance": 1.1364087963226273
       }
     },
     {
+      "lamp": {
+        "heading": -67.525048187307,
+        "distance": 1.5163883639604463
+      }
+    },
+    {
+      "window": {
+        "heading": 146.1455008842442,
+        "distance": 0.5460616797360209
+      }
+    },
+    {
+      "window": {
+        "heading": -7.4397865445068305,
+        "distance": 1.4512196917075668
+      }
+    },
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": 50.90527518174878,
+        "distance": 1.2247227353598582
+      }
+    },
+    {},
+    {
       "basket": {
-        "heading": -126.76909453244838,
-        "distance": 1.8670579712777111
+        "heading": 154.8633197502498,
+        "distance": 1.6574799258041266
       }
     }
   ],
   "6c47cd8bd2664281bec3740c473946f8": [
     {
-      "chandelier chandelier": {
-        "heading": 131.04263468587033,
-        "distance": 1.6153546125692553
+      "lamp": {
+        "heading": 118.32820150408457,
+        "distance": 1.7436975060822584
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": -17.57433222282296,
+        "distance": 0.6035477573792574
       }
     },
     {
-      "window picture": {
-        "heading": 154.8680821666719,
-        "distance": 1.2827201966020416
+      "table": {
+        "heading": -37.79627865993365,
+        "distance": 0.617875084906509
       }
     },
-    {},
-    {},
     {
-      "mattress": {
-        "heading": -76.50564426315682,
-        "distance": 1.5972808760374497
+      "lamp": {
+        "heading": 15.074365540787426,
+        "distance": 0.8992986432577225
       }
     },
-    {},
-    {},
+    {
+      "shelf cabinet": {
+        "heading": -128.11178700247774,
+        "distance": 1.1150644872022384
+      }
+    },
     {},
     {}
   ],
   "a93b8f09613947edb32ce61dbc51b0dc": [
     {
-      "chandelier chandelier": {
-        "heading": 98.82517712697876,
-        "distance": 1.8263283955509095
+      "lamp": {
+        "heading": 18.377780374653213,
+        "distance": 0.974322437083653
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -108.56903211632294,
+        "distance": 1.6393414494351357
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -152.50220121080756,
-        "distance": 0.9353894045129226
+      "lamp": {
+        "heading": -80.0965214502176,
+        "distance": 1.8794807522263273
       }
     },
-    {},
     {},
     {},
     {
       "door": {
-        "heading": -71.2020337649,
-        "distance": 1.7030552939105887
+        "heading": 90.0617243080078,
+        "distance": 1.7180890711967831
       }
     },
     {
-      "lamp": {
-        "heading": 64.19239799217212,
-        "distance": 1.474897825174666
+      "shelf cabinet": {
+        "heading": 105.34699870201172,
+        "distance": 1.6633405398228986
       }
     },
     {},
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": -130.1058389732784,
-        "distance": 1.7018652280883788
-      }
-    },
+    {},
     {}
   ],
   "20c874407177474180a32c6ea562fce7": [
@@ -226,99 +263,107 @@
     {},
     {},
     {},
-    {
-      "desk": {
-        "heading": -6.361114912375683,
-        "distance": 0.5909348215300418
-      }
-    },
+    {},
+    {},
     {},
     {
-      "bookcase": {
-        "heading": -107.6435561977487,
-        "distance": 0.9980355428985078
+      "shelf cabinet": {
+        "heading": 130.0365181579159,
+        "distance": 0.7124841670459771
       }
     },
-    {},
-    {},
+    {
+      "shelf cabinet": {
+        "heading": 5.680680440731834,
+        "distance": 0.6062139237049966
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 109.34862478736784,
+        "distance": 0.6385624756958445
+      }
+    },
+    {
+      "table counter": {
+        "heading": -28.752606033726863,
+        "distance": 0.8928091523596873
+      }
+    },
     {},
     {
       "rug": {
-        "heading": 101.2702116634124,
-        "distance": 1.5590530765240669
+        "heading": -90.34466974076622,
+        "distance": 1.6133566480944923
       }
     },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 102.16946174476675,
-        "distance": 0.960959949879307
+      "curtain": {
+        "heading": 24.692450886360746,
+        "distance": 1.8963307425508302
       }
     },
+    {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -3.569155906181777,
-        "distance": 1.723878528315633
+      "counter": {
+        "heading": 34.250448356195335,
+        "distance": 1.4280266695646775
       }
     },
-    {
-      "desk": {
-        "heading": 164.92993050410593,
-        "distance": 1.858998312560321
-      }
-    },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
     {},
     {}
   ],
   "91138dab74324afb9535c61c30c8f830": [
     {},
     {
-      "chair armchair armchair": {
-        "heading": -57.9385791205748,
-        "distance": 1.7085100538401496
+      "chair": {
+        "heading": -123.06496517397784,
+        "distance": 1.7694329039884342
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 170.25680592141686,
-        "distance": 1.4040074380196246
+      "shelf cabinet": {
+        "heading": 131.1844058473439,
+        "distance": 1.211857467727779
       }
     },
+    {},
     {},
     {},
     {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -5.848361885038514,
-        "distance": 1.0055042010891786
+      "shelf cabinet": {
+        "heading": 85.34230747430837,
+        "distance": 1.507074561794746
       }
     },
     {},
     {
-      "bookcase": {
-        "heading": 128.76616216529965,
-        "distance": 0.7160342390408594
-      }
-    },
-    {},
-    {},
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -79.84839846553561,
-        "distance": 0.6117302569204335
+      "shelf cabinet": {
+        "heading": -165.19424901096937,
+        "distance": 1.259211630424029
       }
     },
     {
-      "couch chair sofa armchair sofa armchair": {
-        "heading": 173.597786413577,
-        "distance": 1.9243507876883559
+      "shelf cabinet": {
+        "heading": -48.881643857452644,
+        "distance": 0.5461178216457883
+      }
+    },
+    {
+      "chair sofa": {
+        "heading": -28.59814023172305,
+        "distance": 0.6270987603337042
       }
     },
     {},
@@ -326,501 +371,525 @@
     {},
     {},
     {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "counter": {
+        "heading": -48.0223572358334,
+        "distance": 1.1212583672853933
+      }
+    },
     {},
     {}
   ],
   "79d2b1c2f82d4c15b1e6a74278b6e560": [
-    {},
     {
       "lamp": {
-        "heading": 79.7304889747623,
-        "distance": 1.4253676563338926
+        "heading": -127.31018485741512,
+        "distance": 1.3033294767435435
       }
     },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {},
     {},
     {
-      "desk counter": {
-        "heading": 64.10076212601294,
-        "distance": 1.5841484232836602
+      "table counter": {
+        "heading": 87.72971755150434,
+        "distance": 1.8589358093572856
       }
     },
-    {},
     {},
     {},
     {
       "rug": {
-        "heading": -103.39215926434352,
-        "distance": 1.0637689256298415
+        "heading": 24.508625860475007,
+        "distance": 1.5792069519614615
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 1.591011688809317,
+        "distance": 1.0052817813585926
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -61.348453461916364,
+        "distance": 1.3242204379450406
       }
     },
     {},
     {},
     {},
     {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": 90.22796770775551,
-        "distance": 1.2647592591684709
+      "table counter": {
+        "heading": 117.94473362806866,
+        "distance": 1.6239081206206571
       }
     },
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": 138.69623553285152,
-        "distance": 1.1069941577709161
-      }
-    },
-    {
-      "desk counter": {
-        "heading": 134.31696273298274,
-        "distance": 0.8500736576942017
-      }
-    },
-    {},
-    {
-      "desk": {
-        "heading": -153.53194269876826,
-        "distance": 1.6787379660389496
-      }
-    },
-    {
-      "window": {
-        "heading": 164.09353551849347,
-        "distance": 1.532693810956348
-      }
-    },
-    {},
-    {},
-    {},
     {},
     {},
     {
       "window": {
-        "heading": 67.07359212222201,
-        "distance": 1.0315223633223236
+        "heading": 28.244992172422286,
+        "distance": 1.194817893386188
       }
     },
+    {},
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 124.68457569736296,
+        "distance": 1.749690188721463
+      }
+    },
+    {},
+    {},
     {},
     {}
   ],
   "759c8882206a456fb163093de8c0abcc": [
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -63.10836310822626,
-        "distance": 1.8012250641788554
+      "shelf cabinet": {
+        "heading": 137.38224824554317,
+        "distance": 1.4291176995792298
       }
     },
     {
       "window curtain": {
-        "heading": 94.86593591096005,
-        "distance": 0.9957241422168024
+        "heading": -161.41110140973362,
+        "distance": 1.1337673536028523
       }
     },
     {},
-    {
-      "picture picture frame": {
-        "heading": -110.44696353604425,
-        "distance": 1.1777096800940365
-      }
-    },
-    {},
-    {
-      "picture picture frame": {
-        "heading": -159.81138241739973,
-        "distance": 0.9317107294073326
-      }
-    },
-    {},
-    {
-      "bookcase": {
-        "heading": -148.82026163886835,
-        "distance": 1.9797375534146482
-      }
-    },
     {},
     {
       "curtain": {
-        "heading": 2.150844412315564,
-        "distance": 1.477292227076668
-      }
-    },
-    {
-      "picture picture frame": {
-        "heading": 80.3800349426769,
-        "distance": 1.1818344439767197
+        "heading": 38.46227342213851,
+        "distance": 1.6399034188851491
       }
     },
     {
       "curtain": {
-        "heading": -175.4051041700063,
-        "distance": 0.8074838763314748
+        "heading": -5.6206356658046275,
+        "distance": 0.7356759639692951
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 93.95556537493258,
+        "distance": 1.080886061846619
+      }
+    },
+    {
+      "counter": {
+        "heading": 61.58283988978155,
+        "distance": 0.5394888759473976
       }
     }
   ],
   "3a256f31181143e9844d11ca49211aa4": [
     {
       "curtain": {
-        "heading": -118.95954031202692,
-        "distance": 1.2412220871497452
+        "heading": 127.14884929142676,
+        "distance": 1.8046423978133848
       }
     },
     {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -166.54474311327513,
-        "distance": 0.5315967934250385
-      }
-    },
-    {
-      "window": {
-        "heading": -124.91662720863839,
-        "distance": 1.1846896174073274
+      "shelf cabinet": {
+        "heading": -38.718608067221936,
+        "distance": 0.9123739386169566
       }
     },
     {
       "window": {
-        "heading": 137.92423315278586,
-        "distance": 1.2345820659022544
+        "heading": 174.02214449803688,
+        "distance": 1.759889394760178
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -10.566021050612648,
-        "distance": 0.709728058625456
+      "shelf cabinet": {
+        "heading": -106.83191548504092,
+        "distance": 0.5318847866633557
       }
     },
     {
       "window": {
-        "heading": -9.043737953461914,
-        "distance": 0.5383662398381244
+        "heading": -100.83988594919367,
+        "distance": 0.8876702016938247
       }
     },
-    {
-      "window": {
-        "heading": 91.26313024803437,
-        "distance": 0.8364035806657326
-      }
-    },
+    {},
+    {},
+    {},
     {
       "door": {
-        "heading": -71.03622270880962,
-        "distance": 1.30739749171348
-      }
-    },
-    {
-      "table desk counter massage _ table": {
-        "heading": 80.95920986296227,
-        "distance": 0.5022765956059166
+        "heading": 164.70963221361018,
+        "distance": 1.0944405288090002
       }
     },
     {},
     {
       "window": {
-        "heading": -26.003367301264063,
-        "distance": 1.102049414407191
+        "heading": 105.15913886043143,
+        "distance": 0.5696959934434316
       }
     },
-    {},
-    {},
-    {},
+    {
+      "window": {
+        "heading": 170.91874162123156,
+        "distance": 1.5180336347938708
+      }
+    },
+    {
+      "window": {
+        "heading": -89.67998582758031,
+        "distance": 0.8061243246287324
+      }
+    },
     {
       "curtain": {
-        "heading": 127.55235683736618,
-        "distance": 0.7652271780690301
+        "heading": -7.572012075690452,
+        "distance": 0.6962812947464001
       }
     },
     {},
     {
-      "fridge": {
-        "heading": 157.16545813895237,
-        "distance": 0.8885273066789641
+      "table counter": {
+        "heading": -43.928611427413244,
+        "distance": 1.878293985707467
       }
     },
+    {
+      "fridge": {
+        "heading": 49.38697921383829,
+        "distance": 1.2535072242983163
+      }
+    },
+    {},
     {},
     {}
   ],
   "128f2cd37ef241cea64bc179a8be82ae": [
     {
-      "chandelier chandelier": {
-        "heading": 44.39126169189689,
-        "distance": 0.5290153217952924
+      "lamp": {
+        "heading": -127.8760839728813,
+        "distance": 1.3817768942722433
       }
     },
     {
-      "footstool ottoman": {
-        "heading": -108.21618811425893,
-        "distance": 0.9150811705203205
+      "lamp": {
+        "heading": 162.26346116147272,
+        "distance": 0.9178378078456219
       }
     },
+    {},
     {},
     {},
     {},
     {
       "lamp": {
-        "heading": -94.14554199343195,
-        "distance": 1.1529329115380873
+        "heading": -26.74382441205921,
+        "distance": 1.6525162059633194
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -40.43424584327727,
+        "distance": 1.560896095454491
       }
     },
     {},
+    {},
+    {},
+    {},
     {
-      "bookcase": {
-        "heading": 176.12003097656856,
-        "distance": 0.806540634420714
+      "shelf cabinet": {
+        "heading": 155.9964032593868,
+        "distance": 1.0819987516358713
       }
     },
-    {},
-    {},
-    {
-      "lamp": {
-        "heading": 81.14557837490537,
-        "distance": 1.5613744370052656
-      }
-    }
+    {}
   ],
   "4c793e5198034f3eb52a199745373fb8": [
     {
       "lamp": {
-        "heading": -92.70477425019288,
-        "distance": 1.7075822775528875
+        "heading": -66.96104454674185,
+        "distance": 1.7185437052405375
       }
     },
-    {
-      "curtain": {
-        "heading": 120.37105290889917,
-        "distance": 1.585788383100228
-      }
-    },
-    {
-      "lamp chandel chandel": {
-        "heading": 78.54025341812917,
-        "distance": 1.5291682003987186
-      }
-    },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": -78.52390579553833,
-        "distance": 1.0597678132239343
-      }
-    },
-    {},
-    {
-      "window": {
-        "heading": -53.69210100273244,
-        "distance": 1.7684624525487653
-      }
-    },
-    {},
-    {
-      "window": {
-        "heading": -64.71373817352867,
-        "distance": 1.5591622851646967
-      }
-    },
-    {
-      "grill": {
-        "heading": -116.2435052642085,
-        "distance": 1.389885074552411
-      }
-    },
-    {},
     {
       "lamp": {
-        "heading": -114.50067260916448,
-        "distance": 0.9098118718068751
+        "heading": 70.85843934096658,
+        "distance": 1.2634053304957824
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": -10.149076696842627,
+        "distance": 0.6563270284580451
       }
     },
     {},
     {},
-    {}
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 4.212911745306883,
+        "distance": 1.108491537958911
+      }
+    },
+    {},
+    {
+      "grill": {
+        "heading": -149.8211006349581,
+        "distance": 0.7576631670127647
+      }
+    },
+    {},
+    {},
+    {
+      "window": {
+        "heading": 38.325724491047396,
+        "distance": 1.3504512126357686
+      }
+    },
+    {},
+    {
+      "counter": {
+        "heading": -160.58088059710218,
+        "distance": 1.8083852668823708
+      }
+    },
+    {},
+    {
+      "window": {
+        "heading": 110.80487035865264,
+        "distance": 1.8481090391117314
+      }
+    }
   ],
   "d5c6ca3ad0204601b6c9c0280a0e144e": [
     {
       "lamp": {
-        "heading": -70.59117355170866,
-        "distance": 1.926019185998232
+        "heading": -100.64933343201466,
+        "distance": 0.8895372240616333
       }
     },
+    {},
     {
       "rug": {
-        "heading": 122.09527532744067,
-        "distance": 1.030817877871892
+        "heading": 10.524561591852347,
+        "distance": 1.8729563346861218
       }
     },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 135.36611462424383,
+        "distance": 0.771346355862838
+      }
+    },
+    {},
     {},
     {},
     {},
     {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 40.880440789554314,
-        "distance": 0.6127045416095442
-      }
-    },
-    {},
-    {},
-    {
-      "desk counter": {
-        "heading": -118.8988448000282,
-        "distance": 0.9751403658311566
-      }
-    },
-    {},
-    {},
-    {},
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": 112.85180071404073,
-        "distance": 0.7412484298187323
-      }
-    },
-    {},
-    {},
-    {
-      "desk": {
-        "heading": -86.80566645047546,
-        "distance": 1.5523600809140214
+      "shelf cabinet": {
+        "heading": 178.32033318111797,
+        "distance": 0.7442476200282566
       }
     },
     {},
     {},
     {},
     {},
-    {
-      "##stool table ottoman": {
-        "heading": -154.8421439093483,
-        "distance": 1.8807274297776084
-      }
-    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {},
     {
       "curtain": {
-        "heading": -75.85075709640488,
-        "distance": 1.3066619195922389
+        "heading": -75.6819060232065,
+        "distance": 1.8241487059641255
+      }
+    },
+    {
+      "table counter": {
+        "heading": 43.91503006067336,
+        "distance": 1.437156970309341
+      }
+    },
+    {},
+    {
+      "ottoman": {
+        "heading": 126.48207047932073,
+        "distance": 1.230209793689124
+      }
+    },
+    {
+      "table counter": {
+        "heading": -64.6408774690631,
+        "distance": 1.766537052597515
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -99.60539323162332,
+        "distance": 0.9151876667989536
       }
     },
     {},
     {},
     {
       "rug": {
-        "heading": -15.807706132718408,
-        "distance": 1.0275612142419122
+        "heading": -3.4954717594715703,
+        "distance": 1.1719065912407156
       }
     },
     {},
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -98.94214155090087,
-        "distance": 1.6313370845142934
-      }
-    },
+    {},
+    {},
     {}
   ],
   "e7c626147b2247f08ca9422d481b8107": [
     {
-      "lamp chandelier chandelier": {
-        "heading": 76.20937885189784,
-        "distance": 1.5820691861281846
-      }
-    },
-    {
-      "fire _ extinguisher fire _ extinguisher": {
-        "heading": -107.24603739337155,
-        "distance": 1.3619054918312932
+      "lamp": {
+        "heading": 20.05929670100423,
+        "distance": 1.8024924086605119
       }
     },
     {
       "stairs": {
-        "heading": -128.89019895020758,
-        "distance": 0.993009765220136
+        "heading": -81.61849713199393,
+        "distance": 0.54945051084851
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -127.27137452364295,
-        "distance": 0.5054372653666979
+      "shelf cabinet": {
+        "heading": 118.68575574806414,
+        "distance": 0.6310525568141738
       }
     },
     {
-      "lamp chandelier chandelier": {
-        "heading": -38.79935135467986,
-        "distance": 1.8909188438781885
+      "lamp": {
+        "heading": 83.28277193633011,
+        "distance": 1.712232436852806
       }
     },
     {},
-    {},
-    {
-      "closet": {
-        "heading": -18.931104684200534,
-        "distance": 1.3795646367091543
-      }
-    },
     {},
     {
       "grill": {
-        "heading": 92.24894758694228,
-        "distance": 1.5507570018677423
-      }
-    },
-    {
-      "door": {
-        "heading": 52.083153362944586,
-        "distance": 0.500888428263653
-      }
-    },
-    {
-      "door": {
-        "heading": 6.447212090002324,
-        "distance": 0.8782640973144458
+        "heading": 145.16586474443915,
+        "distance": 0.5708107052293563
       }
     },
     {},
+    {
+      "door": {
+        "heading": -138.28318018863143,
+        "distance": 1.3620875789772229
+      }
+    },
+    {
+      "closet": {
+        "heading": -55.238470268307424,
+        "distance": 0.515915595150108
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "door": {
+        "heading": 48.9137172005299,
+        "distance": 0.7204738972310927
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -118.79412032063952,
+        "distance": 1.509982765142029
+      }
+    },
     {}
   ],
   "a5aab4ca936e4ad780431bd6e13bb534": [
-    {
-      "fire _ extinguisher fire _ extinguisher": {
-        "heading": -102.57508580203412,
-        "distance": 1.4240669838346616
-      }
-    },
     {},
     {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -103.67804844356172,
-        "distance": 0.9460916138765012
+      "shelf cabinet": {
+        "heading": 71.80185106806599,
+        "distance": 1.6518227653118702
       }
     },
+    {},
     {
       "window": {
-        "heading": -60.399487476437585,
-        "distance": 1.9779896807931223
+        "heading": 77.74529401828192,
+        "distance": 1.9425032929935357
       }
     },
-    {},
     {
       "stairs": {
-        "heading": -21.190045677947637,
-        "distance": 1.2709782568890222
+        "heading": 75.59787096510229,
+        "distance": 1.653666850176076
       }
     },
-    {},
-    {},
+    {
+      "statue": {
+        "heading": 157.23760165368617,
+        "distance": 1.4045700380482935
+      }
+    },
     {
       "window": {
-        "heading": 127.83805341737047,
-        "distance": 1.6921407939738011
+        "heading": 106.7936438475657,
+        "distance": 1.7336842257657474
       }
     },
+    {
+      "window": {
+        "heading": 32.11870430352465,
+        "distance": 0.7568433326948605
+      }
+    },
+    {},
+    {
+      "door": {
+        "heading": -121.32725230416347,
+        "distance": 0.8448199388552071
+      }
+    },
+    {},
+    {},
     {},
     {}
   ],
@@ -829,36 +898,40 @@
     {},
     {},
     {
-      "desk": {
-        "heading": -111.86888633116551,
-        "distance": 1.9211830152075262
-      }
-    },
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": 73.58489622360463,
-        "distance": 1.9643132774555898
+      "shelf cabinet": {
+        "heading": -31.919377159466904,
+        "distance": 1.3561417886394307
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -145.82960914841192,
-        "distance": 1.5518377345440908
+      "shelf cabinet": {
+        "heading": -134.25472667182746,
+        "distance": 1.3054039618927327
       }
     },
+    {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -104.50972590248396,
-        "distance": 1.5677710577286212
+      "shelf cabinet": {
+        "heading": 137.85272732032388,
+        "distance": 0.6970442684067981
       }
     },
-    {},
     {
       "lamp": {
-        "heading": -151.30140413290235,
-        "distance": 1.3431520021715884
+        "heading": 123.0999711203126,
+        "distance": 1.4438757218849818
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "table counter": {
+        "heading": 17.664306462077207,
+        "distance": 0.6291846171492843
       }
     },
     {},
@@ -867,128 +940,130 @@
     {},
     {},
     {},
-    {},
-    {},
-    {},
     {
-      "desk counter": {
-        "heading": -163.07398928391333,
-        "distance": 0.7299532574328481
+      "counter": {
+        "heading": -102.74279501928578,
+        "distance": 1.5408891176399604
       }
-    }
+    },
+    {}
   ],
   "f324c5a2e85c4957ae6b9073581f3452": [
     {},
-    {},
     {
-      "chandelier chandelier": {
-        "heading": -110.67056944978637,
-        "distance": 1.5555162398172455
+      "statue": {
+        "heading": 18.432236182787932,
+        "distance": 1.503320378369774
       }
     },
     {},
     {},
     {
-      "statue statue": {
-        "heading": 93.81493208377327,
-        "distance": 1.7212713220194407
+      "lamp": {
+        "heading": -115.4621105603327,
+        "distance": 1.1476591648863776
       }
     },
+    {},
     {
-      "picture picture frame": {
-        "heading": -128.18684358543038,
-        "distance": 1.6622846422001307
+      "stairs": {
+        "heading": 15.737063157597959,
+        "distance": 1.0188445940421331
       }
     },
-    {},
-    {},
-    {},
     {
       "window": {
-        "heading": -129.96048979709224,
-        "distance": 1.7749748056889152
-      }
-    },
-    {
-      "desk counter": {
-        "heading": -13.646154891887875,
-        "distance": 0.5277161163100674
+        "heading": -44.2980245800303,
+        "distance": 1.9134346730449165
       }
     },
     {},
     {
-      "fridge door closet": {
-        "heading": -24.509788919428956,
-        "distance": 1.8524529658428102
+      "fridge door": {
+        "heading": -46.39434673805178,
+        "distance": 1.2909970942921596
       }
     },
     {
-      "picture picture": {
-        "heading": -130.63375281219672,
-        "distance": 1.435227011002277
-      }
-    },
-    {
-      "lamp chandelier chandelier": {
-        "heading": 20.9556479692871,
-        "distance": 1.8557685753858624
-      }
-    },
-    {
-      "eye _ chart table plaque": {
-        "heading": 148.51718236480298,
-        "distance": 0.854980416661994
-      }
-    },
-    {
-      "lamp chandelier chandelier": {
-        "heading": -162.2329976997389,
-        "distance": 1.7579735396682106
-      }
-    },
-    {
-      "picture frame eye chart plaque": {
-        "heading": 120.80707754311197,
-        "distance": 0.9576548140932832
+      "plaque": {
+        "heading": 67.80017432773298,
+        "distance": 1.4372748038503012
       }
     },
     {},
+    {
+      "table counter": {
+        "heading": 71.50487679529397,
+        "distance": 1.855271409018545
+      }
+    },
+    {
+      "lamp": {
+        "heading": -10.781973226955984,
+        "distance": 1.7553215609889037
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 41.127476670309704,
+        "distance": 1.7270271068800365
+      }
+    },
     {},
     {},
     {}
   ],
   "b1242fb861d84f088b13240a5fe3ccb1": [
     {
-      "lamp chandelier chandelier": {
-        "heading": 6.91695997358201,
-        "distance": 1.773026452604999
+      "lamp": {
+        "heading": -103.07201834783147,
+        "distance": 0.7680720235659277
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 86.6455673078425,
+        "distance": 1.5105639860429918
       }
     },
     {
       "lamp": {
-        "heading": 39.22070617342311,
-        "distance": 0.5129055167822779
+        "heading": 103.26394894292486,
+        "distance": 1.636494588856638
       }
     },
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": -132.16106133221666,
-        "distance": 1.2827081437439178
-      }
-    },
+    {},
     {
       "stairs": {
-        "heading": 54.61119538917251,
-        "distance": 0.6676619848767872
+        "heading": 114.06362964345385,
+        "distance": 1.8110650615701127
       }
     },
     {},
     {},
+    {
+      "lamp": {
+        "heading": -100.70591609615113,
+        "distance": 1.13324162397653
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 97.71215986531143,
+        "distance": 1.6397065838379916
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -78.41548951962947,
+        "distance": 0.7829519963446421
+      }
+    },
     {},
     {
-      "bookcase": {
-        "heading": -176.95234902757275,
-        "distance": 1.596919253035492
+      "window": {
+        "heading": -26.986155519923358,
+        "distance": 1.8541920454797225
       }
     },
     {},
@@ -997,117 +1072,122 @@
   "24f4450a5eb14381b8ed20ee31ac44ac": [
     {
       "stairs": {
-        "heading": -102.68436913240828,
-        "distance": 0.7826225123270634
+        "heading": -43.42972129547144,
+        "distance": 0.6121050769398259
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -167.8195694467871,
-        "distance": 1.7631470190728447
+      "shelf cabinet": {
+        "heading": 37.21933903950722,
+        "distance": 1.394836136025106
       }
     },
-    {},
-    {},
-    {
-      "curtain": {
-        "heading": -57.390757786803945,
-        "distance": 0.7790937804261943
-      }
-    },
-    {},
-    {},
-    {},
-    {},
     {},
     {},
     {
       "curtain": {
-        "heading": 116.93317332540744,
-        "distance": 1.560063453204779
+        "heading": -72.756598481988,
+        "distance": 1.8623637676977645
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": 60.63863347454512,
+        "distance": 1.0648137956729524
       }
     },
     {},
     {},
     {},
     {
+      "shelf cabinet": {
+        "heading": 124.8292350151554,
+        "distance": 0.5241064035709304
+      }
+    },
+    {
       "curtain": {
-        "heading": 9.972331689207806,
-        "distance": 1.4833019132555527
+        "heading": 99.48947032818722,
+        "distance": 1.8453034252854166
       }
     },
     {
       "fridge": {
-        "heading": 50.68421901352022,
-        "distance": 1.8773880123715343
+        "heading": 55.74008395658282,
+        "distance": 1.8173548037061746
+      }
+    },
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": -76.07920185228629,
+        "distance": 0.9356227582040584
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "fridge": {
+        "heading": 138.31218400514393,
+        "distance": 0.8856692351472168
       }
     }
   ],
   "be686c9f317c40469fa7d4b638023726": [
     {
-      "picture picture frame": {
-        "heading": 49.93897640581338,
-        "distance": 0.7203568989814335
-      }
-    },
-    {
-      "painting picture picture frame painting": {
-        "heading": 60.05045881486373,
-        "distance": 1.4039837076775352
-      }
-    },
-    {
       "window": {
-        "heading": -114.24984513450168,
-        "distance": 0.7933607864886959
+        "heading": 9.318551187966136,
+        "distance": 0.6828872581466372
       }
     },
     {
-      "picture picture frame": {
-        "heading": 4.570546949580859,
-        "distance": 0.9984742463681653
+      "shelf cabinet": {
+        "heading": -117.33652674418617,
+        "distance": 0.805998425149649
       }
     },
-    {},
     {
       "stairs": {
-        "heading": -51.28840824911126,
-        "distance": 1.8715271837784004
+        "heading": 176.94052597914646,
+        "distance": 1.079063307359371
       }
     },
     {
-      "lamp chandelier chandelier": {
-        "heading": 176.86017947223382,
-        "distance": 1.742284354589936
-      }
-    },
-    {},
-    {
-      "bookcase": {
-        "heading": -89.47071537416043,
-        "distance": 1.3699841469519567
+      "painting": {
+        "heading": 38.56714329835225,
+        "distance": 0.5901898215805841
       }
     },
     {},
     {},
     {
-      "curtain": {
-        "heading": 149.08742238560535,
-        "distance": 0.7674873750441256
+      "painting": {
+        "heading": -11.377189744301148,
+        "distance": 1.8017492110792346
       }
     },
     {},
-    {},
     {
-      "bookcase": {
-        "heading": 149.3084522748759,
-        "distance": 0.5134975107039252
+      "lamp": {
+        "heading": 20.231171160315455,
+        "distance": 0.5660925088323481
       }
     },
     {
       "curtain": {
-        "heading": 14.807982157285892,
-        "distance": 1.6899838083978027
+        "heading": 5.365552950648606,
+        "distance": 0.6289468913347293
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": 13.621382227394804,
+        "distance": 1.0271862651339136
       }
     },
     {}
@@ -1115,143 +1195,153 @@
   "cd9fd57e2de04c39b87e7fbe92e80a6c": [
     {},
     {},
-    {},
-    {},
     {
       "door": {
-        "heading": -114.89059397535945,
-        "distance": 1.6435157286685316
+        "heading": -67.8158880830588,
+        "distance": 1.7038776899589885
       }
     },
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": 32.39395615231902,
-        "distance": 0.6027688948235548
-      }
-    },
+    {},
     {},
     {},
     {
       "curtain": {
-        "heading": -18.949351659018475,
-        "distance": 1.4266519021619908
+        "heading": -12.945368904901272,
+        "distance": 0.9114619413583709
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -84.6099080388166,
+        "distance": 1.9463906691680442
       }
     },
     {
-      "desk counter massage table": {
-        "heading": -156.1457237332314,
-        "distance": 0.5081662084497156
+      "shelf cabinet": {
+        "heading": -106.76301865617131,
+        "distance": 0.5436167326159704
       }
     },
+    {
+      "table counter": {
+        "heading": -14.186865782301822,
+        "distance": 1.2095936435915213
+      }
+    },
+    {},
     {},
     {},
     {
       "lamp": {
-        "heading": 111.54059971196199,
-        "distance": 1.414359837202967
+        "heading": -54.6251137135643,
+        "distance": 1.8155658373407664
       }
     },
     {
-      "desk counter": {
-        "heading": -156.11185378858875,
-        "distance": 0.6886583285085195
+      "counter": {
+        "heading": -71.51903972503074,
+        "distance": 1.4123370356196032
       }
     },
     {},
+    {},
     {
-      "window": {
-        "heading": -31.809804526089295,
-        "distance": 0.6804116423168212
+      "counter": {
+        "heading": -91.11292605904454,
+        "distance": 1.870711254832406
       }
     },
     {
-      "desk counter": {
-        "heading": -42.62029120492684,
-        "distance": 1.3122811944445811
+      "window": {
+        "heading": 174.17434692382312,
+        "distance": 1.7786283936716683
       }
     }
   ],
   "3beab818935e4ed8aefd2d4d080130fa": [
     {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": 47.6218604136908,
-        "distance": 1.128214502421457
+      "curtain": {
+        "heading": 80.45855662850136,
+        "distance": 0.8527332081667766
       }
     },
     {
-      "curtain": {
-        "heading": 48.779618613565304,
-        "distance": 1.6677857594053234
+      "shelf cabinet": {
+        "heading": -77.35586741001994,
+        "distance": 0.7041535580758012
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -173.42834665908927,
+        "distance": 1.3311919132135803
       }
     },
     {},
     {},
     {
       "window": {
-        "heading": -83.99899416466876,
-        "distance": 1.859596271758506
+        "heading": -99.63256495415105,
+        "distance": 1.6956389839397883
       }
     },
     {
       "stairs": {
-        "heading": -77.29508257379011,
-        "distance": 0.7365526815680322
-      }
-    },
-    {
-      "stairs": {
-        "heading": 124.26829492392307,
-        "distance": 1.2769999184979652
+        "heading": 94.5829399204282,
+        "distance": 1.7995333919290444
       }
     }
   ],
   "03ff19f1d0f64700b3b51346cdb554e0": [
     {
       "stairs": {
-        "heading": -110.22895412856582,
-        "distance": 1.3615253319988807
+        "heading": 7.547536698639931,
+        "distance": 1.1045072503507534
       }
     },
     {},
     {
       "grill": {
-        "heading": 102.99067267670324,
-        "distance": 1.6381943056828443
+        "heading": -151.87639745271096,
+        "distance": 0.9433562793912433
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -61.5506049823733,
+        "distance": 1.7584733793841307
       }
     },
     {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 59.164584771771075,
-        "distance": 1.527253615211657
+      "table pool": {
+        "heading": 50.06914589960056,
+        "distance": 0.8729601984552435
       }
     },
-    {
-      "picture picture frame": {
-        "heading": 46.02339206817419,
-        "distance": 0.611664578729173
-      }
-    },
-    {},
-    {},
-    {
-      "table table pool": {
-        "heading": -176.1751716836559,
-        "distance": 1.6605974832081423
-      }
-    },
-    {},
     {
       "counter": {
-        "heading": -86.60973781360785,
-        "distance": 1.2353749641975789
+        "heading": 43.204973334095314,
+        "distance": 0.5138334330606824
       }
     },
     {
-      "table table pool": {
-        "heading": 40.08641628580517,
-        "distance": 0.5620567037417592
+      "window": {
+        "heading": 147.58311241042048,
+        "distance": 1.0269617804394968
+      }
+    },
+    {},
+    {},
+    {
+      "table": {
+        "heading": 53.173743357772736,
+        "distance": 1.4665728319229219
       }
     }
   ],
@@ -1259,120 +1349,121 @@
     {},
     {
       "lamp": {
-        "heading": -163.04322191165906,
-        "distance": 1.7781530231980969
+        "heading": 44.524290173757265,
+        "distance": 1.5010570833659598
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -51.564507322984866,
-        "distance": 0.9676809437829392
+      "shelf cabinet": {
+        "heading": -119.5938233911998,
+        "distance": 1.395212661378786
       }
     },
+    {},
     {
       "window": {
-        "heading": 7.589724664252373,
-        "distance": 1.1767344081503381
+        "heading": -45.145422038879445,
+        "distance": 1.8926375229519006
       }
-    }
+    },
+    {}
   ],
   "8819dc622e7241c2a479ba1f49af460e": [
     {
-      "lamp chandelier chandelier": {
-        "heading": 28.22275380719651,
-        "distance": 0.6996001441275582
-      }
-    },
-    {},
-    {
-      "picture picture _ frame": {
-        "heading": -12.607102636586916,
-        "distance": 0.9095355034154087
+      "lamp": {
+        "heading": 53.48731015953118,
+        "distance": 1.555020843393951
       }
     },
     {},
     {},
     {
       "window": {
-        "heading": -108.89299323637913,
-        "distance": 1.3305631268181874
+        "heading": 28.92660988128148,
+        "distance": 1.5006942477583387
       }
     },
     {},
     {
-      "window": {
-        "heading": -178.02617949537898,
-        "distance": 1.5801911687869166
+      "shelf cabinet": {
+        "heading": 153.02586002812217,
+        "distance": 1.3099985428324248
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 144.50878597881803,
-        "distance": 1.8484244412961242
+      "window": {
+        "heading": -174.72079861467626,
+        "distance": 0.9580576587043932
       }
     },
-    {},
     {
       "window": {
-        "heading": -77.99909364554735,
-        "distance": 1.9429905673701209
+        "heading": -136.73233791434953,
+        "distance": 1.281989094973916
       }
-    }
+    },
+    {}
   ],
   "5ca7bfc500ec4d928285e61efee2dde5": [
     {},
     {},
-    {},
-    {},
     {
       "window": {
-        "heading": -114.60243450315491,
-        "distance": 0.9375403748577364
+        "heading": -127.18564247803039,
+        "distance": 1.859142269578585
       }
     },
+    {},
+    {},
     {},
     {},
     {},
     {
       "curtain": {
-        "heading": 169.35966382457997,
-        "distance": 1.5619323598754242
+        "heading": 42.86779779255892,
+        "distance": 0.7966680428214322
       }
     }
   ],
   "7b19d99c586f456c8095502d78d0f6f8": [
     {
-      "couch sofa sofa": {
-        "heading": -172.4761565660018,
-        "distance": 1.7598145120177409
+      "sofa mattress": {
+        "heading": -113.46107760522743,
+        "distance": 1.580292263901045
       }
     },
     {
-      "lamp chandelier chandelier": {
-        "heading": 163.38774230420285,
-        "distance": 0.993082008496788
+      "lamp": {
+        "heading": -131.6643019567963,
+        "distance": 1.6471805925363543
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": 109.57255739909903,
+        "distance": 0.6816984679900733
       }
     },
     {
-      "bookcase": {
-        "heading": 113.27609447736887,
-        "distance": 1.4186176001136586
+      "shelf cabinet": {
+        "heading": -131.54241142149968,
+        "distance": 1.189512505416454
       }
     },
     {},
     {},
     {
       "window": {
-        "heading": 148.23507731341363,
-        "distance": 0.9576796184925838
+        "heading": 136.73927283799418,
+        "distance": 1.8857298551748158
       }
     },
-    {},
     {
-      "curtain": {
-        "heading": -98.53073424128151,
-        "distance": 1.1445733975046228
+      "shelf cabinet": {
+        "heading": 64.14927310633578,
+        "distance": 0.5543594127535971
       }
     },
     {}
@@ -1380,286 +1471,250 @@
   "4dbad4e837894372bf2dcefe5fa85cde": [
     {
       "curtain": {
-        "heading": -76.90803761301363,
-        "distance": 0.5163523014429556
+        "heading": -34.37137789860927,
+        "distance": 0.7397592546251825
       }
     },
-    {},
     {
       "window": {
-        "heading": -59.949309222758885,
-        "distance": 0.8811881643977735
+        "heading": -167.25813116757223,
+        "distance": 1.7602831569769877
       }
     },
     {},
     {
-      "bookcase": {
-        "heading": -23.694774407082974,
-        "distance": 0.9421217153858831
+      "shelf cabinet": {
+        "heading": -79.50357111373452,
+        "distance": 1.8444096937346868
       }
     },
-    {},
-    {},
-    {},
     {},
     {},
     {
       "stairs": {
-        "heading": -81.63139339947692,
-        "distance": 1.033456213826525
+        "heading": 132.77453715414174,
+        "distance": 0.8427601510994119
+      }
+    },
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": -74.93080328037325,
+        "distance": 1.9390282533074685
       }
     },
     {
       "curtain": {
-        "heading": 16.279374217638775,
-        "distance": 1.0380824257713146
-      }
-    },
-    {
-      "bookcase": {
-        "heading": -7.7879252821898035,
-        "distance": 1.4616934757861955
-      }
-    },
-    {
-      "curtain": {
-        "heading": 69.68271082386227,
-        "distance": 1.4623714018875993
+        "heading": 145.95797162616998,
+        "distance": 1.55230706367712
       }
     }
   ],
   "ceed635a9b804a13a8db5fd5cd755281": [
     {},
+    {},
+    {},
     {
-      "picture picture frame": {
-        "heading": -170.02114453783514,
-        "distance": 0.9448780081062229
+      "shelf cabinet": {
+        "heading": -23.73719279804459,
+        "distance": 0.6597796206004201
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -133.14983138027688,
+        "distance": 1.1206681330489676
       }
     },
     {},
     {},
-    {},
-    {},
-    {
-      "bookcase": {
-        "heading": -150.02185115790837,
-        "distance": 1.4434878896238363
-      }
-    },
     {},
     {},
     {},
     {
       "window": {
-        "heading": 126.5645474197143,
-        "distance": 1.2068083348885803
+        "heading": -176.23325420621134,
+        "distance": 1.0450514545982412
       }
     },
+    {
+      "shelf cabinet": {
+        "heading": 139.60838060449538,
+        "distance": 0.6931294085175169
+      }
+    },
+    {},
     {},
     {},
     {},
     {},
     {
       "curtain": {
-        "heading": -84.82012237489033,
-        "distance": 1.2944071420762073
+        "heading": -131.14495383574044,
+        "distance": 1.835023341602732
       }
     },
+    {},
+    {},
     {
-      "desk counter": {
-        "heading": -7.779150266278435,
-        "distance": 1.6447921057129944
+      "counter": {
+        "heading": 50.70264035540927,
+        "distance": 0.7403197165861621
+      }
+    },
+    {},
+    {},
+    {
+      "table counter": {
+        "heading": -161.7669266648589,
+        "distance": 1.7355250583586939
       }
     },
     {},
     {
-      "lamp": {
-        "heading": -7.402299125140814,
-        "distance": 1.2177136756850322
-      }
-    },
-    {
-      "desk": {
-        "heading": 96.79844874023178,
-        "distance": 1.7338644768614064
+      "counter": {
+        "heading": 126.86826849865247,
+        "distance": 1.5467152271301408
       }
     },
     {},
-    {
-      "desk counter": {
-        "heading": -174.14262217318543,
-        "distance": 1.441639743460691
-      }
-    }
+    {}
   ],
   "082f6f6ac7c241669643586b39ce562b": [
-    {
-      "chandelier chandelier": {
-        "heading": -130.2621823896444,
-        "distance": 0.7873217746639787
-      }
-    },
     {},
     {
-      "statue statue": {
-        "heading": 71.53456259712078,
-        "distance": 0.947680150441698
-      }
-    },
-    {
-      "picture picture frame": {
-        "heading": -58.67751349465192,
-        "distance": 0.6999586772037082
+      "statue": {
+        "heading": 6.415314534968445,
+        "distance": 1.0442500344252017
       }
     },
     {
       "lamp": {
-        "heading": 157.4839451780092,
-        "distance": 1.838374764650834
+        "heading": 177.51777514545836,
+        "distance": 1.1466812449141317
       }
     },
     {
       "lamp": {
-        "heading": -97.73414432276269,
-        "distance": 1.3527542022526684
+        "heading": -176.97694648537737,
+        "distance": 1.9701063464254889
       }
     },
     {
-      "picture picture frame": {
-        "heading": 124.20345014775171,
-        "distance": 1.4989211559978728
-      }
-    },
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -171.7022522301223,
-        "distance": 1.1142209126900848
+      "shelf cabinet": {
+        "heading": 76.30697821441743,
+        "distance": 1.848445395855856
       }
     },
     {},
     {},
-    {
-      "lamp": {
-        "heading": -1.4455557497072107,
-        "distance": 0.6337676578547563
-      }
-    },
+    {},
     {},
     {},
     {
       "window": {
-        "heading": -40.574404538930224,
-        "distance": 1.4619988153329158
+        "heading": 16.710176975318518,
+        "distance": 1.6018252161089213
       }
     },
     {
-      "chart console _ table plaque": {
-        "heading": -145.76984934228986,
-        "distance": 0.7161978848688595
+      "lamp": {
+        "heading": 102.08009279186285,
+        "distance": 0.8753347202318316
       }
     },
     {},
     {
-      "fridge": {
-        "heading": 32.2435585712949,
-        "distance": 1.1531827180177396
+      "window": {
+        "heading": -173.18600912948045,
+        "distance": 0.5162834163280727
       }
     },
     {
-      "window": {
-        "heading": 147.4193861201153,
-        "distance": 0.990093847781254
+      "plaque": {
+        "heading": 172.97880684477622,
+        "distance": 0.9708702426820703
       }
     },
     {},
     {
       "curtain": {
-        "heading": -38.23521890276123,
-        "distance": 1.0202912246644862
+        "heading": 147.94929582153543,
+        "distance": 0.9806186767433054
       }
     },
     {
       "window": {
-        "heading": 160.08507738494382,
-        "distance": 1.4263945010847299
+        "heading": -78.51016988057087,
+        "distance": 0.9930265751724173
       }
     },
-    {},
     {},
     {
       "mirror": {
-        "heading": -64.42692203894612,
-        "distance": 0.7920708966795758
-      }
-    }
-  ],
-  "84291807bc3a4c9ea9f5d7f7ef53704c": [
-    {
-      "picture picture _ frame": {
-        "heading": -179.41345276385096,
-        "distance": 1.3266586842782933
-      }
-    },
-    {
-      "picture picture _ frame": {
-        "heading": -106.07350455723457,
-        "distance": 1.4674364802509499
+        "heading": 36.00088512438313,
+        "distance": 0.6241407498539981
       }
     },
     {},
+    {},
+    {}
+  ],
+  "84291807bc3a4c9ea9f5d7f7ef53704c": [
     {},
     {
       "lamp": {
-        "heading": -16.818525666260456,
-        "distance": 0.9322775680848436
+        "heading": -118.61965095444867,
+        "distance": 1.4500113013268585
       }
     },
-    {},
     {
-      "chair armchair armchair": {
-        "heading": 96.1868765787438,
-        "distance": 0.7468566197625416
-      }
-    },
-    {},
-    {},
-    {
-      "curtain": {
-        "heading": -91.8655851079946,
-        "distance": 1.7664378073898557
-      }
-    },
-    {},
-    {},
-    {
-      "desk counter": {
-        "heading": -120.10230640489175,
-        "distance": 0.8848421932650945
+      "chair": {
+        "heading": 170.52127504863762,
+        "distance": 1.809092621860001
       }
     },
     {},
     {
-      "desk": {
-        "heading": 78.90528944952626,
-        "distance": 0.5478894894416774
+      "curtain": {
+        "heading": 104.2186722794736,
+        "distance": 1.2747304541316873
       }
     },
-    {},
-    {},
-    {},
-    {
-      "desk": {
-        "heading": 158.03101392604384,
-        "distance": 1.9849413654098422
-      }
-    },
-    {},
     {},
     {},
     {
       "door": {
-        "heading": -56.15787645477111,
-        "distance": 0.908030539307018
+        "heading": 144.32996352949766,
+        "distance": 1.7426548904087307
+      }
+    },
+    {},
+    {
+      "painting plaque": {
+        "heading": -50.22882853692488,
+        "distance": 1.060201360801729
+      }
+    },
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": -33.69206718528562,
+        "distance": 1.0398059850109533
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "curtain": {
+        "heading": 111.73295151018351,
+        "distance": 1.9570424939953093
       }
     },
     {},
@@ -1667,165 +1722,218 @@
     {},
     {},
     {
-      "curtain": {
-        "heading": 114.06231228937543,
-        "distance": 1.8267828895839522
+      "painting clock": {
+        "heading": -108.91926097629661,
+        "distance": 0.5909552932405691
       }
     },
     {},
+    {},
     {
-      "curtain": {
-        "heading": -49.185168249779935,
-        "distance": 1.7277466825975965
+      "table counter": {
+        "heading": -87.64247424385064,
+        "distance": 0.7409115965376094
       }
     },
+    {},
+    {},
+    {},
+    {},
+    {
+      "table counter": {
+        "heading": 29.88571560777021,
+        "distance": 1.9054347517001256
+      }
+    },
+    {},
     {},
     {}
   ],
   "e42a8231f4364b629cecd35d58c43635": [
     {},
-    {
-      "bookcase": {
-        "heading": -76.28246496966847,
-        "distance": 1.7936061999782105
-      }
-    },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 78.10749229648434,
-        "distance": 0.9634639601642634
+      "shelf cabinet": {
+        "heading": 145.7577426769825,
+        "distance": 1.1125720291569383
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 13.101797062018562,
-        "distance": 1.3352219458195782
+      "shelf cabinet": {
+        "heading": 76.06430026415535,
+        "distance": 0.7877890511945385
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 24.414716258418338,
-        "distance": 1.8215020345720552
+      "shelf cabinet": {
+        "heading": 94.32650073938822,
+        "distance": 0.7071458143155145
       }
     },
-    {},
-    {},
-    {},
+    {
+      "shelf cabinet": {
+        "heading": -141.4163181638734,
+        "distance": 1.9574113193261862
+      }
+    },
     {},
     {},
     {
       "curtain": {
-        "heading": 2.30839785856071,
-        "distance": 1.2863893519952379
+        "heading": 137.72997021846754,
+        "distance": 1.8224201315915658
       }
     },
-    {
-      "desk": {
-        "heading": 142.87504534532258,
-        "distance": 0.626663837547337
-      }
-    },
-    {},
-    {},
-    {},
     {},
     {
-      "desk counter": {
-        "heading": 97.48694185105745,
-        "distance": 1.4585739543871439
+      "shelf cabinet": {
+        "heading": -20.6753524586085,
+        "distance": 1.0772087785327953
       }
     },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {
       "window": {
-        "heading": 81.53447373791556,
-        "distance": 1.0788228280701608
+        "heading": 128.4762567251413,
+        "distance": 0.5467744773536591
       }
     },
+    {
+      "table counter": {
+        "heading": -3.8192633274802574,
+        "distance": 1.6516126453981272
+      }
+    },
+    {},
+    {},
     {},
     {}
   ],
   "1cf9bfa7442841e9b5edc64590d0e879": [
-    {
-      "picture picture frame": {
-        "heading": -109.57003877152242,
-        "distance": 0.6890434944226617
-      }
-    },
-    {},
     {},
     {},
     {},
     {},
     {
-      "desk counter": {
-        "heading": -172.63195584219247,
-        "distance": 1.8140983382716245
+      "window": {
+        "heading": -104.31505076808587,
+        "distance": 1.6780539576504618
       }
     },
-    {},
-    {},
-    {},
+    {
+      "shelf cabinet": {
+        "heading": -103.35159078651652,
+        "distance": 1.3815158777210237
+      }
+    },
     {
       "lamp": {
-        "heading": -176.97786655693028,
-        "distance": 1.4200486575124434
+        "heading": -87.13909912160749,
+        "distance": 0.5114655610351979
       }
     },
-    {}
+    {
+      "table counter": {
+        "heading": -138.36474484663069,
+        "distance": 1.1479519366409645
+      }
+    }
   ],
   "7f7d2a41ca0b44a58c987833692e2791": [
     {
       "lamp": {
-        "heading": 17.313441562288233,
-        "distance": 1.321252709102282
+        "heading": -1.6510255076520934,
+        "distance": 0.5796392035492418
       }
     },
-    {
-      "table desk": {
-        "heading": -8.696919039570389,
-        "distance": 1.336341381321695
-      }
-    },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
     {},
     {},
     {
-      "bookcase": {
-        "heading": 8.083115897771819,
-        "distance": 1.5034635753775736
+      "table": {
+        "heading": -80.21449841206702,
+        "distance": 1.9681928750921696
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "counter": {
+        "heading": -110.76507969507101,
+        "distance": 0.6352338443335824
       }
     },
     {
-      "couch sofa sofa": {
-        "heading": 129.7231638424231,
-        "distance": 1.5596779825428682
+      "shelf cabinet": {
+        "heading": -161.85780086858014,
+        "distance": 1.5419621062178956
       }
     },
+    {},
     {},
     {},
     {},
     {}
   ],
   "c4e9e99398d84df5bf0150c484ebcd01": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {
-      "picture picture _ frame": {
-        "heading": -17.439454695200396,
-        "distance": 1.3532129786576919
+      "curtain": {
+        "heading": -179.79672432315664,
+        "distance": 0.7620369588116276
       }
     },
     {},
     {},
     {},
     {
-      "picture picture frame": {
-        "heading": 55.593835841784795,
-        "distance": 1.2760574010402062
+      "shelf cabinet": {
+        "heading": -69.71823731586854,
+        "distance": 0.7994260319145801
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "painting plaque": {
+        "heading": -8.44794997247294,
+        "distance": 0.9273233836692588
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -81.64683870320788,
+        "distance": 1.8479826050301789
+      }
+    },
+    {
+      "door": {
+        "heading": 25.3819765436358,
+        "distance": 1.648795773760893
       }
     },
     {},
@@ -1835,8 +1943,14 @@
     {},
     {
       "curtain": {
-        "heading": -64.72403937649479,
-        "distance": 0.6435198720988726
+        "heading": 98.44140844294537,
+        "distance": 0.5826520655453784
+      }
+    },
+    {
+      "table counter": {
+        "heading": 58.81520908052315,
+        "distance": 1.093328418838748
       }
     },
     {},
@@ -1845,103 +1959,55 @@
     {},
     {
       "curtain": {
-        "heading": 58.85982977194095,
-        "distance": 1.4591828907811693
+        "heading": 134.70560495690717,
+        "distance": 1.091432584727738
       }
     },
-    {},
-    {},
-    {
-      "fridge door": {
-        "heading": 69.40877628743425,
-        "distance": 1.5994203915897443
-      }
-    },
-    {},
-    {
-      "desk": {
-        "heading": 139.18704610171852,
-        "distance": 1.2687337275931723
-      }
-    },
-    {},
-    {},
-    {},
-    {},
-    {
-      "desk counter": {
-        "heading": -120.36193189841582,
-        "distance": 1.5617953820417432
-      }
-    },
-    {},
-    {
-      "desk counter": {
-        "heading": 80.33184563088588,
-        "distance": 1.129742045740934
-      }
-    },
-    {
-      "curtain": {
-        "heading": 125.73520664254909,
-        "distance": 1.1744320426926849
-      }
-    },
-    {},
     {}
   ],
   "0f69425af2544c6f981c0ae9a7f9b829": [
     {},
-    {},
     {
-      "lamp chandelier chandelier": {
-        "heading": 161.27634383395275,
-        "distance": 1.5521769505782659
+      "curtain": {
+        "heading": -32.079684168927116,
+        "distance": 1.6346903057782056
       }
     },
     {},
     {
       "window": {
-        "heading": -87.24955211025107,
-        "distance": 0.5133565080368616
+        "heading": 130.55711674931672,
+        "distance": 1.8806074026711834
       }
     },
     {
-      "curtain": {
-        "heading": 162.4591460618215,
-        "distance": 1.6206062617064836
+      "shelf cabinet": {
+        "heading": -20.84943956442453,
+        "distance": 1.1000013876297683
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -58.9883083743275,
-        "distance": 1.5843745909333435
-      }
-    },
-    {},
-    {
-      "desk counter": {
-        "heading": 30.998977903345605,
-        "distance": 1.2432268370814525
+      "lamp": {
+        "heading": 88.34130690406283,
+        "distance": 1.5945799574871464
       }
     },
     {
-      "bookcase": {
-        "heading": 174.27710711931087,
-        "distance": 0.944600691414421
-      }
-    },
-    {},
-    {
-      "statue statue": {
-        "heading": -179.83836386894282,
-        "distance": 1.481617742917767
+      "counter": {
+        "heading": -34.55295298178271,
+        "distance": 1.2567365567002091
       }
     },
     {
-      "desk counter": {
-        "heading": -113.60693886986458,
-        "distance": 0.8760497104779961
+      "counter": {
+        "heading": -90.73227475775367,
+        "distance": 0.7297271430048095
+      }
+    },
+    {
+      "statue": {
+        "heading": -69.0161913754167,
+        "distance": 0.8088524055070722
       }
     }
   ],
@@ -1949,710 +2015,782 @@
     {},
     {
       "window": {
-        "heading": -44.08969559005851,
-        "distance": 1.364274539990788
+        "heading": -27.965240056873597,
+        "distance": 1.652130617990377
       }
     },
     {},
     {},
+    {},
     {
-      "bookcase": {
-        "heading": -140.86850253560053,
-        "distance": 1.2674180488909155
+      "shelf cabinet": {
+        "heading": 19.45767792652424,
+        "distance": 0.9766328141908578
       }
     }
   ],
   "c6cb369b552f4d3384095bc19eb46e40": [
     {
-      "picture picture _ frame": {
-        "heading": 12.388087896744622,
-        "distance": 0.8372489904883571
-      }
-    },
-    {
-      "picture picture frame": {
-        "heading": -128.5730053396282,
-        "distance": 1.0421517899593877
+      "curtain": {
+        "heading": -86.88565975751315,
+        "distance": 1.7776129095344888
       }
     },
     {
       "lamp": {
-        "heading": -176.21408064635924,
-        "distance": 0.5443872812570953
+        "heading": 104.9877251998762,
+        "distance": 1.1021459959150113
       }
     },
     {
-      "curtain": {
-        "heading": -9.925554869837953,
-        "distance": 0.9297558946153401
+      "stairs": {
+        "heading": 132.06464715420867,
+        "distance": 1.9700463935046264
       }
     },
     {},
     {},
     {
       "door": {
-        "heading": -7.2272657670687295,
-        "distance": 0.6931611525865218
-      }
-    },
-    {
-      "stairs": {
-        "heading": -141.87184217319663,
-        "distance": 0.5698288743850186
+        "heading": 51.4456966167985,
+        "distance": 1.7299325611112442
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 81.67329069589857,
-        "distance": 1.3451519541090362
+      "shelf cabinet": {
+        "heading": 63.35489597882031,
+        "distance": 1.0644089774957597
       }
     },
     {
-      "shelf cabinet shelf cabinet dresser": {
-        "heading": 98.3808880618376,
-        "distance": 1.7596840905884943
+      "shelf cabinet": {
+        "heading": 81.55821955242266,
+        "distance": 1.8737705032470755
+      }
+    },
+    {
+      "window": {
+        "heading": -69.16442884940669,
+        "distance": 1.4499314462106203
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 18.447229127308475,
+        "distance": 1.6629604608877353
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 151.95030865383472,
+        "distance": 0.6924469751790103
+      }
+    },
+    {
+      "painting": {
+        "heading": -142.91227337503076,
+        "distance": 0.6585330992400056
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -101.99485777044116,
+        "distance": 1.1232019460629692
+      }
+    },
+    {
+      "painting": {
+        "heading": -168.44333265113167,
+        "distance": 1.0698901772457123
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -60.13651464364969,
+        "distance": 1.7231148793430406
+      }
+    },
+    {
+      "table counter": {
+        "heading": 52.23201680895741,
+        "distance": 1.4652452444773825
+      }
+    },
+    {},
+    {},
+    {
+      "sofa": {
+        "heading": 171.47201387679763,
+        "distance": 0.696998250509838
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "counter": {
+        "heading": -61.70545360915828,
+        "distance": 1.7871630387553803
+      }
+    },
+    {},
+    {}
+  ],
+  "87e385b82c704a29855826d3cf4f79a0": [
+    {
+      "rug": {
+        "heading": -179.96288662913364,
+        "distance": 1.3403390441233776
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -159.98910119737928,
+        "distance": 0.8776988742108375
+      }
+    },
+    {
+      "painting": {
+        "heading": 142.47226295875203,
+        "distance": 1.1054264739790447
+      }
+    },
+    {
+      "lamp": {
+        "heading": 154.05043733650842,
+        "distance": 1.5956448208364633
+      }
+    },
+    {
+      "painting": {
+        "heading": -114.69878513501781,
+        "distance": 1.7117001792895428
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 69.9945107382737,
+        "distance": 1.2392774171701302
+      }
+    },
+    {},
+    {
+      "curtain": {
+        "heading": 173.82657162280952,
+        "distance": 1.5330256516359688
+      }
+    },
+    {},
+    {
+      "lamp": {
+        "heading": -27.12380597149877,
+        "distance": 1.1459772489802065
+      }
+    },
+    {},
+    {},
+    {
+      "clock": {
+        "heading": 139.54399912243207,
+        "distance": 1.8860132212840035
+      }
+    },
+    {
+      "sofa": {
+        "heading": -4.765891871051906,
+        "distance": 0.6370660799128869
+      }
+    },
+    {},
+    {
+      "table": {
+        "heading": 84.6446743970406,
+        "distance": 0.6634157641592936
+      }
+    },
+    {
+      "painting": {
+        "heading": -158.23712872116585,
+        "distance": 1.2573131993794378
       }
     },
     {},
     {},
     {
       "window": {
-        "heading": 16.573773977495563,
-        "distance": 1.1591543941441096
-      }
-    },
-    {},
-    {
-      "desk": {
-        "heading": 38.877303951176856,
-        "distance": 1.8121859494549075
-      }
-    },
-    {
-      "shelf cabinet shelf cabinet dresser": {
-        "heading": 105.56270488310838,
-        "distance": 1.5618731297054804
-      }
-    },
-    {},
-    {},
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": -111.24253198136219,
-        "distance": 0.9132132541727143
-      }
-    },
-    {},
-    {},
-    {},
-    {
-      "desk": {
-        "heading": 5.709716217245585,
-        "distance": 1.9821517764113104
-      }
-    },
-    {
-      "desk": {
-        "heading": -83.35450945910046,
-        "distance": 1.406192052215312
-      }
-    },
-    {
-      "desk": {
-        "heading": -39.39723793719986,
-        "distance": 0.9465667898196627
-      }
-    }
-  ],
-  "87e385b82c704a29855826d3cf4f79a0": [
-    {
-      "painting picture picture frame painting": {
-        "heading": -120.71803977268155,
-        "distance": 1.0262970661649176
-      }
-    },
-    {
-      "painting picture picture frame painting": {
-        "heading": -102.54843769969648,
-        "distance": 0.6311118638237199
-      }
-    },
-    {},
-    {
-      "rug": {
-        "heading": 151.59902834713813,
-        "distance": 1.9578533034106194
-      }
-    },
-    {
-      "lamp": {
-        "heading": 102.52944345880076,
-        "distance": 1.2343543805251407
-      }
-    },
-    {},
-    {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -154.8126151847695,
-        "distance": 0.6410517239934161
-      }
-    },
-    {
-      "painting picture picture frame painting": {
-        "heading": -167.01170549407067,
-        "distance": 1.9133510127811924
-      }
-    },
-    {
-      "shelf cabinetcase shelf cabinet": {
-        "heading": 144.73782303961002,
-        "distance": 1.1084483172608632
-      }
-    },
-    {},
-    {},
-    {},
-    {
-      "lamp": {
-        "heading": -4.444883776174663,
-        "distance": 1.8003298480773946
-      }
-    },
-    {},
-    {
-      "couch sofa sofa": {
-        "heading": -127.99454427025621,
-        "distance": 0.5464329025221514
-      }
-    },
-    {},
-    {},
-    {},
-    {},
-    {
-      "chandelier chandelier": {
-        "heading": 66.61989981120198,
-        "distance": 0.8636220473864151
-      }
-    },
-    {
-      "curtain": {
-        "heading": -53.94594500527133,
-        "distance": 1.9750052208013829
+        "heading": -94.06185484676516,
+        "distance": 1.8425812686006786
       }
     },
     {
       "rug": {
-        "heading": 21.314062039606142,
-        "distance": 1.223108606009899
-      }
-    },
-    {},
-    {},
-    {
-      "table desk": {
-        "heading": -13.504414943934961,
-        "distance": 1.6919950934425736
-      }
-    },
-    {
-      "window curtain": {
-        "heading": -58.3843662782038,
-        "distance": 1.6347633953481404
-      }
-    },
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": -17.28142496446037,
-        "distance": 1.3339169937895285
-      }
-    },
-    {},
-    {
-      "desk": {
-        "heading": -123.91649470535397,
-        "distance": 1.5322609813463792
-      }
-    },
-    {
-      "desk counter": {
-        "heading": -164.07934267604878,
-        "distance": 1.8858896152550195
+        "heading": 122.16515992818432,
+        "distance": 0.8316833014358324
       }
     },
     {},
     {},
     {},
     {
-      "desk": {
-        "heading": 115.57601902057758,
-        "distance": 1.374555529791432
+      "shelf cabinet": {
+        "heading": 85.572949196926,
+        "distance": 1.87730213492705
+      }
+    },
+    {
+      "door": {
+        "heading": 133.48862877383215,
+        "distance": 0.6049078174756255
+      }
+    },
+    {
+      "table": {
+        "heading": 60.3355522285336,
+        "distance": 1.8877931178265899
+      }
+    },
+    {},
+    {},
+    {
+      "table": {
+        "heading": 147.40023019068673,
+        "distance": 0.6295476315814877
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "table": {
+        "heading": -30.159087255795896,
+        "distance": 1.862800476837857
       }
     },
     {}
   ],
   "0e6e6b0332d745178dd37fc1d4a710a2": [
     {
-      "desk": {
-        "heading": -119.88988647561723,
-        "distance": 1.9681484477130715
-      }
-    },
-    {
-      "lamp chandelier chandelier": {
-        "heading": -40.150561170635484,
-        "distance": 0.5358731442737905
-      }
-    },
-    {
       "window": {
-        "heading": -22.75925082613344,
-        "distance": 0.8248870497279175
+        "heading": -146.15327105601224,
+        "distance": 1.1552900171924834
       }
     },
     {},
     {
-      "desk counter": {
-        "heading": 179.55832855038477,
-        "distance": 1.806982208624806
+      "lamp": {
+        "heading": -121.20810314822681,
+        "distance": 0.8664402806628605
       }
     },
-    {},
-    {},
-    {},
-    {},
-    {},
     {
-      "window": {
-        "heading": 171.8664621990069,
-        "distance": 0.6758776230573493
+      "table counter": {
+        "heading": -101.08518709175705,
+        "distance": 0.904060068062045
       }
     },
+    {},
+    {},
+    {},
+    {},
     {
       "curtain": {
-        "heading": -166.6539861135136,
-        "distance": 1.7901063291062527
+        "heading": -0.3092058340389485,
+        "distance": 1.5177795916241963
       }
     },
     {
-      "statue statue": {
-        "heading": 53.061520544607674,
-        "distance": 0.5800589992490119
+      "window": {
+        "heading": 141.69649332341532,
+        "distance": 0.6768093201129421
+      }
+    },
+    {
+      "counter": {
+        "heading": 28.29307859830945,
+        "distance": 1.3261419462254345
+      }
+    },
+    {},
+    {},
+    {
+      "statue": {
+        "heading": 32.76167070630089,
+        "distance": 0.6914707340784638
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": -27.38664035668114,
+        "distance": 1.1659312336244365
       }
     }
   ],
   "cf726b6c0144425282245b34fc4efdca": [
     {},
     {
-      "stairs": {
-        "heading": 56.64629102677148,
-        "distance": 1.579966920176096
-      }
-    },
-    {
       "lamp": {
-        "heading": 115.2434696097464,
-        "distance": 1.0113473773339898
+        "heading": 1.7778046346404608,
+        "distance": 1.4695825510487937
       }
     },
     {
-      "picture picture": {
-        "heading": 148.25255195696093,
-        "distance": 1.9493929229996163
-      }
-    },
-    {
-      "picture picture frame": {
-        "heading": 160.91009797065936,
-        "distance": 0.9789173015460995
-      }
-    },
-    {
-      "picture picture frame": {
-        "heading": 32.89270088628689,
-        "distance": 1.4507300642962067
+      "stairs": {
+        "heading": -107.4498990370893,
+        "distance": 1.1026323071369748
       }
     },
     {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 13.762272632207754,
-        "distance": 1.0027828057130428
+      "shelf cabinet": {
+        "heading": 64.3887840339818,
+        "distance": 0.5874615204841154
       }
     },
-    {},
     {},
     {
       "door": {
-        "heading": 162.86920543672255,
-        "distance": 0.6805744499312603
+        "heading": 11.217634216756522,
+        "distance": 0.5506148396780848
       }
     },
     {},
     {},
-    {},
+    {
+      "plaque": {
+        "heading": -153.55720054549053,
+        "distance": 1.3178967513918864
+      }
+    },
     {
       "window": {
-        "heading": -114.73017424207156,
-        "distance": 1.097117459629514
+        "heading": -161.9044184925363,
+        "distance": 1.9904260802212559
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 171.5117447544108,
+        "distance": 1.1258449988031567
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 29.867576205884177,
+        "distance": 1.2485074092117978
       }
     },
     {},
     {},
     {},
     {
-      "desk": {
-        "heading": 33.51485784467056,
-        "distance": 0.8348137007437555
+      "painting": {
+        "heading": -57.917203749712556,
+        "distance": 1.6445066294797623
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 132.33679099171604,
-        "distance": 1.9840220281750873
+      "counter": {
+        "heading": 54.69956005817923,
+        "distance": 1.6640828049031866
       }
     },
     {},
+    {},
     {
-      "desk": {
-        "heading": 163.08595740710075,
-        "distance": 1.2014691104392319
+      "clock": {
+        "heading": 72.21690426640515,
+        "distance": 1.051574991226762
       }
     },
     {
       "curtain": {
-        "heading": -3.5466206515501995,
-        "distance": 0.8332728101446527
+        "heading": 116.04472305387219,
+        "distance": 1.663579924949403
       }
     },
     {
-      "desk counter": {
-        "heading": 37.90475988227382,
-        "distance": 0.7923528522016572
-      }
-    },
-    {},
-    {
-      "desk": {
-        "heading": -99.832603336992,
-        "distance": 1.6480864047194315
+      "counter": {
+        "heading": 113.71372343496319,
+        "distance": 1.5499757512443477
       }
     },
     {},
     {},
+    {},
+    {},
+    {},
     {
-      "lamp": {
-        "heading": -100.85088118441517,
-        "distance": 1.8087118485112483
+      "curtain": {
+        "heading": -20.639562355053272,
+        "distance": 1.6100331201780793
       }
     },
+    {},
     {
       "vase": {
-        "heading": -158.13736933840184,
-        "distance": 0.5788124579097654
+        "heading": -22.46355051868281,
+        "distance": 1.2742804154933023
       }
     },
+    {},
+    {},
     {},
     {
-      "curtain": {
-        "heading": 164.28401919641135,
-        "distance": 1.694484425240579
+      "shelf cabinet": {
+        "heading": 130.57192993032976,
+        "distance": 0.71259411165628
       }
     },
-    {},
-    {},
-    {},
     {},
     {}
   ],
   "89f70e0571d64dbf99c48e56287b997f": [
     {
-      "painting picture picture _ frame painting": {
-        "heading": 178.65110171917274,
-        "distance": 1.3971035166658512
-      }
-    },
-    {
       "lamp": {
-        "heading": 53.05108564054805,
-        "distance": 1.1569540560014162
-      }
-    },
-    {
-      "painting picture picture frame painting": {
-        "heading": -171.31497691201938,
-        "distance": 1.3445314096528351
+        "heading": -123.43069163313942,
+        "distance": 0.5971204757411023
       }
     },
     {},
     {
       "rug": {
-        "heading": -9.5714957213101,
-        "distance": 0.5357096515022166
+        "heading": -107.13335411648211,
+        "distance": 0.8094850682224988
       }
     },
     {
-      "picture picture _ frame": {
-        "heading": 99.80794679180912,
-        "distance": 1.017823870617833
+      "shelf cabinet": {
+        "heading": 62.09940881711691,
+        "distance": 0.964882417413081
       }
     },
     {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": 60.90102109734593,
-        "distance": 1.4645831400998515
+      "painting": {
+        "heading": 44.287948470547036,
+        "distance": 0.9485955765984322
+      }
+    },
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 125.12113931711349,
+        "distance": 1.1202561554316228
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -2.651515739644026,
-        "distance": 0.5214841888182786
+      "painting": {
+        "heading": -163.91960604028696,
+        "distance": 1.224974250448676
+      }
+    },
+    {},
+    {
+      "stairs": {
+        "heading": 43.34330167360059,
+        "distance": 0.6124898825825678
+      }
+    },
+    {},
+    {
+      "stairs": {
+        "heading": -154.6690098931081,
+        "distance": 1.3685870596539516
       }
     },
     {
-      "picture picture": {
-        "heading": -164.04000986181705,
-        "distance": 1.7247625551185117
+      "shelf cabinet counter": {
+        "heading": 22.492695359390808,
+        "distance": 0.6143155977279466
+      }
+    },
+    {
+      "window": {
+        "heading": -10.533323879297427,
+        "distance": 1.9717166826071462
+      }
+    },
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 128.5330177591926,
+        "distance": 1.534814180306388
+      }
+    },
+    {
+      "window": {
+        "heading": 108.34439942081798,
+        "distance": 1.9101346401912946
+      }
+    },
+    {
+      "counter": {
+        "heading": -58.99957196728404,
+        "distance": 1.4408703350185135
       }
     },
     {
       "stairs": {
-        "heading": -175.69087396337056,
-        "distance": 1.4539880010585051
+        "heading": -37.613045740805234,
+        "distance": 1.005492240998649
       }
     },
     {},
     {},
+    {
+      "counter": {
+        "heading": -112.2695606313858,
+        "distance": 1.3292453688789625
+      }
+    },
     {},
     {
-      "stairs": {
-        "heading": 69.92389983195935,
-        "distance": 1.3631717741814504
+      "painting": {
+        "heading": 54.83913026087484,
+        "distance": 1.088166914322027
+      }
+    },
+    {},
+    {
+      "table counter": {
+        "heading": -75.53765803742013,
+        "distance": 1.9306818546030686
+      }
+    },
+    {
+      "counter": {
+        "heading": 55.91625825092245,
+        "distance": 1.3786550963367614
+      }
+    },
+    {
+      "painting": {
+        "heading": 69.38095277798064,
+        "distance": 1.6531470558748937
+      }
+    },
+    {
+      "table": {
+        "heading": 93.46834974585136,
+        "distance": 1.3974607384767561
+      }
+    },
+    {
+      "counter": {
+        "heading": -175.60105245623754,
+        "distance": 1.4784088336425079
+      }
+    },
+    {
+      "lamp": {
+        "heading": -68.06017523268136,
+        "distance": 1.788099115639436
       }
     },
     {},
     {},
     {
       "window": {
-        "heading": 7.888531354054237,
-        "distance": 0.6932530509248838
+        "heading": 92.38214128662531,
+        "distance": 1.9916339588874519
       }
     },
-    {
-      "window": {
-        "heading": -40.7225061318712,
-        "distance": 1.0585390497162723
-      }
-    },
-    {
-      "desk counter": {
-        "heading": -67.02230899537523,
-        "distance": 0.6338060946401034
-      }
-    },
-    {
-      "stairs": {
-        "heading": 51.622590607923314,
-        "distance": 0.6620460685401348
-      }
-    },
-    {},
-    {
-      "desk counter": {
-        "heading": -106.33616413526836,
-        "distance": 1.107026784518365
-      }
-    },
-    {
-      "desk": {
-        "heading": 37.678471490114674,
-        "distance": 1.0894761551098282
-      }
-    },
-    {
-      "desk counter": {
-        "heading": -81.57264604794936,
-        "distance": 1.7699155569895422
-      }
-    },
-    {},
-    {},
-    {
-      "desk counter": {
-        "heading": 142.21648108299632,
-        "distance": 1.844014489342315
-      }
-    },
-    {},
-    {},
-    {
-      "desk counter": {
-        "heading": -43.568448173381626,
-        "distance": 1.3508256949394257
-      }
-    }
+    {}
   ],
   "5ac71b4e9af64a6c8fb4a2f8fde8a239": [
     {
       "stairs": {
-        "heading": 12.12194505654577,
-        "distance": 1.8390685725638356
+        "heading": -54.40270145696532,
+        "distance": 1.1468089229519594
       }
     },
     {},
     {},
-    {},
     {
       "window": {
-        "heading": -27.948582780825433,
-        "distance": 0.8711011883101893
+        "heading": 1.1488858692820543,
+        "distance": 0.948689906381356
+      }
+    },
+    {
+      "window": {
+        "heading": -89.45432158731488,
+        "distance": 1.9657843878352632
       }
     },
     {},
     {
       "window": {
-        "heading": -137.20133770515568,
-        "distance": 1.8474518808164924
-      }
-    },
-    {
-      "window": {
-        "heading": -3.6555996821771544,
-        "distance": 0.6081810614482636
+        "heading": -23.61773486734657,
+        "distance": 0.9545305747169412
       }
     },
     {
       "closet": {
-        "heading": -97.04789911908283,
-        "distance": 1.0368144032449447
+        "heading": -11.5989457670195,
+        "distance": 0.7730596550942974
       }
     },
     {},
-    {},
+    {
+      "window": {
+        "heading": 99.61150327290329,
+        "distance": 1.0822617730908828
+      }
+    },
     {},
     {
       "door": {
-        "heading": -98.44536479693795,
-        "distance": 1.1201719554713752
+        "heading": 109.87448251543861,
+        "distance": 0.7941834542521076
       }
-    }
+    },
+    {},
+    {}
   ],
   "3ad040847d7c48788baf889755ecf33c": [
     {},
     {},
     {},
-    {
-      "desk counter": {
-        "heading": -7.487888507174176,
-        "distance": 1.643676396792134
-      }
-    },
-    {
-      "shelf cabinet shelf cabinet": {
-        "heading": 21.976506947806826,
-        "distance": 0.8466110118925005
-      }
-    },
     {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": 55.534595847270026,
+        "distance": 1.799873487951043
+      }
+    },
     {},
     {},
     {},
     {
       "curtain": {
-        "heading": -148.03886075671838,
-        "distance": 0.8698180389908059
+        "heading": -132.38873368420326,
+        "distance": 0.6982551078376606
       }
     },
     {
-      "bookcase": {
-        "heading": 153.46354721468254,
-        "distance": 1.102058706938494
+      "shelf cabinet": {
+        "heading": 132.89649295879644,
+        "distance": 1.2922252528176859
+      }
+    },
+    {
+      "table counter": {
+        "heading": 70.4103922940595,
+        "distance": 1.5498822513339394
+      }
+    },
+    {},
+    {},
+    {
+      "counter": {
+        "heading": 96.6244783198494,
+        "distance": 1.4571681110381611
+      }
+    },
+    {
+      "chair": {
+        "heading": -128.46226310072944,
+        "distance": 1.3236726889264223
       }
     },
     {},
     {
-      "desk": {
-        "heading": 3.2547886062031637,
-        "distance": 1.8588161688944997
+      "counter": {
+        "heading": 79.13792903691956,
+        "distance": 1.2872393668114388
       }
     },
     {},
     {},
+    {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 3.4384920435515767,
-        "distance": 0.996335220501394
-      }
-    },
-    {
-      "desk counter": {
-        "heading": 12.977018836653883,
-        "distance": 1.149401994374603
+      "table counter": {
+        "heading": -54.53969885567183,
+        "distance": 1.4968414127705696
       }
     },
     {},
-    {
-      "desk": {
-        "heading": -16.857289131025652,
-        "distance": 1.5422107868552306
-      }
-    },
-    {},
-    {
-      "desk": {
-        "heading": 80.67100269588656,
-        "distance": 0.8814603125502687
-      }
-    },
     {}
   ],
   "c09569d9a442483ab65364b18a438d1a": [
     {},
-    {
-      "painting picture picture _ frame painting": {
-        "heading": 51.99954583524362,
-        "distance": 1.071669236919154
-      }
-    },
+    {},
     {},
     {},
     {},
     {},
     {
       "rug": {
-        "heading": -138.05669368991352,
-        "distance": 1.2794334407248735
+        "heading": -44.15885808129835,
+        "distance": 0.7724702529062517
       }
     },
     {},
-    {},
-    {},
+    {
+      "painting": {
+        "heading": 87.97523468562196,
+        "distance": 1.4839268325843937
+      }
+    },
     {},
     {},
     {},
     {},
     {
-      "couch sofa sofa": {
-        "heading": 32.104798161166485,
-        "distance": 1.535163658196315
-      }
-    },
-    {
-      "desk": {
-        "heading": 138.7445814942938,
-        "distance": 0.935264191075654
-      }
-    },
-    {
-      "stool footstool ottoman": {
-        "heading": 123.21588347055183,
-        "distance": 1.25049546619256
+      "window": {
+        "heading": -151.24652542256092,
+        "distance": 1.5718803944154685
       }
     },
     {},
+    {},
+    {
+      "door": {
+        "heading": 169.37688553355974,
+        "distance": 0.6660114858804644
+      }
+    },
+    {
+      "table counter": {
+        "heading": 54.43546720224859,
+        "distance": 1.4961989093315098
+      }
+    },
+    {},
+    {
+      "bed sofa": {
+        "heading": -105.93933775372014,
+        "distance": 1.3595496333764752
+      }
+    },
+    {
+      "ottoman": {
+        "heading": -20.052439579682897,
+        "distance": 1.4975940494628246
+      }
+    },
+    {
+      "window": {
+        "heading": 90.78095256768927,
+        "distance": 1.9334311015839676
+      }
+    },
     {},
     {},
     {}
@@ -2660,8 +2798,14 @@
   "bfd3e9defa8742118917a4a5cc9190a3": [
     {
       "window": {
-        "heading": 92.11371741577693,
-        "distance": 0.7612872525372996
+        "heading": -2.4757650059694924,
+        "distance": 1.3499361886663481
+      }
+    },
+    {
+      "window": {
+        "heading": -136.11293043649675,
+        "distance": 1.0941757696642984
       }
     },
     {},
@@ -2669,10 +2813,11 @@
     {},
     {
       "curtain": {
-        "heading": 93.56638115904775,
-        "distance": 1.064576265378638
+        "heading": -153.81709134831272,
+        "distance": 1.4559764733746556
       }
     },
+    {},
     {},
     {},
     {},
@@ -2682,42 +2827,40 @@
   ],
   "dc3170aacd3f40f2ac2f5b726bd75b88": [
     {
-      "shelf cabinet bookcase shelf cabinet": {
-        "heading": -128.2958124713753,
-        "distance": 0.6225382609006642
+      "shelf cabinet": {
+        "heading": 140.6985830351108,
+        "distance": 1.087014463203869
       }
-    },
-    {},
-    {}
+    }
   ],
   "4610dfb32d044ad793cf8640a7ede0f4": [
-    {
-      "picture picture frame": {
-        "heading": 116.08563618924529,
-        "distance": 1.2289884114328793
-      }
-    },
     {},
     {},
     {},
     {},
-    {
-      "bookcase": {
-        "heading": -162.33577418753134,
-        "distance": 0.5693886316860832
-      }
-    },
     {},
     {},
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 2.699679519741011,
-        "distance": 1.9282879073941819
+      "painting": {
+        "heading": -98.67315592553167,
+        "distance": 1.1401905217164385
+      }
+    },
+    {
+      "shelf cabinet": {
+        "heading": 8.723129062208386,
+        "distance": 1.1511850659211111
       }
     },
     {},
     {},
+    {
+      "shelf cabinet": {
+        "heading": 148.10528826987962,
+        "distance": 0.6798832451472939
+      }
+    },
     {},
     {},
     {},
@@ -2725,58 +2868,76 @@
     {},
     {
       "curtain": {
-        "heading": -18.863626830068597,
-        "distance": 0.7240200971819086
+        "heading": -156.57466429660445,
+        "distance": 1.8254918780547893
       }
     },
-    {},
-    {},
-    {},
-    {},
     {},
     {},
     {
-      "desk": {
-        "heading": -94.17715947865103,
-        "distance": 1.4549914782334497
+      "shelf cabinet counter": {
+        "heading": 5.176991776181751,
+        "distance": 1.8895368409122417
       }
     },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {},
     {}
   ],
   "f8f15aaf58354ce1b990df2ab33381bb": [
     {
-      "lamp chandelier chandelier": {
-        "heading": 119.74740226548397,
-        "distance": 1.9646003757142125
+      "lamp": {
+        "heading": -3.2194919506409008,
+        "distance": 1.0934786198227902
       }
     },
     {},
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": 117.97449527404092,
-        "distance": 1.2360197087999105
+      "shelf cabinet": {
+        "heading": 112.25704076459391,
+        "distance": 1.6643931095274556
       }
     },
     {
-      "shelf cabinet shelf cabinet": {
-        "heading": -22.619907111553687,
-        "distance": 0.8987404506812438
+      "shelf cabinet": {
+        "heading": -24.056676941537916,
+        "distance": 1.6690402633676593
+      }
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "shelf cabinet": {
+        "heading": -37.581468789057766,
+        "distance": 1.462449535106017
       }
     },
     {
       "window": {
-        "heading": -13.702097266208966,
-        "distance": 1.2230592380582106
+        "heading": -147.1386817793033,
+        "distance": 0.612659402252719
+      }
+    },
+    {
+      "lamp": {
+        "heading": 43.72832913876914,
+        "distance": 0.6205750190136352
       }
     },
     {},
-    {
-      "lamp": {
-        "heading": -119.84492240429734,
-        "distance": 1.8872231060674363
-      }
-    },
+    {},
     {}
   ]
 }
