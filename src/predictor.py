@@ -194,7 +194,7 @@ class Predictor:
             end_idx = self.response.rfind(']')
             stack = []
             json_string = ""
-            for i in range(end_idx+1, -1, -1):
+            for i in range(end_idx, -1, -1):
                 if self.response[i] == ']':
                     stack.append(']')
                 elif self.response[i] == '[':
@@ -206,7 +206,7 @@ class Predictor:
             # json_string = json_string.partition('[')[2]
             # json_string = '[' + json_string 
             # json_string = json_string.rpartition(']')[0] + ']'
-            # json_string = json_string.replace("'", '"')  # 替换单引号
+            json_string = json_string.replace("'", '"')  # 替换单引号
             data = json.loads(json_string.strip())
             
             # 4. 使用列表推导式高效地提取group和goal
