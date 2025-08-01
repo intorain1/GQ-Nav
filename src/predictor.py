@@ -208,7 +208,11 @@ class Predictor:
             # json_string = json_string.partition('[')[2]
             # json_string = '[' + json_string 
             # json_string = json_string.rpartition(']')[0] + ']'
+<<<<<<< HEAD
             self.json_string = json_string.replace("'", '"')  # 替换单引号
+=======
+            json_string = json_string.replace("'", '"')  # 替换单引号
+>>>>>>> e942a97be9c0a64cea957f8393867642875cfaf2
             data = json.loads(json_string.strip())
             
             # 4. 使用列表推导式高效地提取group和goal
