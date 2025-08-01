@@ -30,7 +30,8 @@ def parse_args():
     # parser.add_argument('--val_env_name', type=str, default='R2R_val_unseen_instr_2')
     # parser.add_argument('--val_env_name', type=str, default='R2R_val_unseen_instr_3')
     # parser.add_argument('--val_env_name', type=str, default='R2R_val_unseen_instr_4')
-    parser.add_argument('--val_env_name', type=str, default='R2R_val_instr')
+    parser.add_argument('--val_env_name', type=str, default='R2R_val_unseen_instr')
+    # parser.add_argument('--val_env_name', type=str, default='R2R_val_instr')
 
     parser.add_argument('--load_instruction', action='store_true', default=True)
     parser.add_argument('--load_action_plan', action='store_true', default=True)

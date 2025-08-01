@@ -49,16 +49,33 @@ if __name__ == "__main__":
             basename = os.path.basename(image_file)
             scene_id = basename.lower().split('_combined')[0]
 
+            depth_image_file = image_file.replace('combined_images', "combined_depth__mages")
             image = np.array(Image.open(image_file))
+            depth = np.array(Image.open(depth_image_file))
             mask, xyxy, conf, caption = segmenter.get_segmentation(image)
-
+            print(depth.shape)
             scene_list = []
             for i in range(len(caption)):
                 entry = {}
                 if conf[i] > 0.9:
+                    obj_mask = mask[i]
+                    ys, xs = np.where(obj_mask)
+                    if len(xs) == 0 or len(ys) == 0:
+                        continue 
+                    cx = int(np.mean(xs))
+                    cy = int(np.mean(ys))
+                    # Calculate heading for panorama: map x position to [0, 360) degrees
+                    img_width = image.shape[1]
+                    heading = (cx / img_width) * 360.0 - 180
+                    # Get distance from depth image at centroid
+                    # If depth image has 3 channels, take the first channel
+                    if depth.ndim == 3 and depth.shape[2] == 3:
+                        distance = float(depth[int(cy), int(cx), 0]) * 25 / 1000
+                    else:
+                        distance = float(depth[int(cy), int(cx)])
                     entry[caption[i]] = {
-                        "heading": float(np.random.uniform(-180, 180)),
-                        "distance": float(np.random.uniform(0.5, 2.0))
+                        "heading": float(heading),
+                        "distance": distance
                     }
                 scene_list.append(entry)
             results[scene_id] = scene_list

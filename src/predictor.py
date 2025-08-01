@@ -1,3 +1,4 @@
+
 from graph import OptimizedTimeObjectGraph
 from openai import OpenAI
 import os
@@ -42,8 +43,8 @@ class Predictor:
         self.error_skill = None
         self.error_imagined_graph = None
 
-        self.system_prompt = "You are a smart human and you can imagine the spatial relation of object navigate to the goal perfectly."
-
+        self.system_prompt = "You are a smart human and you can imagine the spatial relation of object, predict unseen objects, as well as their spatial relation and the order of their appearance, according to current observation. Then navigate to the goal perfectly."
+        self.json_string =""
         self.user_prompt =None
         #优化方向：现在的前几个goal只由instruction决定，并不合理，应该在路径中途细化想象；
         #skill没有体现，是一个空壳参数
@@ -114,18 +115,19 @@ class Predictor:
                 self.user_prompt += f'''Now you have explored some parts of the scene and known the following objects in your environment: {self.graph_to_string()}. 
                 The objects in a pair of [] are the objects detected in the same viewpoint. The time order is from top to bottom. The first line is the objects detected at the first viewpoint, and so on. The last line is currently in the agent's observation view.\n'''
             self.user_prompt += f'''What should the agent do next? Now you need to rethink next actions and views. You should use given information of ego state of agent, detected objects, current observation and position to analyze the waypoints, thinking in the following steps to finish this task.
-            1. Fisrt, you should break down the instruction to subtasks, for example: first go into xxx room, then xxx way, then … .\n'''
+            1. Fisrt, you should break down the instruction to at least 3 subtasks, for example: first go into xxx room, then xxx way, then … .\n'''
         if is_rethinking:
             self.user_prompt += f'''You have explored some parts of the scene and detected some "known objects" in your environment: {self.graph_to_string()}.
               The objects in a pair of [] are the objects detected in the same viewpoint. The time order is from top to bottom. The first line is the objects detected at the first viewpoint, and so on. The last line is currently in the agent's observation view.\n'''
-            self.user_prompt =f'''Now you are halfway through the navigation task. Your previous prediction is {self.response}.'''
+            self.user_prompt =f'''Now you are halfway through the navigation task. Your previous prediction is {self.json_string}.'''
             self.user_prompt += f''' So far, you have successfully reached the first {self.error_action_num} goal objects.'''
             self.user_prompt += f''' But when trying to get to "{self.error_object}", the real observation of objects(i.e. the last line of "known objects") differs a lot from your previous prediction.\n'''
-            self.user_prompt += f'''What should the agent do next? Now you need to rethink next actions and views. Your answers shoulf not repeat the "group" and "goal" in already-done subtasks!! Just tell me your plan of next steps. You should use given information of prediction error, ego state of agent, detected objects, current observation and position to analyze the waypoints, thinking in the following steps to finish this task.
+            self.user_prompt += f'''What should the agent do next? Now you need to rethink  next actions and views. Your answers shoulf not repeat the "group" and "goal" in already-done subtasks!! Just tell me your plan of next steps. You should use given information of prediction error, ego state of agent, detected objects, current observation and position to analyze the waypoints, thinking in the following steps to finish this task.
             1. Fisrt, you should break down the instruction to subtasks, and reason about the subtasks waiting to be done. For example: Subtasks in instruction is …. According to previous successful steps, xxx tasks were done. Then, according to the error information, first undo xxx step. Next, first go into xxx room, then xxx way, then … .\n'''
-        self.user_prompt += f'''2. Then reasoning: in your experience, what objects would you find in the rooms/hallway/…? Please give me a set of objects that you would expect to find in each subtasks respectively. Each subtask should have a set of at least 4 objects.
-        3. Next, What are the objects you would find when transferring from one room/hallay/… to another? Predicted the objects to help the agent to complete the instruction. Notice that the objects in the transferring process should include at least 1 object respectively that is in the 2 neighbor room/hallway/… you mentioned in step 2.
-        The two steps above generate a series of object "group" in this task. The number of "group" is added from the number of rooms/ways and the number of transferring movements. How many "group" do you think there are in this task?
+        self.user_prompt += f'''2. Then reasoning: in your experience, what objects would you find in the rooms/hallway/… in the first step? Please give me a set of objects that you would expect to find in each subtasks respectively. Each subtask should have a set of at least 4 objects.
+        3. Next, What are the objects you would find when transferring from one room/hallay/… to another? Predicted the objects to help the agent to complete the instruction. Notice that there should be at least 2 transferring movements between subtasks. The objects in the transferring process should include at least 1 object respectively that is in the 2 neighbor room/hallway/… you mentioned in step 2.
+        
+        The second and third steps generate a series of object "group" in this task. The number of "group" is added from the number of rooms/ways and the number of transferring movements. How many "group" do you think there are in this task?
         For example, if there are 3 rooms and 2 transferring movements, then there will be 5 "group" in total.
         4. Then organize the relative all objects of each "group" above in chronological order and output the result as a 2-dim array in python.
         Objects can be repeatable. If one type of objects appear twice in the process of complete the task, its name should also appear twice in the array. Remember, all the metioned objects should be in the list:{self.nodespace}.
@@ -148,7 +150,7 @@ class Predictor:
             ...
         ]
         This list must can be decoded as a json object.
-        Tell me your answers of all 6 steps above. Mark each answer with "answer1", "answer2", etc. 
+        Tell me your results of all 6 steps one by one! Thank you a lot! 
         '''
 
     def graph_to_string(self):
@@ -194,7 +196,7 @@ class Predictor:
             end_idx = self.response.rfind(']')
             stack = []
             json_string = ""
-            for i in range(end_idx+1, -1, -1):
+            for i in range(end_idx, -1, -1):
                 if self.response[i] == ']':
                     stack.append(']')
                 elif self.response[i] == '[':
@@ -206,7 +208,7 @@ class Predictor:
             # json_string = json_string.partition('[')[2]
             # json_string = '[' + json_string 
             # json_string = json_string.rpartition(']')[0] + ']'
-            # json_string = json_string.replace("'", '"')  # 替换单引号
+            self.json_string = json_string.replace("'", '"')  # 替换单引号
             data = json.loads(json_string.strip())
             
             # 4. 使用列表推导式高效地提取group和goal
@@ -341,6 +343,7 @@ if __name__ == "__main__":
     predictor.set_instruction("Go through the door way and down the hallway, turning left at the end looking into a bedroom with a gray throw on the bed.")
     #做出预测
     predictor.update_imagined_graph()
+    print("response =\n", predictor.response)
     print("action_chain =", predictor.action_chain)
     print("imagined_graph_chain =", predictor.imagined_graph_chain)
     error_point= predictor.action_chain[-2]  # 假设倒数第二个动作是错误的

@@ -4,7 +4,7 @@
 # base_dir = "/media/mspx/Elements1/mp3d/v1/scans/"
 
 # for root, dirs, files in os.walk(base_dir):
-#     zip_name = "matterport_color_images.zip"
+#     zip_name = "matterport_depth_images.zip"
 #     if zip_name in files:
 #         extracted_dir = os.path.join(root, zip_name.replace(".zip", ""))  
 #         if not os.path.exists(extracted_dir):
@@ -35,15 +35,15 @@ def process_scenes(folder_path, output_folder):
 
     os.makedirs(output_folder, exist_ok=True)
     
-    all_files = glob(os.path.join(folder_path, "*_i*_*.jpg")) + \
-                glob(os.path.join(folder_path, "*_i*_*.png"))
+    all_files = glob(os.path.join(folder_path, "*_d*_*.jpg")) + \
+                glob(os.path.join(folder_path, "*_d*_*.png"))
     scene_ids = set([os.path.basename(f).split('_')[0] for f in all_files])
     
     print(f"find {len(scene_ids)} scenes")
     
     for scene_id in tqdm(scene_ids, desc="processing"):
         groups = {'up': [], 'mid': [], 'down': []}
-        for angle, prefix in [('up', 'i0'), ('mid', 'i1'), ('down', 'i2')]:
+        for angle, prefix in [('up', 'd0'), ('mid', 'd1'), ('down', 'd2')]:
             for seq in range(6):
                 img_path = os.path.join(folder_path, f"{scene_id}_{prefix}_{seq}.jpg")
                 if not os.path.exists(img_path):
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     scan_root = "/media/mspx/Elements1/mp3d/v1/scans"
     scan_dirs = [d for d in os.listdir(scan_root) if os.path.isdir(os.path.join(scan_root, d))]
     for scan in scan_dirs:
-        input_folder = os.path.join(scan_root, scan, scan, "matterport_color_images")
-        output_folder = input_folder.replace("matterport_color_images", "combined_images")
+        input_folder = os.path.join(scan_root, scan, scan, "matterport_depth_images")
+        output_folder = input_folder.replace("matterport_depth_images", "combined_depth__mages")
         os.makedirs(output_folder, exist_ok=True)
         process_scenes(input_folder, output_folder)

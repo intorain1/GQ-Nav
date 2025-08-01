@@ -33,7 +33,9 @@ class NavAgent(BaseAgent):
         for obj in objects:
             for name, props in obj.items():
                 words = list(dict.fromkeys(name.split()))
-                parsed.extend(words)
+                for word in words:
+                    if word not in parsed:
+                        parsed.append(word)
         return parsed
     
     def parse_navigable(self, navigable: List[Dict[str, Any]]) -> List[str]:
@@ -48,7 +50,27 @@ class NavAgent(BaseAgent):
             'instr_id': obs['instr_id'],
             'path': [[obs['viewpoint']]],
         }]
+    
+    def init_obj_traj(self, obs: List[dict]):
+        self.obj_traj = [{
+            'instr_id': obs['instr_id'],
+            'obj': [self.parse_objects(obs['objects'])],
+        }]
 
+    def get_obj_traj(self):
+        """Get the object trajectory."""
+        cur_obs = self.env.reset()[0]
+        self.init_obj_traj(cur_obs)
+        instr_id = cur_obs['instr_id']
+        gt_traj = self.env.gt_trajs[instr_id][1]
+        for step in gt_traj:
+            self.env.step([step])
+            cur_obs = self.env._get_obs()[0]
+            objects = self.parse_objects(cur_obs['objects'])
+            self.obj_traj[0]['obj'].append(objects)
+        
+        return self.obj_traj   
+    
     def _make_action(self, max_step, reset=True) -> str:
         if reset:  # Reset env
             cur_obs = self.env.reset()[0]

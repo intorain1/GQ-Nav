@@ -65,7 +65,7 @@ if __name__ == "__main__":
     val_envs = build_dataset(args)
 
     results = valid(args, val_envs)
-    print(results)
+    # print(results)
     # results = []
 
 

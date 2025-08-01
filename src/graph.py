@@ -1,7 +1,10 @@
 import networkx as nx
+import matplotlib
+matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap# Use a non-interactive backend for matplotlib
 import math
+import os
 
 class OptimizedTimeObjectGraph:
     def __init__(self):
@@ -84,7 +87,7 @@ class OptimizedTimeObjectGraph:
     def get_objects(self):
         return list(self.object_nodes.values())
     
-    def visualize(self, title="Optimized Time-Object Graph"):
+    def visualize(self, output_dir, title="Optimized Time-Object Graph"):
         G = nx.Graph()
 
         node_colors = []
@@ -117,16 +120,17 @@ class OptimizedTimeObjectGraph:
         
         nx.draw_networkx_edges(G, pos, edge_color="blue", width=1.5)
         
-        plt.scatter([], [], c='lightgreen', s=1200, label='Object Nodes')
-        plt.scatter([], [], c=self.color_map(0), s=1500, label='Time Nodes (Value=0)')
-        plt.scatter([], [], c=self.color_map(1), s=1500, label='Time Nodes (Value=1)')
-        plt.scatter([], [], c=self.color_map(2), s=1500, label='Time Nodes (Value=2)')
-        plt.legend(loc='best', fontsize=8)
+        # plt.scatter([], [], c='lightgreen', s=1200, label='Object Nodes')
+        # plt.scatter([], [], c=self.color_map(0), s=1500, label='Time Nodes (Value=0)')
+        # plt.scatter([], [], c=self.color_map(1), s=1500, label='Time Nodes (Value=1)')
+        # plt.scatter([], [], c=self.color_map(2), s=1500, label='Time Nodes (Value=2)')
+        # plt.legend(loc='best', fontsize=8)
         
         plt.title(title, fontsize=14)
         plt.axis('off')
         plt.tight_layout()
-        plt.show()
+        plt.savefig(os.path.join(output_dir, f"{title}.png"), dpi=300)
+        # plt.show()
     
     def print_state(self):
         print("Time Nodes (value -> id):", self.time_nodes)
@@ -139,7 +143,7 @@ class OptimizedTimeObjectGraph:
         for obj_id, times in self.object_to_times.items():
             time_values = [self._get_time_value_from_id(self, t) for t in times]
             print(f"  Object {self.object_nodes[obj_id]}: Times {time_values}")
-        print()
+        # print()
     
     def compute_pq_matrices(self, other_graph):
         all_times = set(self.get_time_values()) | set(other_graph.get_time_values())
